@@ -20,7 +20,7 @@
   .hdt-menu-uppercase-true #hdt-nav-ul > li > hdt-header-menu > details > summary .hdt-menu-link-text {
     text-transform: uppercase;
   }
-  
+
   {% if section.settings.header_transparent -%}
     {%- assign scheme = section.settings.header_colors -%}
     {%- if section.settings.header_transparent_colors != section.settings.header_colors -%}
@@ -71,7 +71,7 @@
         background-color: rgb({{scheme.settings.background.rgb}} / {{section.settings.background_opacity_transparent}});
       }
     }
-    
+
     {%- if section.settings.header_transparent_colors != section.settings.header_colors -%}
       body:has(.section-allow-transparent.hdt-section:first-child) .hdt-section-header:not(.scrolled-past-header.shopify-section-header-sticky) hdt-sticky-header,
       body:has(.hdt-section-header + .shopify-section-group-header-group) .hdt-section-header:not(.scrolled-past-header.shopify-section-header-sticky) hdt-sticky-header {
@@ -127,7 +127,7 @@
       }
     {%- endif -%}
   {%- endif -%}
-  
+
   {% if section.settings.sticky_type != 'none' -%}
     {%- if section.settings.header_sticky_colors != section.settings.header_colors -%}
       {%- assign scheme = section.settings.header_sticky_colors -%}
@@ -203,7 +203,7 @@
               {%- if section.settings.main_menu != blank -%}
                 <nav class="hdt-navigation hdt-text-{{ section.settings.menu_position }} hdt-menu-uppercase-{{ section.settings.text_transform }} hdt-nav-arrow_{{ section.settings.dropdown_arrow }}">
                   <ul id="hdt-nav-ul" class="hdt-nav__ul hdt-inline-flex hdt-align-center hdt-text-{{ section.settings.menu_position }} hdt-justify-{{ section.settings.menu_position }}">
-                    
+
                     {{ blocks_content }}
                     {%- for link in section.settings.main_menu.links -%}
                       {%- render 'main-menu', link: link, index: forloop.index, blocks_content: blocks_content -%}
@@ -218,8 +218,8 @@
                     <hdt-predictive-search {% if settings.predictive_search_enabled -%} enabled{% endif %} data-section-id-results="hdt_predictive-search" class="hdt_predictive-search hdt-block hdt-relative">
                       {{ 'hdt-search-form.css' | asset_url | stylesheet_tag }}
                       <form data-frm-search action="{{ routes.search_url }}" method="get" class="hdt-search_form hdt-search_{{ section.settings.search_type}} hdt-relative" role="search">
-                        <input type="hidden" name="resources[limit_scope]" value="each">
-                        <input type="hidden" name="resources[options][fields]" value="title,body,tag,product_type,variants.title,vendor,variants.sku">
+                        <input type="hidden" name="resources[limit_scope]" value="each" >
+                        <input type="hidden" name="resources[options][fields]" value="title,body,tag,product_type,variants.title,vendor,variants.sku" >
                         <div class="hdt-search_inner hdt-flex hdt-justify-between hdt-align-center hdt-relative">
                           {%- if settings.search_form_by_type %}
                           <div data-cat-search class="hdt-search__categories">
@@ -300,7 +300,7 @@
             {%- if section.settings.main_menu != blank -%}
               <nav class="hdt-navigation hdt-text-{{ section.settings.menu_position }} hdt-menu-uppercase-{{ section.settings.text_transform }} hdt-nav-arrow_{{ section.settings.dropdown_arrow }}">
                 <ul id="hdt-nav-ul" class="hdt-nav__ul hdt-inline-flex hdt-align-center hdt-text-{{ section.settings.menu_position }} hdt-justify-{{ section.settings.menu_position }}">
-                  
+
                 {{ blocks_content }}
                 {%- for link in section.settings.main_menu.links -%}
                   {%- render 'main-menu', link: link, index: forloop.index, blocks_content: blocks_content -%}
@@ -324,11 +324,11 @@
         </div>
         {%- if section.settings.menu_type == "split" -%}
           <div class="lg:hdt-custom-col-8 md:hdt-custom-col-4 hdt-custom-col-6 hdt-text-center lg:hdt-flex hdt-hidden hdt-align-center hdt-justify-center hdt-header-center hdt-col-logo">
-            
+
             {%- if section.settings.main_menu != blank -%}
               <nav class="hdt-navigation hdt-text-{{ section.settings.menu_position }} hdt-menu-uppercase-{{ section.settings.text_transform }} hdt-nav-arrow_{{ section.settings.dropdown_arrow }}">
                 <ul id="hdt-nav-ul" class="hdt-nav__ul hdt-inline-flex hdt-align-center hdt-text-{{ section.settings.menu_position }} hdt-justify-{{ section.settings.menu_position }}">
-                  
+
                 {{ blocks_content }}
                 {%- for link in section.settings.main_menu.links -%}
                   {%- render 'main-menu', link: link, index: forloop.index, blocks_content: blocks_content -%}
@@ -358,7 +358,7 @@
     </div>
   </div>
 </hdt-sticky-header>
-{% comment %} 
+{% comment %}
 <hdt-drawer class="hdt-drawer hdt-drawer-menu-mb hdt-header-menu-mobile hdt-contents" color-scheme="{{ section.settings.header_mobile_colors }}">
   <dialog id="menu_mobile" class="hdt-dialog hdt-dialog-drawer" scroll-lock pos="left">
     <div class="hdt-dialog-drawer__header">
@@ -613,7 +613,7 @@
     },
     {
       "type": "select",
-      "id": "menu_type",  
+      "id": "menu_type",
       "options": [
         {
           "value": "default",
@@ -691,7 +691,7 @@
     },
     {
       "type": "select",
-      "id": "search_type",  
+      "id": "search_type",
       "options": [
         {
           "value": "none",

@@ -358,7 +358,7 @@ html.no-js .no-js-inline {
 }
 
 .hdt-text-xs {
-  font-size: var(--text-xs)  
+  font-size: var(--text-xs)
 }
 .hdt-text-sm {
   font-size: var(--text-sm)
@@ -792,6 +792,12 @@ select {
 .hdt-order-last {
   order: 9999;
 }
+/* by me */
+.md\:hdt-inline-flex {
+  display: inline-flex;
+}
+
+/* ============== */
 @media (min-width: 768px) {
   .md\:hdt-hidden {
     display: none;
@@ -2338,7 +2344,7 @@ hdt-richlist button.is-unavailable,
   height: 100%;
   object-fit: cover;
 }
-/*       
+/*
 .hdt-product-form_value.is-type-block,
 .hdt-product-form_value.is-type-block_with_color {
   padding: 0.5rem 1rem;
@@ -2923,7 +2929,7 @@ button.product__xr-button {
 /*================ 5.5. Table ================*/
 
 /*================ 5.6. Slider ================*/
-.hdt-slider, 
+.hdt-slider,
 .hdt-slides-1 {
   --slide-spacing: 0px;
   --slide-size: 100%;
@@ -4899,7 +4905,7 @@ UPDATE: THEME BLOCKS
   /* line-height: inherit; */
   letter-spacing: inherit;
 }
-.hdt-h_custom { 
+.hdt-h_custom {
   --heading-fs: var(--heading-fs-mb);
 }
 @media (min-width: 768px) {
@@ -4913,7 +4919,7 @@ UPDATE: THEME BLOCKS
   }
 }
 
-/*================ 2. Text block ================*/  
+/*================ 2. Text block ================*/
 .hdt-text-custom {
   font-size: var(--text-custom);
   /* font-weight: var(--text-fw); */
@@ -4925,7 +4931,7 @@ UPDATE: THEME BLOCKS
   /* font-weight: inherit; */
   letter-spacing: inherit;
 }
-.hdt-text-custom { 
+.hdt-text-custom {
   --text-custom: var(--text-custom-mb);
 }
 .hdt-text-secondary,
@@ -4959,7 +4965,7 @@ UPDATE: THEME BLOCKS
 }
 .hdt-lh-1 {
   line-height: 1;
-} 
+}
 .hdt-lh-1-2 {
   line-height: 1.2;
 }
@@ -5030,7 +5036,7 @@ UPDATE: THEME BLOCKS
   width: auto;
   height: var(--height-btn-icon);
 
-  .dir--rtl &{ 
+  .dir--rtl &{
     transform: rotateX(180deg);
   }
 }
@@ -5697,7 +5703,7 @@ font-weight: 500;
     right: 10px;
     left: 10px;
   }
-  
+
   .toast {
     max-width: none;
     min-width: auto;

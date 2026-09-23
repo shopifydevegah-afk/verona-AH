@@ -112,6 +112,11 @@
       transform: translateX(0.25rem);
     }
   }
+
+{%comment%} by me {%endcomment%}
+  .hdt-announcement-bar__close {
+    display: none;
+  }
 {%- endstyle -%}
 {%- assign total_size = 0 -%}
 {%- if section.settings.close_btn != '0' -%}
@@ -196,7 +201,7 @@
         {% endif %}
       {{- cap_btn | remove: ' hdt-op-0 hdt-hidden md:hdt-block' -}}
     </div>
-    {%- endif -%} 
+    {%- endif -%}
   </div>
 </div>
 {%- if section.settings.close_btn !='0' %}<script>window.announceSize = 'theme4:announce-{{ total_size }}-closed';try { if ( sessionStorage.getItem(window.announceSize) != 'true' ) document.getElementById('shopify-section-{{ section.id }}').classList.remove('hdt-announcement-hidden'); } catch (err) {}</script>{% endif -%}
