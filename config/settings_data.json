@@ -126,7 +126,7 @@
       "scheme-1": {
         "settings": {
           "text": "#d0b4a6",
-          "text2": "#878787",
+          "text2": "#D0B4A6",
           "background": "#1a2a3a",
           "background_gradient": "",
           "background2": "#f2f2f2",
@@ -151,8 +151,8 @@
           "background": "#ffffff",
           "background_gradient": "",
           "background2": "#ffffff",
-          "button": "#1A2A3A",
-          "button_label": "#FFFFFF",
+          "button": "#1a2a3a",
+          "button_label": "#ffffff",
           "button_border": "#ffffff",
           "secondary_button_label": "#ffffff",
           "accent_color": "#56cfe1",

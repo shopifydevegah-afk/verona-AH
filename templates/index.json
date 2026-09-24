@@ -63,6 +63,91 @@
     "collections_list_GFzhVe": {
       "type": "collections-list",
       "blocks": {
+        "collection_item_k47XjM": {
+          "type": "_collection_item",
+          "name": "t:sections.collections-list.blocks.collection_item",
+          "settings": {
+            "collection": "العروض-الخاصة",
+            "hdt_collection_list_svg": "",
+            "svg_width": 60,
+            "svg_width_mb": 40,
+            "title": "العروض الخاصة",
+            "shop_now_label": "تسوق الآن",
+            "collection_link": "",
+            "col_dk": "6",
+            "col_tb": "6",
+            "col_mb": "6"
+          },
+          "blocks": {}
+        },
+        "collection_item_3i4BWa": {
+          "type": "_collection_item",
+          "name": "t:sections.collections-list.blocks.collection_item",
+          "settings": {
+            "collection": "التوزيعات",
+            "hdt_collection_list_svg": "",
+            "svg_width": 60,
+            "svg_width_mb": 40,
+            "title": "التوزيعات",
+            "shop_now_label": "تسوق الآن",
+            "collection_link": "",
+            "col_dk": "6",
+            "col_tb": "6",
+            "col_mb": "6"
+          },
+          "blocks": {}
+        },
+        "collection_item_NVyfBj": {
+          "type": "_collection_item",
+          "name": "t:sections.collections-list.blocks.collection_item",
+          "settings": {
+            "collection": "الموالح",
+            "hdt_collection_list_svg": "",
+            "svg_width": 60,
+            "svg_width_mb": 40,
+            "title": "الموالح",
+            "shop_now_label": "تسوق الآن",
+            "collection_link": "",
+            "col_dk": "6",
+            "col_tb": "6",
+            "col_mb": "6"
+          },
+          "blocks": {}
+        },
+        "collection_item_yMLVCj": {
+          "type": "_collection_item",
+          "name": "t:sections.collections-list.blocks.collection_item",
+          "settings": {
+            "collection": "بوكسات-الشوكولاتة",
+            "hdt_collection_list_svg": "",
+            "svg_width": 60,
+            "svg_width_mb": 40,
+            "title": "بوكسات الشوكولاتة",
+            "shop_now_label": "تسوق الآن",
+            "collection_link": "",
+            "col_dk": "6",
+            "col_tb": "6",
+            "col_mb": "6"
+          },
+          "blocks": {}
+        },
+        "collection_item_8W6e8C": {
+          "type": "_collection_item",
+          "name": "t:sections.collections-list.blocks.collection_item",
+          "settings": {
+            "collection": "الكيك",
+            "hdt_collection_list_svg": "",
+            "svg_width": 60,
+            "svg_width_mb": 40,
+            "title": "الكيك",
+            "shop_now_label": "تسوق الآن",
+            "collection_link": "",
+            "col_dk": "6",
+            "col_tb": "6",
+            "col_mb": "6"
+          },
+          "blocks": {}
+        },
         "section-heading-collections-list": {
           "type": "section-heading",
           "static": true,
@@ -94,17 +179,18 @@
           ]
         }
       },
+      "block_order": [
+        "collection_item_k47XjM",
+        "collection_item_3i4BWa",
+        "collection_item_NVyfBj",
+        "collection_item_yMLVCj",
+        "collection_item_8W6e8C"
+      ],
       "name": "t:sections.collections-list.name",
       "settings": {
-        "collection_list": [
-          "العروض-الخاصة",
-          "التوزيعات",
-          "الموالح",
-          "بوكسات-الشوكولاتة",
-          "الكيك"
-        ],
+        "collection_list": [],
         "collection_des": "8",
-        "content_size": "base",
+        "content_size": "lg",
         "content_weight": "semibold",
         "content_position": "center",
         "content_space": 20,
