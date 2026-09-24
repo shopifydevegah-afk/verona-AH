@@ -1,6 +1,9 @@
 /* Custom styles */
 
 /* From base.css */
+/* Custom styles */
+
+/* From base.css */
 .md\:hdt-inline-flex {
 	display: inline-flex;
 }
@@ -40,6 +43,49 @@ header [data-header-height] {
 
 .hdt-shop-now-link {
 	color: #9E7C4E;
+}
+
+@media (max-width: 991px) {
+	.hdt-menu-on-mobile .hdt-btn-open-sub {
+		display: inline-flex !important;
+		align-items: center;
+		justify-content: center;
+		box-sizing: border-box;
+		width: 50px !important;
+		height: 38px !important;
+		padding: 14px 19px;
+		position: relative;
+		flex: 0 0 50px;
+		color: #C8A995;
+		overflow: visible;
+	}
+
+	.hdt-menu-on-mobile .hdt-btn-open-sub::before,
+	.hdt-menu-on-mobile .hdt-btn-open-sub::after {
+		display: none !important;
+	}
+
+	.hdt-menu-on-mobile .hdt-btn-open-sub > svg {
+		display: block !important;
+		width: 12px !important;
+		height: 10px !important;
+		overflow: visible !important;
+		visibility: visible !important;
+		opacity: 1 !important;
+		pointer-events: none;
+		transition: transform 0.25s ease;
+	}
+
+	.hdt-menu-on-mobile details[open] > summary > .hdt-btn-open-sub > svg,
+	.hdt-menu-on-mobile details[aria-expanded="true"] > summary > .hdt-btn-open-sub > svg {
+		transform: rotate(180deg);
+	}
+
+	.hdt-menu-on-mobile .hdt-btn-open-sub > svg path {
+		stroke: #C8A995 !important;
+		visibility: visible !important;
+		opacity: 1 !important;
+	}
 }
 
 .hdt-mobile_group_icons{

@@ -240,7 +240,7 @@
           "type": "_menu_mobile",
           "static": true,
           "settings": {
-            "main_menu_mobile": "",
+            "main_menu_mobile": "main-menu",
             "menu_categories": "",
             "only_click_icon": false,
             "header_mobile_colors": "",
@@ -270,7 +270,7 @@
         "menu_size": "base",
         "menu_weight": "medium",
         "text_transform": false,
-        "dropdown_arrow": false,
+        "dropdown_arrow": true,
         "spacing_nav": 28,
         "open_event": "hover",
         "menu_type": "default",
