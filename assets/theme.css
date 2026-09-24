@@ -78,7 +78,6 @@ header [data-header-height] {
   height: 83px;
 }
 
-
 /* =================================== */
 
 
@@ -650,6 +649,14 @@ header [data-header-bottom-height] {
   gap: 16px;
   padding-inline-end: 10px;
 }
+
+/* by me */
+@media (max-width: 767px) {
+  .hdt-site-top_nav {
+    gap: 4px !important;
+  }
+}
+/* ================= */
 .hdt-site-top_nav.hdt-site-top_nav_has_text {
   gap: 12px;
 }

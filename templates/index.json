@@ -30,7 +30,7 @@
         "position_x_mb": 50,
         "position_y_mb": 50,
         "content_position_mb": "center",
-        "alignment_mb": "left",
+        "alignment_mb": "center",
         "overlay_content": false,
         "overlay_color": "#000000",
         "overlay_opacity": 0,
@@ -49,134 +49,104 @@
         "padding_horizontal": 30,
         "min_width_content": 350,
         "border_pd": 0,
-        "colors_by_section": false,
-        "color_scheme": "",
-        "background_opacity": 0,
+        "colors_by_section": true,
+        "color_scheme": "scheme-77e4ef58-56a9-4631-876a-12098ba7d57d",
+        "background_opacity": 1,
         "section_layout": "full_width",
         "hdt_background_parallax": false,
-        "mg": ",,50px,",
-        "mg_mb": ",,30px,",
+        "mg": ",,,",
+        "mg_mb": ",,,",
         "pd": "",
         "pd_mb": ""
       }
     },
-    "collections_list_manual_eErqxt": {
-      "type": "collections-list-manual",
+    "collections_list_GFzhVe": {
+      "type": "collections-list",
       "blocks": {
-        "collection_manual_item_tXNANF": {
-          "type": "_collection_manual-item",
-          "settings": {
-            "collection": "women",
-            "title": "Women",
-            "collection_link": "",
-            "column_width": "6",
-            "row_count": 2,
-            "tb_column_width": "6",
-            "tb_row_count": 1,
-            "mb_column_width": "2",
-            "mb_row_count": 2
-          },
-          "blocks": {}
-        },
-        "collection_manual_item_AEWjQE": {
-          "type": "_collection_manual-item",
-          "settings": {
-            "collection": "accessories",
-            "title": "Accessories",
-            "collection_link": "",
-            "column_width": "3",
-            "row_count": 1,
-            "tb_column_width": "6",
-            "tb_row_count": 1,
-            "mb_column_width": "1",
-            "mb_row_count": 1
-          },
-          "blocks": {}
-        },
-        "collection_manual_item_YDPY8G": {
-          "type": "_collection_manual-item",
-          "settings": {
-            "collection": "watch",
-            "title": "Watches",
-            "collection_link": "",
-            "column_width": "3",
-            "row_count": 2,
-            "tb_column_width": "6",
-            "tb_row_count": 1,
-            "mb_column_width": "1",
-            "mb_row_count": 2
-          },
-          "blocks": {}
-        },
-        "collection_manual_item_D67f4i": {
-          "type": "_collection_manual-item",
-          "settings": {
-            "collection": "footwear",
-            "title": "Footwear",
-            "collection_link": "",
-            "column_width": "3",
-            "row_count": 1,
-            "tb_column_width": "6",
-            "tb_row_count": 1,
-            "mb_column_width": "1",
-            "mb_row_count": 1
-          },
-          "blocks": {}
-        },
-        "collections-list-manual-heading": {
+        "section-heading-collections-list": {
           "type": "section-heading",
-          "disabled": true,
           "static": true,
           "settings": {
-            "design_heading": "2",
+            "design_heading": "1",
             "horizontal": false,
             "alignment": "center",
-            "heading_gap": 0,
+            "heading_gap": 15,
             "margin_bottom": 30
           },
-          "blocks": {}
+          "blocks": {
+            "heading_section_LziRK3": {
+              "type": "_heading_section",
+              "name": "t:blocks.section_heading.name",
+              "settings": {
+                "heading": "الأقسام الرئيسية",
+                "line_height": "",
+                "heading_size": "h3",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 50,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_section_LziRK3"
+          ]
         }
       },
-      "block_order": [
-        "collection_manual_item_tXNANF",
-        "collection_manual_item_AEWjQE",
-        "collection_manual_item_YDPY8G",
-        "collection_manual_item_D67f4i"
-      ],
+      "name": "t:sections.collections-list.name",
       "settings": {
-        "collection_des": "1",
-        "rounded": "",
+        "collection_list": [
+          "العروض-الخاصة",
+          "التوزيعات",
+          "الموالح",
+          "بوكسات-الشوكولاتة",
+          "الكيك"
+        ],
+        "collection_des": "8",
         "content_size": "base",
-        "font_size_text_lg": 22,
-        "font_size_text_md": 14,
-        "font_size_text": 14,
-        "font_weight_text": 400,
-        "letter_spacing_text": 0,
         "content_weight": "semibold",
-        "content_position": "end-center",
+        "content_position": "center",
         "content_space": 20,
         "show_count": false,
         "count_label": "Products",
         "image_rounded": false,
         "enable_border": false,
         "image_padding": 30,
-        "img_effect": "zoom",
+        "image_ratio": "landscape",
+        "image_size": true,
+        "img_effect": "none",
         "b_effect": "none",
-        "row_height": 300,
-        "row_height_tb": 300,
-        "row_height_mb": 200,
-        "space_items": "var(--spacing-x)",
-        "space_items_tb": "var(--spacing-x)",
-        "space_items_mb": "var(--spacing-x)",
-        "colors_by_section": false,
-        "color_scheme": "scheme-1",
-        "background_opacity": 0,
+        "col_dk": "4",
+        "col_tb": "3",
+        "col_mb": "2",
+        "space_items": "20",
+        "layout_mode": "carousel",
+        "loop": false,
+        "autoplay": 0,
+        "pauseOnHover": false,
+        "navUI": false,
+        "nav_position": "default",
+        "nav_visible": "always",
+        "nav_style": "default",
+        "nav_shape": "default",
+        "nav_size": "small",
+        "nav_hide_mobile": false,
+        "dotUI": false,
+        "pag_style": "default",
+        "pag_rounded": true,
+        "pag_space": 10,
+        "pag_mgt": 10,
+        "pag_hide_mobile": false,
+        "colors_by_section": true,
+        "color_scheme": "scheme-77e4ef58-56a9-4631-876a-12098ba7d57d",
+        "background_opacity": 1,
         "section_layout": "wrapper_container",
         "hdt_background_parallax": false,
-        "mg": "",
-        "mg_mb": "",
-        "pd": ",,100px,",
-        "pd_mb": ",,75px,"
+        "mg": ",,,",
+        "mg_mb": ",,,",
+        "pd": "48px,90px.48px,90px",
+        "pd_mb": "16px,16px,16px,16px"
       }
     },
     "featured_collection_PTq36A": {
@@ -267,8 +237,8 @@
       ],
       "settings": {
         "colors_by_section": false,
-        "color_scheme": "scheme-1",
-        "background_opacity": 0,
+        "color_scheme": "scheme-77e4ef58-56a9-4631-876a-12098ba7d57d",
+        "background_opacity": 1,
         "section_layout": "container",
         "hdt_background_parallax": false,
         "mg": "",
@@ -1381,7 +1351,7 @@
   },
   "order": [
     "hero_image_AFwGiH",
-    "collections_list_manual_eErqxt",
+    "collections_list_GFzhVe",
     "featured_collection_PTq36A",
     "banner_VyWanM",
     "featured_collection_CKUpWw",

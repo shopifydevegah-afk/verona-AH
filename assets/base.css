@@ -2962,6 +2962,13 @@ button.product__xr-button {
   position: relative;
   overflow: hidden;
 }
+
+/* by me */
+.hdt-slider__viewport{
+  padding-bottom: 10px;
+}
+
+/* ================ */
 .hdt-slider__container {
   display: flex;
   backface-visibility: hidden;

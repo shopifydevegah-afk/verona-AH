@@ -38,6 +38,7 @@
   container-name: card-collection;
   container-type: inline-size;
 }
+
 .hdt-collection-title {
 	min-height: 24px;
   line-height: var(--font-heading-line-height);
@@ -135,7 +136,7 @@
       .hdt-collection-count{
         opacity: 1;
       }
-      
+
     }
     &:has(.hdt-collection-count):hover {
       .hdt-collection-title{
@@ -219,7 +220,7 @@
     @media (width < 768px) {
       width: var(--w-image-svg-mb);
       height: var(--w-image-svg-mb);
-      
+
     }
   }
 }
@@ -241,7 +242,7 @@
       color: rgb(var(--color-accent));
     }
   }
-} 
+}
 .hdt-has-collection12 .hdt-collection-img {
   /* max-width: 100px; */
   margin-inline-start: auto;
@@ -257,6 +258,17 @@
   height: 100%;
   width: 100%;
 }
+/* by me */
+.hdt-collection-inner{
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07) !important;
+  border-radius: 14px;
+  pointer-events: none;
+}
+
+.hdt-collection-style8 .hdt-collection-content {
+  padding-top: 15px;
+}
+/* =================== */
 .hdt-collection-manual-item .hdt-collection-img :where(img, svg) {
   object-fit: cover;
   object-position: center;
@@ -341,13 +353,13 @@
 @media (-moz-touch-enabled: 0), (hover: hover) and (min-width: 1150px) {
   .hdt-collection-style3 .hdt-collection-title {
     transform: translateY(-15px);
-  }  
+  }
   .hdt-collection-style3 .hdt-collection-count {
     transform: translateY(15px);
     opacity: 0;
     visibility: hidden;
     height: 0;
-  } 
+  }
   .hdt-collection-style3:hover :where(.hdt-collection-title,.hdt-collection-count) {
     transform: translateY(0);
     opacity: 1;
@@ -358,14 +370,14 @@
     height: 100%;
     position: relative;
     z-index: 2;
-  }  
+  }
   .hdt-collection-style4 .hdt-collection-has-count .hdt-collection-count {
     height: 100%;
     opacity: 0;
     visibility: hidden;
     z-index: 1;
     position: absolute;
-  } 
+  }
   .hdt-collection-style4 .hdt-collection-has-count .hdt-collection-wrapper:hover .hdt-collection-title {
     opacity: 0;
     visibility: hidden;
@@ -395,7 +407,7 @@
   .hdt-collection-content {
     top: 65%;
   }
-  .hdt-collection-title { 
+  .hdt-collection-title {
     color: rgb(var(--hdt-btn-outline-color));
     &:hover{
       color: rgb(var(--color-accent));
@@ -403,7 +415,7 @@
   }
 }
 
-@media (width < 768px) { 
+@media (width < 768px) {
   .hdt-collection-style15 {
     .hdt-collection-title-text {
       margin-block-end: 0 !important;
@@ -421,7 +433,7 @@
     .hdt-collection-content {
       top: 55%;
     }
-    
+
   }
 }
 
