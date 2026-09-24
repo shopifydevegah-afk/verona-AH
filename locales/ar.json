@@ -582,8 +582,8 @@
       "remove_all": "إزالة الكل"
     },
     "cart": {
-      "title": "سلتك",
-      "empty": "سلتك فارغة",
+      "title": "سلة التسوق الخاصة بك",
+      "empty": "سلة التسوق الخاصة بك فارغة",
       "return_shop": "العودة إلى المتجر",
       "subtotal": "المجموع الفرعي",
       "taxes_included_and_shipping_policy_html": "الضرائب مشمولة ويتم احتساب <a href=\"{{ link }}\">الشحن</a> عند الدفع",

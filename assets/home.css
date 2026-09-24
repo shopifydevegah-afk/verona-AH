@@ -50,10 +50,6 @@ header [data-header-height] {
     display: none;
 }
 
-.hdt-btn-open-sub{
-    display: none;
-}
-
 @media (max-width: 767px) {
     .hdt-drawer-menu-mb .hdt-dialog-drawer__inner #tab-mobile .hdt-menu-item:nth-child(1) {
     order: 2 !important;

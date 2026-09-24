@@ -54,14 +54,15 @@
 													</span>
 												</span>
 												{%- if li_class != "" -%}
-													<span class="hdt-btn-open-sub hdt-relative" accordion-icon></span>
+													{% comment %} <span class="hdt-btn-open-sub hdt-relative" accordion-icon></span> {% endcomment %}
+													 <svg class="hdt-btn-open-sub hdt-relative" accordion-icon width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"/></svg>
 												{%- endif -%}
 											</summary>
 											<ul class="hdt-mb-sub-menu hdt-menu-list hdt-mb-sub-menu-lever-1" role="list"  >
 												{%- for childlink in link.links -%}
 													<li class="hdt-menu-item hdt-flex hdt-justify-center hdt-flex-col {% if childlink.links != blank %} hdt-has-children hdt-relative {% endif %}">
-														{%- if childlink.links != blank -%}			     
-															<hdt-accordion class="hdt-contents" {{ only_click_icon }}> 		
+														{%- if childlink.links != blank -%}
+															<hdt-accordion class="hdt-contents" {{ only_click_icon }}>
 																<details>
 																	<summary data-url="{{ childlink.url }}" class="hdt-menu-link hdt-flex hdt-align-center hdt-justify-between hdt-relative hdt-text-base hdt-font-normal {% if childlink.current %} hdt-menu-link--active{% endif %}" {% if childlink.current %} aria-current="page" {% endif %}>
 																		{%- assign arr_title = childlink.title | remove: "[is_heading]" | split: '[' -%}
@@ -78,7 +79,8 @@
 																				{%- endif -%}
 																			</span>
 																		</span>
-																		<span class="hdt-btn-open-sub hdt-relative" accordion-icon></span>
+																		{% comment %} <span class="hdt-btn-open-sub hdt-relative" accordion-icon></span> {% endcomment %}
+																		 <svg class="hdt-btn-open-sub hdt-relative" accordion-icon width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 6.68342 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289L12.7071 14.7071Z" fill="#000000"/></svg>
 																	</summary>
 																	<ul class="hdt-mb-sub-menu hdt-menu-list hdt-mb-sub-menu-lever-2" role="list">
 																		{%- for grandchildlink in childlink.links -%}
@@ -188,7 +190,7 @@
 		</div>
 		<div slot="footer" class="hdt-mobile_bottom">
 			<div class="hdt-mb-language_currencies hdt-flex hdt-flex-col hdt-align-start">
-				{%- if localization.available_countries.size >= 1 -%}				
+				{%- if localization.available_countries.size >= 1 -%}
 					{%- unless localization.available_countries.size <= 1 and settings.currency_type == "1" -%}
 						{%- render 'hdt_currency', mobile: true -%}
 					{%- endunless -%}
@@ -222,7 +224,8 @@
 	                        <span class="hdt-menu-link-text"> {{- link.title -}} </span>
 	                      </span>
 	                      {% if link.links != blank %}
-	                        <span class="hdt-btn-open-sub hdt-relative" accordion-icon></span>
+	                        {% comment %} <span class="hdt-btn-open-sub hdt-relative" accordion-icon></span> {% endcomment %}
+							 <svg class="hdt-btn-open-sub hdt-relative" accordion-icon width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289L12.7071 14.7071Z" fill="#000000"/></svg>
 	                      {% endif %}
 	                    </summary>
 	                    <div id="hdt-categories-sub-menu{{ forloop.index }}" class="hdt-mb-sub-menu">
@@ -244,7 +247,8 @@
 		                                    {%- endif -%}
 		                                    <span class="hdt-menu-link-text"> {{- childlink.title -}} </span>
 		                                  </span>
-		                                  <span class="hdt-btn-open-sub hdt-relative" accordion-icon></span>
+		                                  {% comment %} <span class="hdt-btn-open-sub hdt-relative" accordion-icon></span> {% endcomment %}
+										   <svg class="hdt-btn-open-sub hdt-relative" accordion-icon width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289L12.7071 14.7071Z" fill="#000000"/></svg>
 		                                </summary>
 		                                <div id="hdt-categories-sub-menu{{ forloop.index }}" class="hdt-mb-sub-menu">
 		                                  <ul class="hdt-menu-list hdt-categories-sub-menu-lever-2" role="list">
@@ -309,7 +313,7 @@
             {%- endfor -%}
           </ul>
         {%- endif -%}
-			</div>	
+			</div>
 		</div>
 	{% endif %}
 </div>
