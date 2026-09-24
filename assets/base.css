@@ -792,12 +792,6 @@ select {
 .hdt-order-last {
   order: 9999;
 }
-/* by me */
-.md\:hdt-inline-flex {
-  display: inline-flex;
-}
-
-/* ============== */
 @media (min-width: 768px) {
   .md\:hdt-hidden {
     display: none;
@@ -2963,12 +2957,6 @@ button.product__xr-button {
   overflow: hidden;
 }
 
-/* by me */
-.hdt-slider__viewport{
-  padding-bottom: 10px;
-}
-
-/* ================ */
 .hdt-slider__container {
   display: flex;
   backface-visibility: hidden;

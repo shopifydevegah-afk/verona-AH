@@ -1,0 +1,43 @@
+/* Custom styles */
+
+/* From base.css */
+.md\:hdt-inline-flex {
+	display: inline-flex;
+}
+
+.hdt-slider__viewport {
+	padding-bottom: 10px;
+}
+
+/* From hdt-collection-items.css */
+.hdt-collection-inner {
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07) !important;
+	border-radius: 14px;
+	pointer-events: none;
+}
+
+/* From theme.css */
+@media screen and (min-width: 992px) {
+	header [data-header-height] {
+		padding: 0 63px;
+	}
+}
+
+header [data-header-height] {
+	height: 83px;
+}
+
+@media (max-width: 767px) {
+	.hdt-site-top_nav {
+		gap: 4px !important;
+	}
+}
+
+/* From sections */
+.hdt-announcement-bar__close {
+	display: none;
+}
+
+.hdt-shop-now-link {
+	color: #9E7C4E;
+}
