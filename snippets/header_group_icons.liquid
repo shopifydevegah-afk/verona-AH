@@ -33,8 +33,8 @@
       <path d="M3.205 3.205v25.59h25.59v-25.59h-25.59zM27.729 27.729h-23.457v-23.457h23.457v23.457z" fill="currentColor"></path>
       <path d="M9.068 13.334c0 3.828 3.104 6.931 6.931 6.931s6.93-3.102 6.93-6.931v-3.732h1.067v-1.066h-3.199v1.066h1.065v3.732c0 3.234-2.631 5.864-5.864 5.864-3.234 0-5.865-2.631-5.865-5.864v-3.732h1.067v-1.066h-3.199v1.066h1.065v3.732z" fill="currentColor"></path>
     </symbol>
-  </svg> 
-  
+  </svg>
+
 {%- when 'drawn' -%}
   <svg xmlns="http://www.w3.org/2000/svg" class="hdt-d-none">
     <symbol id="icon-h-search" viewBox="0 0 20 20" stroke="currentColor">
@@ -50,7 +50,7 @@
       <path d="M322.03 56.042A15 15 0 00309.999 50H78.98l-4.073-36.656C74.063 5.747 67.642 0 59.999 0h-40c-8.284 0-15 6.716-15 15s6.716 15 15 15h26.574l4.054 36.485c.012.127.026.253.042.379L65.09 196.656C65.934 204.253 72.356 210 79.999 210h191.104a15 15 0 0014.37-10.7l38.897-130a15.004 15.004 0 00-2.34-13.258zM259.934 180H93.425L82.313 80h207.54l-29.919 100zM109.999 239.998c-24.813 0-45 20.187-45 45 0 24.814 20.187 45 45 45s45-20.186 45-45c0-24.813-20.187-45-45-45zm0 60c-8.271 0-15-6.728-15-15 0-8.271 6.729-15 15-15s15 6.729 15 15c0 8.272-6.729 15-15 15zM228.999 239.998c-24.814 0-45 20.187-45 45 0 24.814 20.186 45 45 45s45-20.186 45-45c0-24.813-20.187-45-45-45zm0 60c-8.271 0-15-6.728-15-15 0-8.271 6.729-15 15-15s15 6.729 15 15c0 8.272-6.729 15-15 15z"></path>
     </symbol>
   </svg>
-  
+
 {%- else -%}
   <svg xmlns="http://www.w3.org/2000/svg" class="hdt-d-none">
     <symbol id="icon-h-search" viewBox="0 0 32 32" fill="currentColor">
@@ -66,7 +66,7 @@
       <path xmlns="http://www.w3.org/2000/svg" d="M 16 3 C 13.253906 3 11 5.253906 11 8 L 11 9 L 6.0625 9 L 6 9.9375 L 5 27.9375 L 4.9375 29 L 27.0625 29 L 27 27.9375 L 26 9.9375 L 25.9375 9 L 21 9 L 21 8 C 21 5.253906 18.746094 3 16 3 Z M 16 5 C 17.65625 5 19 6.34375 19 8 L 19 9 L 13 9 L 13 8 C 13 6.34375 14.34375 5 16 5 Z M 7.9375 11 L 11 11 L 11 14 L 13 14 L 13 11 L 19 11 L 19 14 L 21 14 L 21 11 L 24.0625 11 L 24.9375 27 L 7.0625 27 Z"/>
     </symbol>
   </svg>
-  
+
 {%- endcase -%}
 
 <div class="hdt-site-top_nav hdt-flex hdt-align-center hdt-justify-{{ icons_position }} hdt-header-icons-hover-{{ section.settings.hover_icon }} hdt-cart-design{{ section.settings.cart_des }}">
@@ -157,7 +157,7 @@
 		{%- endif -%}
 	{%- endif -%}
 	{%- if section.settings.enabled_cart -%}
-    {% liquid 
+    {% liquid
       assign protect_product = settings.protect_product
       assign protect_product_id = protect_product.selected_or_first_available_variant.id | default: protect_product.variants.first.id | default: protect_product.id | default: 'kalles-5'
       assign has_protect_product = 0
@@ -168,7 +168,12 @@
 	<div class="hdt-site-nav_icon hdt-site-nav_cart hdt-inline-flex hdt-align-center">
 		<a class="hdt-inline-flex hdt-align-center" href="{{ routes.cart_url }}"{% if request.page_type != 'cart' %} aria-controls="CartDrawer"{% endif %}>
       <div class="hdt-inline-flex hdt-align-center hdt-relative hdt-has-count-box">
-        <svg width="24" height="24" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-cart"></use></svg>
+        {% comment %} <svg width="24" height="24" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-cart"></use></svg> {% endcomment %}
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false" role="presentation">
+          <path d="M5 1.66666L2.5 5V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5L15 1.66666H5Z" stroke="#D0B4A6" stroke-width="1.25"/>
+          <path d="M2.5 5H17.5" stroke="#D0B4A6" stroke-width="1.25"/>
+          <path d="M13.3333 8.33334C13.3333 9.21739 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.884 11.6667 9.99999 11.6667C9.11593 11.6667 8.26809 11.3155 7.64297 10.6904C7.01785 10.0652 6.66666 9.21739 6.66666 8.33334" stroke="#D0B4A6" stroke-width="1.25"/>
+        </svg>
         <hdt-cart-count class="hdt-count-box hdt-absolute">{{ cart.item_count | minus: has_protect_product }}</hdt-cart-count>
       </div>
       <hdt-cart-total class="hdt-cart-total hdt-hidden">{{ cart.total_price | money }}</hdt-cart-total>
