@@ -425,3 +425,13 @@ header [data-header-height] {
     opacity: 0;
   }
 }
+
+.hdt-slider .hdt-navigation button{
+    color: var(--color-overlay);
+}
+
+@media (min-width: 767px) {
+    .hdt-slider .hdt-navigation button{
+        display: none;
+    }
+}
