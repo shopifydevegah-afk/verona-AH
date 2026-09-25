@@ -411,7 +411,7 @@ header [data-header-height] {
 
 @media screen and (max-width: 999px) {
   .hdt-header-menu-mobile .hdt-dialog-drawer {
-    top: 110px !important;
+    top: 117px !important;
     height: calc(100dvh - 90px) !important;
     max-height: calc(100dvh - 90px) !important;
   }
