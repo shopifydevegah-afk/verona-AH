@@ -252,19 +252,16 @@
   }
 }
 
-/* ========================= */
+/* slider */
 
-.hdt-slider .hdt-navigation button{
-    color: var(--color-overlay);
+.navigation{
+	width: calc(10vw - 9px);
+
 }
 
-@media (min-width: 767px) {
-    .hdt-slider .hdt-navigation button{
-        display: none;
-    }
-}
 
-/* edit in feature collection */
+
+/* edit in feature collection & collection list */
 
 .hdt-shop-now-link {
 	color: #9E7C4E;
