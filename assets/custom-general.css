@@ -32,8 +32,9 @@
 	display: none !important;
 }
 
-/* 2. TOP-LEVEL MOBILE MENU ITEMS & BORDERS */
 
+
+/* 2. TOP-LEVEL MOBILE MENU ITEMS & BORDERS */
 
 .header  .hdt-nav__ul-mb>.hdt-menu-item>.hdt-menu-link,
 .header .hdt-nav__ul-mb>.hdt-menu-item>hdt-accordion>details>summary.hdt-menu-link {
@@ -213,6 +214,10 @@
 
 /* 5. TOP-LEVEL ORDER (MOBILE ONLY) */
 @media (max-width: 767px) {
+
+	.header .hdt-menu-item{
+	border-bottom: 1px solid #24354a;
+}
 	.header  .hdt-dialog-drawer__inner #tab-mobile .hdt-nav__ul-mb>.hdt-menu-item:nth-child(1) {
 		order: 2 !important;
 	}
@@ -232,7 +237,7 @@
 
 @media screen and (max-width: 999px) {
   .header .hdt-dialog-drawer {
-    top: 117px !important;
+    top: 116px !important;
     height: calc(100dvh - 90px) !important;
     max-height: calc(100dvh - 90px) !important;
 	background-color: #1b2d42;
