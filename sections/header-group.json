@@ -257,7 +257,9 @@
         "mega_block_MtwFkx",
         "mega_block_Jbe4K9"
       ],
+      "custom_css": [],
       "settings": {
+        "custom-class-header-inline": "inline-flex-style",
         "header_layout": "logo_left",
         "header_fullwidth": true,
         "header_height": 60,

@@ -7,6 +7,7 @@
 	display: inline-flex;
 }
 
+
 /* From theme.css */
 @media screen and (min-width: 992px) {
 	header [data-header-height] {
@@ -18,16 +19,7 @@ header [data-header-height] {
 	height: 83px;
 }
 
-@media (max-width: 767px) {
-	.hdt-site-top_nav {
-		gap: 4px !important;
-	}
-}
-
 /* From sections */
-.hdt-announcement-bar__close {
-	display: none;
-}
 
 .hdt-shop-now-link {
 	color: #9E7C4E;
