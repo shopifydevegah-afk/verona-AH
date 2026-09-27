@@ -135,7 +135,7 @@
       "scheme-1": {
         "settings": {
           "text": "#d0b4a6",
-          "text2": "#d0b4a6",
+          "text2": "#A18676",
           "background": "#1a2a3a",
           "background_gradient": "",
           "background2": "#f2f2f2",
@@ -247,7 +247,7 @@
           "button": "#ffffff",
           "button_label": "#222222",
           "button_border": "#ffffff",
-          "secondary_button_label": "#D0B4A6",
+          "secondary_button_label": "#d0b4a6",
           "accent_color": "#56cfe1",
           "line_border": "#dddddd",
           "overlay": "#000000",
