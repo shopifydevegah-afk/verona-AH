@@ -261,7 +261,7 @@
         "@media (max-width: 767px) {.hdt-site-top_nav {gap: 4px !important; } .hdt-site-nav_user {display: flex; }}"
       ],
       "settings": {
-        "custom-class-header-inline": "inline-flex-style",
+        "custom_class_header_inline": "header",
         "header_layout": "logo_left",
         "header_fullwidth": true,
         "header_height": 60,
