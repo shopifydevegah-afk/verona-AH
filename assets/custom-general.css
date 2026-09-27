@@ -43,22 +43,6 @@ header [data-header-height] {
 	}
 }
 
-.hdt-drawer-menu-mb .hdt-dialog-drawer__header {
-	border-bottom: 1px solid #24354a !important;
-	background: #1b2d42 !important;
-	min-height: 48px;
-	padding: 8px 16px;
-}
-
-.hdt-drawer-menu-mb .hdt-dialog-btn__close {
-	color: #c9a97a !important;
-	background: transparent !important;
-}
-
-.hdt-drawer-menu-mb .hdt-dialog-btn__close svg {
-	stroke: #c9a97a !important;
-	color: #c9a97a !important;
-}
 
 /* Hide tab bar (Menu / Categories) and extra content in mobile drawer */
 .hdt-drawer-menu-mb .hdt-mobile_header,
@@ -71,12 +55,6 @@ header [data-header-height] {
 }
 
 /* 2. TOP-LEVEL MOBILE MENU ITEMS & BORDERS */
-.hdt-menu-on-mobile .hdt-nav__ul-mb {
-	background: #1b2d42 !important;
-	padding: 0 !important;
-	margin: 0 !important;
-	list-style: none !important;
-}
 
 .hdt-menu-on-mobile .hdt-nav__ul-mb>.hdt-menu-item {
 	background: #1b2d42 !important;
@@ -100,20 +78,6 @@ header [data-header-height] {
 	transition: color 0.2s ease, background-color 0.2s ease;
 }
 
-.hdt-menu-on-mobile .hdt-nav__ul-mb>.hdt-menu-item>.hdt-menu-link:focus,
-.hdt-menu-on-mobile .hdt-nav__ul-mb>.hdt-menu-item>hdt-accordion>details>summary.hdt-menu-link:focus {
-	outline: none !important;
-}
-
-.hdt-menu-on-mobile .hdt-nav__ul-mb>.hdt-menu-item details[open]>summary.hdt-menu-link,
-.hdt-menu-on-mobile .hdt-nav__ul-mb>.hdt-menu-item details[aria-expanded="true"]>summary.hdt-menu-link {
-	background: #1b2d42 !important;
-	color: #e1ceae !important;
-}
-
-.hdt-menu-on-mobile .hdt-nav__ul-mb>.hdt-menu-item .hdt-menu-link-text {
-	color: inherit !important;
-}
 
 /* Chevron arrow on mobile */
 .hdt-menu-on-mobile .hdt-nav__ul-mb>.hdt-menu-item .hdt-btn-open-sub {
@@ -148,12 +112,6 @@ header [data-header-height] {
 	opacity: 1 !important;
 	pointer-events: none;
 	transition: transform 0.25s ease !important;
-}
-
-.hdt-menu-on-mobile .hdt-nav__ul-mb>.hdt-menu-item .hdt-btn-open-sub>svg path {
-	stroke: #c9a97a !important;
-	visibility: visible !important;
-	opacity: 1 !important;
 }
 
 /* Closed state: in RTL, pointing inwards (<) */
