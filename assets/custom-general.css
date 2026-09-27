@@ -236,16 +236,15 @@
 }
 
 @media screen and (max-width: 999px) {
+  @media screen and (max-width: 999px) {
   .header .hdt-dialog-drawer {
-    top: 116px !important;
-    height: calc(100dvh - 90px) !important;
-    max-height: calc(100dvh - 90px) !important;
-	background-color: #1b2d42;
+    top: var(--live-header-bottom, 116px) !important;
+    height: calc(100dvh - var(--live-header-bottom, 116px)) !important;
+    max-height: calc(100dvh - var(--live-header-bottom, 116px)) !important;
+    background-color: #1b2d42;
   }
-  .header .hdt-dialog-drawer::backdrop {
-    top: 90px;
-    height: calc(100dvh - 90px);
-  }
+}
+
 
   .header .hdt-dialog[open]::backdrop{
     background-color: rgb(var(--color-overlay, 0 0 0) / .5);
