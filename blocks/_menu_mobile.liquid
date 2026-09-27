@@ -1,4 +1,5 @@
-<hdt-drawer class="hdt-drawer hdt-drawer-menu-mb hdt-header-menu-mobile hdt-contents" color-scheme="{{ block.settings.header_mobile_colors }}">
+{%- assign custom_class = section.settings.custom_class_header_inline | strip -%}
+<hdt-drawer class="hdt-drawer hdt-drawer-menu-mb hdt-header-menu-mobile hdt-contents {% if custom_class != blank %} {{ custom_class }}{% endif %}" color-scheme="{{ block.settings.header_mobile_colors }}">
   <dialog id="menu_mobile" class="hdt-dialog hdt-dialog-drawer" scroll-lock pos="{% if section.settings.menu_position != "end" %}left{% else %}right{% endif %}">
     <div class="hdt-dialog-drawer__header">
       <button ref="closeButton" class="hdt-s-text hdt-dialog-btn__close" aria-controls="menu_mobile" aria-label="{{ 'accessibility.close' | t | escape }}">{%- render 'icon' with 'close' -%}</button>
@@ -325,6 +326,12 @@
   "name": "Mobile",
   "tag": null,
   "settings": [
+	{
+      "type": "text",
+      "id": "custom_class_header_inline",
+      "label": "custom class to style",
+      "info": "add custom class here to style"
+    },
     {
       "type": "link_list",
       "id": "main_menu_mobile",
