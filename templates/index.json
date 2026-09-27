@@ -186,6 +186,9 @@
         "collection_item_yMLVCj",
         "collection_item_8W6e8C"
       ],
+      "custom_css": [
+        ".hdt-collection-inner {box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07) !important;border-radius: 14px;pointer-events: none;}"
+      ],
       "name": "t:sections.collections-list.name",
       "settings": {
         "collection_list": [],

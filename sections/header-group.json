@@ -58,7 +58,7 @@
       ],
       "settings": {
         "show_line_separator": false,
-        "close_btn": "3",
+        "close_btn": "0",
         "height": 33,
         "fontsize": 13,
         "design": "marquee",
@@ -257,7 +257,9 @@
         "mega_block_MtwFkx",
         "mega_block_Jbe4K9"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "@media (max-width: 767px) {.hdt-site-top_nav {gap: 4px !important; } .hdt-site-nav_user {display: flex; }}"
+      ],
       "settings": {
         "custom-class-header-inline": "inline-flex-style",
         "header_layout": "logo_left",
