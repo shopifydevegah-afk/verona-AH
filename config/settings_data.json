@@ -99,7 +99,7 @@
     "pick_mode": "first_available",
     "hide_sold_out": false,
     "action_after_atc": "open_cart_drawer",
-    "empty_cart_link": "/",
+    "empty_cart_link": "shopify://collections/all",
     "free_ship_pr": "white-cream-sleeve",
     "gift_wrap_pr": "gift-wrap",
     "animations_reveal_on_scroll": true,
