@@ -65,8 +65,7 @@
 															<hdt-accordion class="hdt-contents" {{ only_click_icon }}>
 																<details>
 																	<summary data-url="{{ childlink.url }}" class="hdt-menu-link hdt-flex hdt-align-center hdt-justify-between hdt-relative hdt-text-base hdt-font-normal {% if childlink.current %} hdt-menu-link--active{% endif %}" {% if childlink.current %} aria-current="page" {% endif %}>
-																<details{% if childlink.links != blank %} open{% endif %}>
-																	<summary data-url="{{ childlink.url }}" class="hdt-menu-link hdt-flex hdt-align-center hdt-justify-between hdt-relative hdt-text-base hdt-font-normal {% if childlink.current %} hdt-menu-link--active{% endif %}{% if childlink.title contains '[is_heading]' %} hdt-is-heading{% endif %}" {% if childlink.current %} aria-current="page" {% endif %}>
+
 																		{%- assign arr_title = childlink.title | remove: "[is_heading]" | split: '[' -%}
 																		{%- assign arr_label = arr_title[1] | split: ',' -%}
 																		<span class="hdt-menu-link-text hdt-block{% if arr_label.size > 0 %} hdt-relative hdt-title_size-{{ arr_title[0].size | at_most: 20 }} hdt-has-{{ arr_label.size | at_most: 2 }}label{% endif %}">
@@ -89,7 +88,6 @@
 																		{%- for grandchildlink in childlink.links -%}
 																			<li class="hdt-menu-item hdt-flex hdt-justify-center hdt-flex-col">
 																				<a id="hdt-menu-{{ grandchildlink.handle }}" href="{{ grandchildlink.url }}" class="hdt-menu-link hdt-flex hdt-align-center hdt-justify-between hdt-relative hdt-text-base hdt-font-normal {% if childlink.current %} hdt-menu-link--active{% endif %}" {% if grandchildlink.current %} aria-current="page" {% endif %}>
-																				<a id="hdt-menu-{{ grandchildlink.handle }}" href="{{ grandchildlink.url }}" class="hdt-menu-link hdt-flex hdt-align-center hdt-justify-between hdt-relative hdt-text-base hdt-font-normal {% if childlink.current %} hdt-menu-link--active{% endif %}{% if grandchildlink.title contains '[is_heading]' %} hdt-is-heading{% endif %}" {% if grandchildlink.current %} aria-current="page" {% endif %}>
 																					{%- assign arr_title = grandchildlink.title | remove: "[is_heading]" | split: '[' -%}
 																					{%- assign arr_label = arr_title[1] | split: ',' -%}
 																					<span class="hdt-menu-link-text hdt-block{% if arr_label.size > 0 %} hdt-relative hdt-title_size-{{ arr_title[0].size | at_most: 20 }} hdt-has-{{ arr_label.size | at_most: 2 }}label{% endif %} {%- if grandchildlink.title contains '[is_heading]' %} hdt-font-semibold{% endif %}">
@@ -112,7 +110,6 @@
 															</hdt-accordion>
 														{%- else -%}
 															<a href="{{ childlink.url }}" class="hdt-menu-link hdt-flex hdt-align-center hdt-justify-between hdt-relative hdt-text-base hdt-font-normal{% if childlink.current %} hdt-menu-link--active{% endif %}" {% if childlink.current %} aria-current="page" {% endif %}>
-															<a href="{{ childlink.url }}" class="hdt-menu-link hdt-flex hdt-align-center hdt-justify-between hdt-relative hdt-text-base hdt-font-normal{% if childlink.current %} hdt-menu-link--active{% endif %}{% if childlink.title contains '[is_heading]' %} hdt-is-heading{% endif %}" {% if childlink.current %} aria-current="page" {% endif %}>
 																{%- assign arr_title = childlink.title | remove: "[is_heading]" | split: '[' -%}
 																{%- assign arr_label = arr_title[1] | split: ',' -%}
 																<span class="hdt-menu-link-text hdt-block{% if arr_label.size > 0 %} hdt-relative hdt-title_size-{{ arr_title[0].size | at_most: 20 }} hdt-has-{{ arr_label.size | at_most: 2 }}label{% endif %}">
@@ -261,7 +258,6 @@
 		                                  <ul class="hdt-menu-list hdt-categories-sub-menu-lever-2" role="list">
 		                                    {%- for grandchildlink in childlink.links -%}
 		                                      <li class="hdt-category-item hdt-relative hdt-flex hdt-justify-center hdt-flex-col  {% if grandchildlink.type == "collection_link" %}hdt-has-img{% endif %}">
-		                                        <a id="hdt-menu-{{ grandchildlink.handle }}" href="{{ grandchildlink.url }}" class="hdt-menu-link hdt-flex hdt-align-center hdt-justify-between hdt-relative hdt-text-base">
 		                                          <span class="hdt-category-title hdt-flex hdt-align-center hdt-oh">
 		                                            {% if grandchildlink.type == "collection_link" %}
 		                                              {%- assign image_item = grandchildlink.object.image | default: grandchildlink.object.featured_image | default: grandchildlink.object.products.first.featured_image -%}
@@ -273,7 +269,6 @@
 		                                            {% endif %}
 		                                            <span class="hdt-menu-link-text"> {{ grandchildlink.title | escape }} </span>
 		                                          </span>
-		                                        </a>
 		                                      </li>
 		                                    {%- endfor -%}
 		                                  </ul>

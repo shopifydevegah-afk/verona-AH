@@ -4,11 +4,11 @@
       {%- if childlink.links != blank -%}
         <li>
           <hdt-accordion class="hdt-contents" only-click-icon>
-            <details open class="hdt-menu-item hdt-flex hdt-justify-center hdt-flex-col{% if childlink.links != blank %} hdt-has-children hdt-relative{% endif %}">
+            <details class="hdt-menu-item hdt-flex hdt-justify-center hdt-flex-col{% if childlink.links != blank %} hdt-has-children hdt-relative{% endif %}">
               <summary
                 data-url="{{ childlink.url }}"
-                class="hdt-flex hdt-justify-between hdt-align-center hdt-relative{% if childlink.title contains '[is_heading]' %} hdt-is-heading{% endif %}"
-                aria-expanded="true">
+                class="hdt-flex hdt-justify-between hdt-align-center hdt-relative"
+                aria-expanded="false">
                 {%- assign arr_title = childlink.title | remove: "[is_heading]" | split: '[' -%}
                 {%- assign arr_label = arr_title[1] | split: ',' -%}
                 <span class="hdt-menu-link-text hdt-block {%- if arr_label.size > 0 %} hdt-relative hdt-title_size-{{ arr_title[0].size | at_most: 20 }} hdt-has-{{ arr_label.size | at_most: 2 }}label{% endif %}">
@@ -69,7 +69,7 @@
           <a
             id="hdt-menu-{{ childlink.handle }}"
             href="{{ childlink.url }}"
-            class="hdt-menu-link hdt-flex hdt-align-center hdt-justify-between hdt-relative hdt-text-base hdt-font-normal {% if childlink.current %} hdt-menu-link--active{% endif %}{% if childlink.title contains '[is_heading]' %} hdt-is-heading{% endif %}">
+            class="hdt-menu-link hdt-flex hdt-align-center hdt-justify-between hdt-relative hdt-text-base hdt-font-normal {% if childlink.current %} hdt-menu-link--active{% endif %}">
             {%- assign arr_title = childlink.title | remove: "[is_heading]" | split: '[' -%}
             {%- assign arr_label = arr_title[1] | split: ',' -%}
             <span class="hdt-menu-link-text hdt-block {%- if arr_label.size > 0 %} hdt-relative hdt-title_size-{{ arr_title[0].size | at_most: 20 }} hdt-has-{{ arr_label.size | at_most: 2 }}label{% endif %}">
