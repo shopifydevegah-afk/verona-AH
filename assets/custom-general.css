@@ -1,7 +1,5 @@
 /* Custom styles */
 
-/* Custom styles */
-
 /* From base.css */
 .md\:inline-flex-style {
 	display: inline-flex;
@@ -55,7 +53,6 @@ header [data-header-height] {
 }
 
 /* 2. TOP-LEVEL MOBILE MENU ITEMS & BORDERS */
-
 .hdt-menu-on-mobile .hdt-nav__ul-mb>.hdt-menu-item {
 	background: #1b2d42 !important;
 	border-bottom: 1px solid #24354a !important;
@@ -98,11 +95,6 @@ header [data-header-height] {
 	overflow: visible;
 }
 
-.hdt-menu-on-mobile .hdt-nav__ul-mb>.hdt-menu-item .hdt-btn-open-sub::before,
-.hdt-menu-on-mobile .hdt-nav__ul-mb>.hdt-menu-item .hdt-btn-open-sub::after {
-	display: none !important;
-}
-
 .hdt-menu-on-mobile .hdt-nav__ul-mb>.hdt-menu-item .hdt-btn-open-sub>svg {
 	display: block !important;
 	width: 12px !important;
@@ -127,13 +119,6 @@ header [data-header-height] {
 }
 
 /* 3. MOBILE SUB-MENU */
-.hdt-menu-on-mobile .hdt-mb-sub-menu {
-	background: #172638 !important;
-	padding: 0 !important;
-	margin: 0 !important;
-	list-style: none !important;
-}
-
 .hdt-menu-on-mobile .hdt-mb-sub-menu .hdt-menu-item {
 	background: #172638 !important;
 	border-bottom: 1px solid #1e2d3e !important;
@@ -159,12 +144,6 @@ header [data-header-height] {
 	transition: color 0.2s ease, background-color 0.2s ease;
 }
 
-.hdt-menu-on-mobile .hdt-mb-sub-menu .hdt-menu-link:hover,
-.hdt-menu-on-mobile .hdt-mb-sub-menu .hdt-menu-link:focus,
-.hdt-menu-on-mobile .hdt-mb-sub-menu .hdt-menu-link.hdt-menu-link--active {
-	color: #e1ceae !important;
-}
-
 /* Circular bullet dot for mobile sub-menu items */
 .hdt-menu-on-mobile .hdt-mb-sub-menu .hdt-menu-link::before {
 	content: "" !important;
@@ -178,39 +157,6 @@ header [data-header-height] {
 	transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.hdt-menu-on-mobile .hdt-mb-sub-menu .hdt-menu-link:hover::before,
-.hdt-menu-on-mobile .hdt-mb-sub-menu .hdt-menu-link:focus::before,
-.hdt-menu-on-mobile .hdt-mb-sub-menu .hdt-menu-link.hdt-menu-link--active::before {
-	background-color: #e1ceae !important;
-	transform: scale(1.15) !important;
-}
-
-/* Sub-menu heading on mobile (e.g.or [is_heading]) */
-.hdt-menu-on-mobile .hdt-mb-sub-menu .hdt-is-heading,
-.hdt-menu-on-mobile .hdt-mb-sub-menu-lever-1>.hdt-has-children>hdt-accordion>details>summary.hdt-menu-link {
-	color: #ffffff !important;
-	font-size: 15px !important;
-	font-weight: 600 !important;
-	padding: 13px 20px !important;
-	border-bottom: 1px solid #1e2d3e !important;
-	background: #172638 !important;
-}
-
-/* No bullet dot on headings */
-.hdt-menu-on-mobile .hdt-mb-sub-menu .hdt-is-heading::before,
-.hdt-menu-on-mobile .hdt-mb-sub-menu-lever-1>.hdt-has-children>hdt-accordion>details>summary.hdt-menu-link::before {
-	display: none !important;
-}
-
-/* Hide chevron on sub-menu heading */
-.hdt-menu-on-mobile .hdt-mb-sub-menu .hdt-btn-open-sub {
-	display: none !important;
-}
-
-.hdt-menu-on-mobile .hdt-mb-sub-menu-lever-2 .hdt-menu-link {
-	padding-inline-start: 20px !important;
-}
-
 /* 4. DESKTOP SUB-MENU (APPLYING SAME DESIGN AS MOBILE) */
 #hdt-nav-ul>li details>.hdt-sub-menu,
 .hdt-sub-menu.hdt-dropdown-menu {
@@ -219,14 +165,8 @@ header [data-header-height] {
 	border-radius: 8px !important;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45) !important;
 	min-width: 250px !important;
-	padding: 6px 0 !important;
-	overflow: hidden !important;
-}
-
-.hdt-sub-menu .hdt-menu-list {
 	padding: 0 !important;
-	margin: 0 !important;
-	list-style: none !important;
+	overflow: hidden !important;
 }
 
 .hdt-sub-menu .hdt-menu-list>li,
@@ -237,10 +177,6 @@ header [data-header-height] {
 	background: #172638 !important;
 }
 
-.hdt-sub-menu .hdt-menu-list>li:last-child,
-.hdt-sub-menu .hdt-menu-list .hdt-menu-item:last-child {
-	border-bottom: none !important;
-}
 .hdt-sub-menu .hdt-menu-list>li:first-child,
 .hdt-sub-menu .hdt-menu-list .hdt-menu-item:first-child {
 	padding-top: 15px;
@@ -263,15 +199,6 @@ header [data-header-height] {
 	transition: color 0.2s ease, background-color 0.2s ease !important;
 }
 
-#hdt-nav-ul li .hdt-sub-menu .hdt-menu-link:hover,
-#hdt-nav-ul li .hdt-sub-menu .hdt-menu-link:focus,
-.hdt-sub-menu .hdt-menu-link:hover,
-.hdt-sub-menu .hdt-menu-link:focus,
-.hdt-sub-menu .hdt-menu-link.hdt-menu-link--active {
-	color: #e1ceae !important;
-	background-color: rgba(255, 255, 255, 0.04) !important;
-}
-
 /* Circular bullet dot for desktop sub-menu items */
 #hdt-nav-ul li .hdt-sub-menu .hdt-menu-link::before,
 .hdt-sub-menu .hdt-menu-link::before {
@@ -284,48 +211,6 @@ header [data-header-height] {
 	flex-shrink: 0 !important;
 	margin-inline-end: 10px !important;
 	transition: background-color 0.2s ease, transform 0.2s ease !important;
-}
-
-#hdt-nav-ul li .hdt-sub-menu .hdt-menu-link:hover::before,
-#hdt-nav-ul li .hdt-sub-menu .hdt-menu-link:focus::before,
-.hdt-sub-menu .hdt-menu-link:hover::before,
-.hdt-sub-menu .hdt-menu-link:focus::before,
-.hdt-sub-menu .hdt-menu-link.hdt-menu-link--active::before {
-	background-color: #e1ceae !important;
-	transform: scale(1.15) !important;
-}
-
-/* Desktop sub-menu heading */
-#hdt-nav-ul li .hdt-sub-menu .hdt-is-heading,
-.hdt-sub-menu .hdt-is-heading,
-.hdt-sub-menu-lever-1>li.hdt-has-children>hdt-accordion>details>summary {
-	color: #ffffff !important;
-	font-size: 15px !important;
-	font-weight: 600 !important;
-	padding: 12px 20px !important;
-	border-bottom: 1px solid #1e2d3e !important;
-	background: #172638 !important;
-}
-
-/* No bullet dot on desktop headings */
-#hdt-nav-ul li .hdt-sub-menu .hdt-is-heading::before,
-.hdt-sub-menu .hdt-is-heading::before,
-.hdt-sub-menu-lever-1>li.hdt-has-children>hdt-accordion>details>summary::before {
-	display: none !important;
-}
-
-/* Hide accordion arrow on sub-menu heading on desktop */
-#hdt-nav-ul .hdt-sub-menu summary span[accordion-icon] {
-	display: none !important;
-}
-
-/* Nested sub-menu child on desktop */
-.hdt-sub-menu .hdt-sub-menu-child {
-	background-color: #141f2d !important;
-	border: 1px solid #24354a !important;
-	border-radius: 6px !important;
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
-	padding: 4px 0 !important;
 }
 
 /* 5. TOP-LEVEL ORDER (MOBILE ONLY) */
