@@ -1203,7 +1203,7 @@
       ],
       "name": "Shoppable Video",
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "color_scheme": "scheme-e0b73555-c767-4eda-aa6d-4e44e10aefce",
         "style": "1",
         "image_height": "fixed",
@@ -1213,7 +1213,7 @@
         "col_dk": "4",
         "col_tb": "3",
         "col_mb": "2",
-        "space_items": "20",
+        "space_items": "10",
         "loop": false,
         "autoplay": 0,
         "pauseOnHover": false,
