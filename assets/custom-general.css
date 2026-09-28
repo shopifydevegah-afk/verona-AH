@@ -5,6 +5,12 @@
 	height: 83px;
 }
 
+@media (max-width: 767px) {
+  body, html {
+    overflow-x: hidden !important;
+  }
+}
+
 @media (min-width: 767px) {
 	.header .hdt-container-full{
 		padding-inline-start: 50px;
@@ -237,7 +243,6 @@
 	}
 }
 
-@media screen and (max-width: 999px) {
   @media screen and (max-width: 999px) {
   .header .hdt-dialog-drawer {
     top: var(--live-header-bottom, 116px) !important;
@@ -245,7 +250,7 @@
     max-height: calc(100dvh - var(--live-header-bottom, 116px)) !important;
     background-color: #1b2d42;
   }
-}
+
 
 
   .header .hdt-dialog[open]::backdrop{
@@ -365,4 +370,82 @@
     flex-direction: column-reverse;
     align-items: flex-start;
     gap: 4px;
+}
+
+/* shipping */
+.shipping .hdt-ship-item-wrap{
+	background-color: #1A2A3A !important;
+}
+
+.shipping .hdt-heading-block{
+	color: #1A2A3A;
+}
+
+.shipping .hdt-ship-content>div{
+	color: #EEE4DE !important;
+}
+
+.shipping .hdt-ship-icon{
+	background-color: #EEE4DE !important;
+}
+
+
+.shipping .hdt-row-grid{
+  gap: 0 !important;
+  justify-content: center;
+}
+
+.shipping .hdt-shipping-item:first-child > div:first-child {
+    border-top-right-radius: 16px !important;
+    border-bottom-right-radius: 16px !important;
+}
+
+.shipping .hdt-shipping-item:last-child > div:last-child {
+    border-top-left-radius: 16px !important;
+    border-bottom-left-radius: 16px !important;
+}
+
+
+.shipping,
+.shipping *,
+.shipping .hdt-ship-icon,
+.shipping .hdt-shipping-item {
+  pointer-events: none !important;
+  will-change: auto !important;
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+.shipping *::before,
+.shipping *::after {
+  display: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+@media (max-width: 767px) {
+
+	.shipping .hdt-shipping-item:first-child > div:first-child {
+    border-bottom-right-radius: 0 !important;
+}
+
+.shipping .hdt-shipping-item:last-child > div:last-child {
+    border-top-left-radius: 0 !important;
+}
+
+.shipping .hdt-shipping-item:nth-child(2) > div:first-child {
+    border-top-left-radius: 16px !important;
+
+}
+
+.shipping .hdt-shipping-item:nth-child(3) > div:first-child {
+    border-bottom-right-radius: 16px !important;
+}
+
+.shipping .hdt-subheading-block{
+	font-size: small;
+}
 }

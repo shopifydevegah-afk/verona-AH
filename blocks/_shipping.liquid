@@ -1,14 +1,19 @@
 <!-- blocks/_shipping.liquid -->
-<div id="Scroll-{{ block.id }}" class="hdt-ship-item-wrap" hdt-reveal="slide-in" timeline>
+{%- assign custom_class = section.settings.custom_class | strip -%}
+<div
+  id="Scroll-{{ block.id }}"
+  class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-ship-item-wrap"
+  hdt-reveal="slide-in"
+  timeline>
   <div class="hdt-ship-icon">
     {%- liquid
-      if block.settings.icon != blank 
+      if block.settings.icon != blank
         echo block.settings.icon
-      elsif block.settings.image_icon != blank 
-        assign image = block.settings.image_icon 
-        echo image | image_url: width: image.width | image_tag: width: image.width, height: image.height, sizes: '50',widths: '20,30,40,50,60', class: 'hdt-object-cover hdt-icon'
-      else 
-        render 'icon_shipping', icon_name: block.settings.icon_themes, icon_class: 'hdt-icon' 
+      elsif block.settings.image_icon != blank
+        assign image = block.settings.image_icon
+        echo image | image_url: width: image.width | image_tag: width: image.width, height: image.height, sizes: '50', widths: '20,30,40,50,60', class: 'hdt-object-cover hdt-icon'
+      else
+        render 'icon_shipping', icon_name: block.settings.icon_themes, icon_class: 'hdt-icon'
       endif
     -%}
   </div>
@@ -21,6 +26,12 @@
     "name": "t:sections.shipping.shipping_item.name",
     "class": "hdt-shipping-item hdt-snap-start",
     "settings": [
+      {
+        "type": "text",
+        "id": "custom_class",
+        "label": "custom class to style",
+        "info": "add custom class here to style"
+      },
       {
         "type": "paragraph",
         "content": "t:sections.shipping.shipping_item.content"
@@ -47,148 +58,112 @@
           {
             "value": "diamond",
             "label": "t:blocks.icon.options.diamond"
-          },
-          {
+          }, {
             "value": "door-lock",
             "label": "t:blocks.icon.options.door_lock"
-          },
-          {
+          }, {
             "value": "gym",
             "label": "t:blocks.icon.options.gym"
-          },
-          {
+          }, {
             "value": "hammer",
             "label": "t:blocks.icon.options.hammer"
-          },
-          {
+          }, {
             "value": "headphones",
             "label": "t:blocks.icon.options.headphones"
-          },
-          {
+          }, {
             "value": "helm",
             "label": "t:blocks.icon.options.helm"
-          },
-          {
+          }, {
             "value": "hourglass",
             "label": "t:blocks.icon.options.hourglass"
-          },
-          {
+          }, {
             "value": "map",
             "label": "t:blocks.icon.options.map"
-          },
-          {
+          }, {
             "value": "piggy",
             "label": "t:blocks.icon.options.piggy"
-          },
-          {
+          }, {
             "value": "refesh",
             "label": "t:blocks.icon.options.refesh"
-          },
-          {
+          }, {
             "value": "rocket",
             "label": "t:blocks.icon.options.rocket"
-          },
-          {
+          }, {
             "value": "shield",
             "label": "t:blocks.icon.options.shield"
-          },
-          {
+          }, {
             "value": "shield2",
             "label": "t:blocks.icon.options.shield_2"
-          },
-          {
+          }, {
             "value": "smile",
             "label": "t:blocks.icon.options.smile"
-          },
-          {
+          }, {
             "value": "scissors",
             "label": "t:blocks.icon.options.scissors"
-          },
-          {
+          }, {
             "value": "shuffle",
             "label": "t:blocks.icon.options.shuffle"
-          },
-          {
+          }, {
             "value": "cloud_upload",
             "label": "t:blocks.icon.options.cloud_upload"
-          },
-          {
+          }, {
             "value": "cash",
             "label": "t:blocks.icon.options.cash"
-          },
-          {
+          }, {
             "value": "way",
             "label": "t:blocks.icon.options.way"
-          },
-          {
+          }, {
             "value": "wristwatch",
             "label": "t:blocks.icon.options.wristwatch"
-          },
-          {
+          }, {
             "value": "world",
             "label": "t:blocks.icon.options.world"
-          },
-          {
+          }, {
             "value": "wallet",
             "label": "t:blocks.icon.options.wallet"
-          },
-          {
+          }, {
             "value": "unlock",
             "label": "t:blocks.icon.options.unlock"
-          },
-          {
+          }, {
             "value": "umbrella",
             "label": "t:blocks.icon.options.umbrella"
-          },
-          {
+          }, {
             "value": "repeat",
             "label": "t:blocks.icon.options.repeat"
-          },
-          {
+          }, {
             "value": "refesh-2",
             "label": "t:blocks.icon.options.refesh_2"
-          },
-          {
+          }, {
             "value": "medal",
             "label": "t:blocks.icon.options.medal"
-          },
-          {
+          }, {
             "value": "portfolio",
             "label": "t:blocks.icon.options.portfolio"
-          },
-          {
+          }, {
             "value": "like",
             "label": "t:blocks.icon.options.like"
-          },
-          {
+          }, {
             "value": "plance",
             "label": "t:blocks.icon.options.plance"
-          },
-          {
+          }, {
             "value": "map-maker",
             "label": "t:blocks.icon.options.map_maker"
-          },
-          {
+          }, {
             "value": "help",
             "label": "t:blocks.icon.options.help"
-          },
-          {
+          }, {
             "value": "gift",
             "label": "t:blocks.icon.options.gift"
-          },
-          {
+          }, {
             "value": "cart",
             "label": "t:blocks.icon.options.cart"
-          },
-          {
+          }, {
             "value": "box",
             "label": "t:blocks.icon.options.box"
-          },
-          {
+          }, {
             "value": "back",
             "label": "t:blocks.icon.options.back"
-          },
-          {
+          }, {
             "value": "back2",
             "label": "t:blocks.icon.options.back2"
           }
@@ -198,16 +173,14 @@
         "type": "image_picker",
         "id": "image_icon",
         "label": "t:blocks.icon.custom_image_icon.label"
-      },
-      {
+      }, {
         "type": "textarea",
         "id": "icon",
         "label": "t:blocks.icon.custom_svg_icon.label"
-      },
-      {
+      }, {
         "type": "paragraph",
         "content": "t:blocks.icon.custom_svg_icon.content"
-      },
+      }
     ],
     "blocks": [
       {
@@ -221,11 +194,9 @@
       },
       {
         "type": "_liquid"
-      },
-      {
+      }, {
         "type": "text_custom"
-      },
-      {
+      }, {
         "type": "button_custom"
       }
     ],
@@ -245,8 +216,7 @@
               "font_size_heading": 24,
               "letter_spacing_heading": 0
             }
-          },
-          {
+          }, {
             "type": "spacer",
             "settings": {
               "direction": false,
@@ -254,8 +224,7 @@
               "space_md": 4,
               "space": 4
             }
-          },
-          {
+          }, {
             "type": "text",
             "settings": {
               "text": "<p>Free shipping on all US order or order above $100</p>",
