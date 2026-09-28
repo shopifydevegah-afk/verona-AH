@@ -762,7 +762,7 @@
         "collection_item_6LbnU4": {
           "type": "_collection_item",
           "settings": {
-            "collection": "",
+            "collection": "مناسبات-خاصة",
             "hdt_collection_list_svg": "",
             "svg_width": 60,
             "svg_width_mb": 40,
@@ -778,7 +778,7 @@
         "collection_item_TQwQzN": {
           "type": "_collection_item",
           "settings": {
-            "collection": "",
+            "collection": "يمعات-عزايم",
             "hdt_collection_list_svg": "",
             "svg_width": 60,
             "svg_width_mb": 40,
@@ -794,7 +794,7 @@
         "collection_item_c4cniG": {
           "type": "_collection_item",
           "settings": {
-            "collection": "",
+            "collection": "هدايا",
             "hdt_collection_list_svg": "",
             "svg_width": 60,
             "svg_width_mb": 40,
@@ -860,12 +860,12 @@
       ],
       "name": "t:sections.collections-list.name",
       "settings": {
-        "custom_class": "",
+        "custom_class": "collection-list",
         "collection_list": [],
         "collection_des": "15",
-        "content_size": "base",
+        "content_size": "4xl",
         "content_weight": "semibold",
-        "content_position": "center",
+        "content_position": "start",
         "content_space": 20,
         "show_count": false,
         "count_label": "Products",
@@ -907,6 +907,186 @@
         "pd": "48px,,48px,",
         "pd_mb": "10px,,16px,"
       }
+    },
+    "testimonial_section_eYCW9r": {
+      "type": "testimonial_section",
+      "blocks": {
+        "testimonial_item_wHaRE6": {
+          "type": "_testimonial_item",
+          "settings": {
+            "heading": "",
+            "content": "<p>الصراحة، خدمة فيرونا رهيبة! الشحن سريع ووصلت الهدية خلال ساعات، والورود كانت طازة والشوكولاتة لذيذة. تغليفهم محترف وراقي، أنصح الكل في فيرونا</p>",
+            "title": "سارة العلي",
+            "pos": "",
+            "rating": 5
+          },
+          "blocks": {}
+        },
+        "testimonial_item_jmUhaa": {
+          "type": "_testimonial_item",
+          "settings": {
+            "heading": "",
+            "content": "<p>جربت فيرونا أكثر من مرة، وكل مرة تكون التجربة أفضل. الشحن سريع، التغليف مرتب وفاخر، والمنتجات جودتها عالية. يستاهلون 5 نجوم</p>",
+            "title": "فهد المنيفي",
+            "pos": "",
+            "rating": 5
+          },
+          "blocks": {}
+        },
+        "testimonial_item_pxDF9P": {
+          "type": "_testimonial_item",
+          "settings": {
+            "heading": "",
+            "content": "<p>ما توقعت الشحن يكون سريع لهالدرجة، طلبت هدية ووصّلوا ليها في ساعات، التغلف رائع والشوكولاتة طعمها ما يعلى عليه. تجربتي معهم أكثر من رائعة</p>",
+            "title": "نورة الصالح",
+            "pos": "",
+            "rating": 5
+          },
+          "blocks": {}
+        },
+        "testimonial_item_hkTFc9": {
+          "type": "_testimonial_item",
+          "settings": {
+            "heading": "",
+            "content": "<p>ما شاء الله عليهم، الخدمة سريعة والتغليف مرتب وجميل. الشوكولاتة لذيذة طازه، وكل شي كان تمام. أنصح فيها لأي مناسبة</p>",
+            "title": "مشعل المطيري",
+            "pos": "",
+            "rating": 5
+          },
+          "blocks": {}
+        },
+        "testimonial_item_bChXwm": {
+          "type": "_testimonial_item",
+          "settings": {
+            "heading": "",
+            "content": "<p>لو في 10 نجوم كنت عطيتهم، الشحن سريع وايد والتغليف جميل، والبوكس اللي وصلني كان طازة وفاخر. تجربة مميزة وأكيد راح أكررها</p>",
+            "title": "رهف الخالدي",
+            "pos": "",
+            "rating": 5
+          },
+          "blocks": {}
+        },
+        "testimonial_item_AVBWxX": {
+          "type": "_testimonial_item",
+          "settings": {
+            "heading": "",
+            "content": "<p>ما توقعت الشحن يكون سريع لهالدرجة، طلبت هدية ووصّلوا ليها في ساعات، التغلف رائع والشوكولاتة طعمها ما يعلى عليه. تجربتي معهم أكثر من رائعة</p>",
+            "title": "نورة الصالح",
+            "pos": "",
+            "rating": 5
+          },
+          "blocks": {}
+        },
+        "testimonial_item_UHXkqP": {
+          "type": "_testimonial_item",
+          "settings": {
+            "heading": "",
+            "content": "<p>ما توقعت الشحن يكون سريع لهالدرجة، طلبت هدية ووصّلوا ليها في ساعات، التغلف رائع والشوكولاتة طعمها ما يعلى عليه. تجربتي معهم أكثر من رائعة</p>",
+            "title": "نورة الصالح",
+            "pos": "",
+            "rating": 5
+          },
+          "blocks": {}
+        },
+        "our-team": {
+          "type": "section-heading",
+          "static": true,
+          "settings": {
+            "design_heading": "1",
+            "horizontal": false,
+            "alignment": "center",
+            "heading_gap": 15,
+            "margin_bottom": 30
+          },
+          "blocks": {
+            "heading_section_imy4qB": {
+              "type": "_heading_section",
+              "name": "t:blocks.section_heading.name",
+              "settings": {
+                "heading": "عملاؤنا يتحدثون عن تجربتهم",
+                "line_height": "",
+                "heading_size": "h3",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 50,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            },
+            "sub_heading_section_fQLT37": {
+              "type": "_sub_heading_section",
+              "settings": {
+                "text": "<p>في فيرونا، نؤمن أن تجربتك معنا يجب أن تكون استثنائية من البداية للنهاية</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "text_size": "sm",
+                "text_color": "hdt-text-secondary",
+                "font_size_text_lg": 16,
+                "font_size_text": 10,
+                "letter_spacing_text": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_section_imy4qB",
+            "sub_heading_section_fQLT37"
+          ]
+        }
+      },
+      "block_order": [
+        "testimonial_item_wHaRE6",
+        "testimonial_item_jmUhaa",
+        "testimonial_item_pxDF9P",
+        "testimonial_item_hkTFc9",
+        "testimonial_item_bChXwm",
+        "testimonial_item_AVBWxX",
+        "testimonial_item_UHXkqP"
+      ],
+      "name": "t:sections.testimonials_section.name",
+      "settings": {
+        "ter_des": "8",
+        "cl_name": "#1B2D42",
+        "cl_content": "#1A2A3A",
+        "cl_bd": "#F4F0EA",
+        "cl_bg_item": "#F4F0EA",
+        "bdr": 10,
+        "content_align": "left",
+        "col_dk": "5",
+        "col_tb": "2",
+        "col_mb": "2",
+        "space_horizontal": "20",
+        "space_vertical": "15",
+        "space_horizontal_mb": "10",
+        "space_vertical_mb": "10",
+        "layout": "carousel",
+        "loop": false,
+        "autoplay": 0,
+        "pauseOnHover": false,
+        "navUI": true,
+        "nav_position": "on_border",
+        "nav_visible": "always",
+        "nav_style": "simple",
+        "nav_shape": "default",
+        "nav_size": "small",
+        "nav_hide_mobile": false,
+        "dotUI": false,
+        "pag_style": "default",
+        "pag_rounded": false,
+        "pag_space": 10,
+        "pag_mgt": 10,
+        "only_show_mobile": false,
+        "pag_hide_mobile": false,
+        "colors_by_section": true,
+        "color_scheme": "scheme-23cf8966-8e57-4acd-9bb3-bb85f222fbb9",
+        "background_opacity": 1,
+        "section_layout": "wrapper_container",
+        "hdt_background_parallax": false,
+        "mg": ",,50px,",
+        "mg_mb": ",,30px,",
+        "pd": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
@@ -915,6 +1095,7 @@
     "featured_collection_PTq36A",
     "shipping_TUqcta",
     "featured_collection_xy4ajm",
-    "collections_list_8DwUjQ"
+    "collections_list_8DwUjQ",
+    "testimonial_section_eYCW9r"
   ]
 }
