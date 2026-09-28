@@ -252,12 +252,10 @@
         "collection_item_yMLVCj",
         "collection_item_8W6e8C"
       ],
-      "custom_css": [
-        ".hdt-collection-inner {box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07) !important; border-radius: 14px; pointer-events: none; padding-bottom: 15px;}",
-        ".hdt-slider__viewport {padding-bottom: 20px;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.collections-list.name",
       "settings": {
+        "custom_class": "collections",
         "collection_list": [],
         "collection_des": "8",
         "content_size": "lg",
