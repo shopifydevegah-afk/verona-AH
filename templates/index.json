@@ -914,6 +914,7 @@
         "testimonial_item_wHaRE6": {
           "type": "_testimonial_item",
           "settings": {
+            "custom_class": "",
             "heading": "",
             "content": "<p>الصراحة، خدمة فيرونا رهيبة! الشحن سريع ووصلت الهدية خلال ساعات، والورود كانت طازة والشوكولاتة لذيذة. تغليفهم محترف وراقي، أنصح الكل في فيرونا</p>",
             "title": "سارة العلي",
@@ -925,6 +926,7 @@
         "testimonial_item_jmUhaa": {
           "type": "_testimonial_item",
           "settings": {
+            "custom_class": "",
             "heading": "",
             "content": "<p>جربت فيرونا أكثر من مرة، وكل مرة تكون التجربة أفضل. الشحن سريع، التغليف مرتب وفاخر، والمنتجات جودتها عالية. يستاهلون 5 نجوم</p>",
             "title": "فهد المنيفي",
@@ -936,6 +938,7 @@
         "testimonial_item_pxDF9P": {
           "type": "_testimonial_item",
           "settings": {
+            "custom_class": "",
             "heading": "",
             "content": "<p>ما توقعت الشحن يكون سريع لهالدرجة، طلبت هدية ووصّلوا ليها في ساعات، التغلف رائع والشوكولاتة طعمها ما يعلى عليه. تجربتي معهم أكثر من رائعة</p>",
             "title": "نورة الصالح",
@@ -947,6 +950,7 @@
         "testimonial_item_hkTFc9": {
           "type": "_testimonial_item",
           "settings": {
+            "custom_class": "",
             "heading": "",
             "content": "<p>ما شاء الله عليهم، الخدمة سريعة والتغليف مرتب وجميل. الشوكولاتة لذيذة طازه، وكل شي كان تمام. أنصح فيها لأي مناسبة</p>",
             "title": "مشعل المطيري",
@@ -958,6 +962,7 @@
         "testimonial_item_bChXwm": {
           "type": "_testimonial_item",
           "settings": {
+            "custom_class": "",
             "heading": "",
             "content": "<p>لو في 10 نجوم كنت عطيتهم، الشحن سريع وايد والتغليف جميل، والبوكس اللي وصلني كان طازة وفاخر. تجربة مميزة وأكيد راح أكررها</p>",
             "title": "رهف الخالدي",
@@ -969,6 +974,7 @@
         "testimonial_item_YVider": {
           "type": "_testimonial_item",
           "settings": {
+            "custom_class": "",
             "heading": "",
             "content": "<p>لو في 10 نجوم كنت عطيتهم، الشحن سريع وايد والتغليف جميل، والبوكس اللي وصلني كان طازة وفاخر. تجربة مميزة وأكيد راح أكررها</p>",
             "title": "رهف الخالدي",
@@ -980,6 +986,7 @@
         "testimonial_item_cKrbUX": {
           "type": "_testimonial_item",
           "settings": {
+            "custom_class": "",
             "heading": "",
             "content": "<p>لو في 10 نجوم كنت عطيتهم، الشحن سريع وايد والتغليف جميل، والبوكس اللي وصلني كان طازة وفاخر. تجربة مميزة وأكيد راح أكررها</p>",
             "title": "رهف الخالدي",
@@ -1064,19 +1071,20 @@
       ],
       "name": "t:sections.testimonials_section.name",
       "settings": {
+        "custom_class": "feadback-card",
         "ter_des": "8",
-        "cl_name": "#1B2D42",
-        "cl_content": "#1A2A3A",
-        "cl_bd": "#F4F0EA",
-        "cl_bg_item": "#F4F0EA",
+        "cl_name": "#1b2d42",
+        "cl_content": "#1a2a3a",
+        "cl_bd": "#f4f0ea",
+        "cl_bg_item": "#f4f0ea",
         "bdr": 10,
         "content_align": "left",
         "col_dk": "5",
         "col_tb": "2",
         "col_mb": "2",
-        "space_horizontal": "20",
+        "space_horizontal": "10",
         "space_vertical": "15",
-        "space_horizontal_mb": "10",
+        "space_horizontal_mb": "8",
         "space_vertical_mb": "10",
         "layout": "carousel",
         "loop": false,
