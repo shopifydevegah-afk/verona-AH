@@ -271,7 +271,7 @@
         "image_size": true,
         "img_effect": "none",
         "b_effect": "none",
-        "col_dk": "4",
+        "col_dk": "5",
         "col_tb": "3",
         "col_mb": "2",
         "space_items": "20",
@@ -427,11 +427,341 @@
         "pd": "48px,,48px,",
         "pd_mb": "10px,,16px,"
       }
+    },
+    "shipping_TUqcta": {
+      "type": "shipping",
+      "blocks": {
+        "shipping_qt8HQM": {
+          "type": "_shipping",
+          "settings": {
+            "custom_class": "",
+            "icon_themes": "help",
+            "image_icon": "shopify://shop_images/94338be7379ae53e7fc3938359c982e6cde19cec_1.png",
+            "icon": ""
+          },
+          "blocks": {
+            "heading_JTrR3Y": {
+              "type": "heading",
+              "settings": {
+                "heading": "<p>شحن سريع ومضمون</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "font_weight": "semibold",
+                "heading_size": "h6",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 16,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_JTrR3Y"
+          ]
+        },
+        "shipping_MzXYF3": {
+          "type": "_shipping",
+          "settings": {
+            "custom_class": "",
+            "icon_themes": "help",
+            "image_icon": "shopify://shop_images/93c437ebdd4789fc6258418b0d412cf4afe846b7.png",
+            "icon": ""
+          },
+          "blocks": {
+            "heading_HrPTMJ": {
+              "type": "heading",
+              "settings": {
+                "heading": "<p>جودة تلاحظها من أول قطعة</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "font_weight": "semibold",
+                "heading_size": "h6",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 16,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_HrPTMJ"
+          ]
+        },
+        "shipping_hAhDJa": {
+          "type": "_shipping",
+          "settings": {
+            "custom_class": "",
+            "icon_themes": "door-lock",
+            "image_icon": "shopify://shop_images/fea98e63affc202c46d3f51648b32f932e294233.png",
+            "icon": ""
+          },
+          "blocks": {
+            "heading_NjAVEM": {
+              "type": "heading",
+              "settings": {
+                "heading": "<p>تغليف فخم وأنيق</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "font_weight": "semibold",
+                "heading_size": "h6",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 16,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_NjAVEM"
+          ]
+        },
+        "shipping_yYipjN": {
+          "type": "_shipping",
+          "settings": {
+            "custom_class": "",
+            "icon_themes": "door-lock",
+            "image_icon": "shopify://shop_images/b3b96b6c7368823389e28311ef8dce5aa9b75b3b.png",
+            "icon": ""
+          },
+          "blocks": {
+            "heading_Lbm7xW": {
+              "type": "heading",
+              "settings": {
+                "heading": "<p>تنويع نكهات لكل الأذواق</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "font_weight": "semibold",
+                "heading_size": "h6",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 16,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_Lbm7xW"
+          ]
+        },
+        "section-heading-shipping": {
+          "type": "section-heading",
+          "static": true,
+          "settings": {
+            "design_heading": "1",
+            "horizontal": false,
+            "alignment": "center",
+            "heading_gap": 15,
+            "margin_bottom": 30
+          },
+          "blocks": {
+            "heading_section_j9BJEM": {
+              "type": "_heading_section",
+              "settings": {
+                "heading": "ما عليك إلا أن تختار فيرونا",
+                "line_height": "",
+                "heading_size": "h3",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 50,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            },
+            "sub_heading_section_BA8dpW": {
+              "type": "_sub_heading_section",
+              "settings": {
+                "text": "<p>نقدم لك تجربة فاخرة تجمع بين الجودة والذوق الرفيع، سواء للاحتفال بلحظاتك السعيدة أو لتقديم هدية مميزة.</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "text_size": "base",
+                "text_color": "hdt-text-secondary",
+                "font_size_text_lg": 16,
+                "font_size_text": 10,
+                "letter_spacing_text": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_section_j9BJEM",
+            "sub_heading_section_BA8dpW"
+          ]
+        }
+      },
+      "block_order": [
+        "shipping_qt8HQM",
+        "shipping_MzXYF3",
+        "shipping_hAhDJa",
+        "shipping_yYipjN"
+      ],
+      "custom_css": [],
+      "name": "t:sections.shipping.name",
+      "settings": {
+        "custom_class": "shipping",
+        "content_align": "center",
+        "align_center": true,
+        "icon_design": "circle",
+        "use_border": true,
+        "space_padding": true,
+        "icon_size": "large",
+        "icon_color": "",
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "2",
+        "carousel_mobile": false,
+        "dot_color": "",
+        "dot_rounded": true,
+        "colors_by_section": true,
+        "color_scheme": "scheme-fe88a2ec-47a1-478d-8953-54da0178e18c",
+        "background_opacity": 1,
+        "section_layout": "wrapper_container",
+        "hdt_background_parallax": false,
+        "mg": "",
+        "mg_mb": ",,30px,",
+        "pd": "40px,,40px,",
+        "pd_mb": "20px,,20px,"
+      }
+    },
+    "featured_collection_xy4ajm": {
+      "type": "featured-collection",
+      "blocks": {
+        "product_carousel_qbPieM": {
+          "type": "_product-carousel",
+          "name": "t:blocks.product_carousel.name",
+          "settings": {
+            "collection": "",
+            "products_count": 8,
+            "product_list": [
+              "عطر-خمرة-من-لطافة",
+              "عطر-سوفاج",
+              "عطر-scandal",
+              "عطر-stronger-with-you",
+              "white-musk-فواحة",
+              "fresh-linen-فواحة",
+              "oud-royal-فواحة",
+              "عطر-bleu-de-chanel-بلو-دو-شانيل"
+            ],
+            "pr_border": "none",
+            "product_des": "6",
+            "image_ratio": "square",
+            "image_size": true,
+            "show_vendor": false,
+            "hdt_slide_center": false,
+            "hdt_opacity_out_container": false,
+            "col_dk": "6",
+            "col_tb": "3",
+            "col_mb": "2",
+            "space_items": "0",
+            "pagination": false,
+            "paginate_pos": "center",
+            "dis_pagination": 30,
+            "btn_label": "",
+            "btn_style": "",
+            "icon": "none",
+            "size": "m",
+            "btn_fw": "medium",
+            "font_size_btn": 14,
+            "padding_btn": 30,
+            "min_width_btn": 100,
+            "min_width_dt_btn": 100,
+            "min_height_btn": 40,
+            "loop": false,
+            "autoplay": 0,
+            "pauseOnHover": false,
+            "navUI": false,
+            "nav_position": "default",
+            "nav_visible": "always",
+            "nav_style": "default",
+            "nav_shape": "default",
+            "nav_size": "small",
+            "nav_hide_mobile": false,
+            "dotUI": false,
+            "pag_style": "default",
+            "pag_rounded": true,
+            "pag_space": 10,
+            "pag_mgt": 10,
+            "only_show_mobile": false,
+            "pag_hide_mobile": false
+          },
+          "blocks": {}
+        },
+        "pr-heading": {
+          "type": "section-heading",
+          "static": true,
+          "settings": {
+            "design_heading": "1",
+            "horizontal": false,
+            "alignment": "center",
+            "heading_gap": 0,
+            "margin_bottom": 30
+          },
+          "blocks": {
+            "heading_section_gUzwMP": {
+              "type": "_heading_section",
+              "settings": {
+                "heading": "البوكسات و التوزيعات",
+                "line_height": "",
+                "heading_size": "h3",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 50,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            },
+            "sub_heading_section_h37mm7": {
+              "type": "_sub_heading_section",
+              "settings": {
+                "text": "<p><a href=\"/collections/all\" title=\"All products\">أكتشف المزيد ›</a></p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "text_size": "base",
+                "text_color": "hdt-text-secondary",
+                "font_size_text_lg": 16,
+                "font_size_text": 10,
+                "letter_spacing_text": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_section_gUzwMP",
+            "sub_heading_section_h37mm7"
+          ]
+        }
+      },
+      "block_order": [
+        "product_carousel_qbPieM"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "feature-collection",
+        "enable_carousel": true,
+        "colors_by_section": true,
+        "color_scheme": "scheme-23cf8966-8e57-4acd-9bb3-bb85f222fbb9",
+        "background_opacity": 1,
+        "section_layout": "wrapper_container",
+        "hdt_background_parallax": false,
+        "mg": "",
+        "mg_mb": "",
+        "pd": "48px,,48px,",
+        "pd_mb": "10px,,16px,"
+      }
     }
   },
   "order": [
     "slideshow_y8JKGt",
     "collections_list_GFzhVe",
-    "featured_collection_PTq36A"
+    "featured_collection_PTq36A",
+    "shipping_TUqcta",
+    "featured_collection_xy4ajm"
   ]
 }

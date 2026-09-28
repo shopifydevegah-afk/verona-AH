@@ -10,7 +10,7 @@
 {
   "current": {
     "purchase_code": "031004fa-28dc-47e1-a5a4-568a83392ca2",
-    "color_scheme_body": "scheme-77e4ef58-56a9-4631-876a-12098ba7d57d",
+    "color_scheme_body": "scheme-e0b73555-c767-4eda-aa6d-4e44e10aefce",
     "color_focus": "#56cfe1",
     "color_scheme_dialog": "scheme-e0b73555-c767-4eda-aa6d-4e44e10aefce",
     "badge_sale": "#f8a802",
@@ -220,14 +220,14 @@
       },
       "scheme-fe88a2ec-47a1-478d-8953-54da0178e18c": {
         "settings": {
-          "text": "#ffffff",
-          "text2": "#878787",
-          "background": "#383838",
+          "text": "#EEE4DE",
+          "text2": "#777777",
+          "background": "#ffffff",
           "background_gradient": "",
           "background2": "#f2f2f2",
           "button": "#ffffff",
           "button_label": "#222222",
-          "button_border": "#ffffff",
+          "button_border": "#EEE4DE",
           "secondary_button_label": "#383838",
           "accent_color": "#56cfe1",
           "line_border": "#e6e6e6",
