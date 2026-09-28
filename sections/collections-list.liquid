@@ -86,7 +86,8 @@
       {% content_for 'blocks' %}
     {%- endcapture -%}
     {% if section.settings.layout_mode == 'carousel' %}
-    <hdt-slider id="Slider-{{ section.id }}" class="hdt-collections-list hdt-has-collection{{ section.settings.collection_des }} hdt-colelction-border-{{ section.settings.enable_border }} hdt-image-rounded-{{ section.settings.image_rounded }} hdt-ratio--{{ section.settings.image_ratio }} {% unless section.settings.image_size %} hdt-ratio--contain{% endunless %} hdt-slider hdt-relative hdt-slide-spacing-x lg:hdt-slides-{{ section.settings.col_dk }} md:hdt-slides-{{ section.settings.col_tb }} hdt-slides-{{ section.settings.col_mb }}" config='{ "id": "Slider-{{ section.id }}", "navUI": {{ section.settings.navUI }}, "dotUI": true, "loop": {{ section.settings.loop }}, "autoPlay": {{ section.settings.autoplay | times: 1000 }}, "pauseOnHover": {{ section.settings.pauseOnHover }} }'>
+      {%- assign custom_class = section.settings.custom_class | strip -%}
+    <hdt-slider id="Slider-{{ section.id }}" class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-collections-list hdt-has-collection{{ section.settings.collection_des }} hdt-colelction-border-{{ section.settings.enable_border }} hdt-image-rounded-{{ section.settings.image_rounded }} hdt-ratio--{{ section.settings.image_ratio }} {% unless section.settings.image_size %} hdt-ratio--contain{% endunless %} hdt-slider hdt-relative hdt-slide-spacing-x lg:hdt-slides-{{ section.settings.col_dk }} md:hdt-slides-{{ section.settings.col_tb }} hdt-slides-{{ section.settings.col_mb }}" config='{ "id": "Slider-{{ section.id }} ", "navUI": {{ section.settings.navUI }}, "dotUI": true, "loop": {{ section.settings.loop }}, "autoPlay": {{ section.settings.autoplay | times: 1000 }}, "pauseOnHover": {{ section.settings.pauseOnHover }} }'>
       <div class="hdt-slider__viewport hdt-relative">
         <div class="hdt-slider__container">
           {%- liquid
@@ -161,6 +162,12 @@
     ]
   },
   "settings": [
+  {
+      "type": "text",
+      "id": "custom_class",
+      "label": "custom class to style",
+      "info": "add custom class here to style"
+    },
     {
       "type": "header",
       "content": "t:sections.all.general_options.label"

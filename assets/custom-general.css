@@ -263,8 +263,21 @@
 
 
 
-/* edit in feature collection & collection list */
+/* edit in collection list */
 
-.hdt-shop-now-link {
+.collections .hdt-shop-now-link{
 	color: #9E7C4E;
 }
+
+.collections .hdt-collection-inner {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07) !important;
+  border-radius: 14px;
+  pointer-events: none;
+  padding-bottom: 15px;
+}
+
+.collections .hdt-slider__viewport {
+  padding-bottom: 20px;
+}
+
+/* edit in feature collection  */
