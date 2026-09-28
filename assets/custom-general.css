@@ -454,3 +454,30 @@
 .collection-list .hdt-collection-content>span{
 	color: #ffffff;
 }
+
+
+/* testimonals */
+.feadback-card .testimonial-inner>div{
+	padding:20px;
+	height: 100%;
+	max-height: 250px;
+}
+
+.feadback-card .hdt-testimonial-item {
+  display: flex;
+  min-height: 100%;
+}
+.feadback-card .hdt-testimonial-item>div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+	.feadback-card .testimonial-inner>div{
+		height: 100%;
+		max-height: 320px;
+}
+
+}
