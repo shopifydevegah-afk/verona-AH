@@ -1082,10 +1082,10 @@
         "background_opacity": 1,
         "section_layout": "wrapper_container",
         "hdt_background_parallax": false,
-        "mg": ",,50px,",
+        "mg": "",
         "mg_mb": ",,30px,",
-        "pd": "",
-        "pd_mb": ""
+        "pd": "48px,,48px,",
+        "pd_mb": "10px,,16px,"
       }
     }
   },
