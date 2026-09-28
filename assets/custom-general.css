@@ -449,3 +449,8 @@
 	font-size: small;
 }
 }
+
+/* another collection */
+.collection-list .hdt-collection-content>span{
+	color: #ffffff;
+}
