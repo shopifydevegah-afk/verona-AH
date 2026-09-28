@@ -70,7 +70,8 @@
   {% endif %}
 
 {%- endstyle -%}
-<div id="{{ section.id }}" class="{{ parent }} {% if section.settings.hdt_background_parallax %} hdt-animate--parallax-bg {% endif %}" {%- if section.settings.colors_by_section %} color-scheme="{{ section.settings.color_scheme }}" style="--background-opacity: {{ section.settings.background_opacity }};"{%- endif %}>
+{%- assign custom_class = section.settings.custom_class | strip -%}
+<div id="{{ section.id }}" class=" {% if custom_class != blank %} {{ custom_class }}{% endif %} {{ parent }} {% if section.settings.hdt_background_parallax %} hdt-animate--parallax-bg {% endif %}" {%- if section.settings.colors_by_section %} color-scheme="{{ section.settings.color_scheme }}" style="--background-opacity: {{ section.settings.background_opacity }};"{%- endif %}>
   <div class="{{ child }}">
     {%- if section.settings.section_background != blank -%}
       {% liquid
@@ -86,8 +87,7 @@
       {% content_for 'blocks' %}
     {%- endcapture -%}
     {% if section.settings.layout_mode == 'carousel' %}
-      {%- assign custom_class = section.settings.custom_class | strip -%}
-    <hdt-slider id="Slider-{{ section.id }}" class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-collections-list hdt-has-collection{{ section.settings.collection_des }} hdt-colelction-border-{{ section.settings.enable_border }} hdt-image-rounded-{{ section.settings.image_rounded }} hdt-ratio--{{ section.settings.image_ratio }} {% unless section.settings.image_size %} hdt-ratio--contain{% endunless %} hdt-slider hdt-relative hdt-slide-spacing-x lg:hdt-slides-{{ section.settings.col_dk }} md:hdt-slides-{{ section.settings.col_tb }} hdt-slides-{{ section.settings.col_mb }}" config='{ "id": "Slider-{{ section.id }} ", "navUI": {{ section.settings.navUI }}, "dotUI": true, "loop": {{ section.settings.loop }}, "autoPlay": {{ section.settings.autoplay | times: 1000 }}, "pauseOnHover": {{ section.settings.pauseOnHover }} }'>
+    <hdt-slider id="Slider-{{ section.id }}" class=" hdt-collections-list hdt-has-collection{{ section.settings.collection_des }} hdt-colelction-border-{{ section.settings.enable_border }} hdt-image-rounded-{{ section.settings.image_rounded }} hdt-ratio--{{ section.settings.image_ratio }} {% unless section.settings.image_size %} hdt-ratio--contain{% endunless %} hdt-slider hdt-relative hdt-slide-spacing-x lg:hdt-slides-{{ section.settings.col_dk }} md:hdt-slides-{{ section.settings.col_tb }} hdt-slides-{{ section.settings.col_mb }}" config='{ "id": "Slider-{{ section.id }} ", "navUI": {{ section.settings.navUI }}, "dotUI": true, "loop": {{ section.settings.loop }}, "autoPlay": {{ section.settings.autoplay | times: 1000 }}, "pauseOnHover": {{ section.settings.pauseOnHover }} }'>
       <div class="hdt-slider__viewport hdt-relative">
         <div class="hdt-slider__container">
           {%- liquid

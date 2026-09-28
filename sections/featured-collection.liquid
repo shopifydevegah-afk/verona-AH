@@ -4,7 +4,7 @@
   #Section layout
   assign sizes  = '(min-width: 1150px) ' | append: settings.page_width | append: 'px,(min-width: 750px) calc(100vw - 60px), calc(100vw - 30px)'
 
-  case section.settings.section_layout 
+  case section.settings.section_layout
     when 'container'
       assign parent = 'hdt-container'
       assign child  = 'hdt-section-spacing hdt-s-gradient hdt-relative' | append: ' hdt-section-spacing-' | append: section.id
@@ -20,7 +20,8 @@
 {% style %}
   {% render 'spacing-vars', box: section %}
 {% endstyle %}
-<div id="section-{{ section.id }}" class="{{ parent }} {% if section.settings.hdt_background_parallax %} hdt-animate--parallax-bg {% endif %}" {%- if section.settings.colors_by_section %} color-scheme="{{ section.settings.color_scheme }}" style="--background-opacity: {{ section.settings.background_opacity }};"{%- endif %}>
+{%- assign custom_class = section.settings.custom_class | strip -%}
+<div id="section-{{ section.id }}" class="{% if custom_class != blank %} {{ custom_class }}{% endif %} {{ parent }} {% if section.settings.hdt_background_parallax %} hdt-animate--parallax-bg {% endif %}" {%- if section.settings.colors_by_section %} color-scheme="{{ section.settings.color_scheme }}" style="--background-opacity: {{ section.settings.background_opacity }};"{%- endif %}>
   <div class="{{ child }}">
     {%- if section.settings.section_background != blank -%}
       {% liquid
@@ -31,7 +32,9 @@
     <div class="hdt-container-heading">
       {%- content_for "block", type: "section-heading", id: "pr-heading" -%}
     </div>
-    {%- content_for "blocks" -%}
+    <div class="{% if section.settings.enable_carousel %}hdt-slider hdt-slides-wrapper hdt-carousel{% else %}hdt-grid-wrapper{% endif %}">
+      {%- content_for "blocks" -%}
+    </div>
   </div>
 </div>
 {% schema %}
@@ -54,6 +57,18 @@
     ]
   },
   "settings": [
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "custom class to style",
+      "info": "add custom class here to style"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_carousel",
+      "label": "Enable Carousel / Slider",
+      "default": true
+    },
     {
       "type": "header",
       "content": "t:sections.all.section_layout.label"
