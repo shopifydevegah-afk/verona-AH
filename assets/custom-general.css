@@ -32,7 +32,9 @@
 	display: none !important;
 }
 
-
+.header .hdt-sub-menu .hdt-menu-list .hdt-menu-item{
+	border-bottom: 1px solid #24354a;
+}
 
 /* 2. TOP-LEVEL MOBILE MENU ITEMS & BORDERS */
 
