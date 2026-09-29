@@ -383,7 +383,8 @@ position: absolute !important;
 }
 
 .feature-collection .hdt-card-product .hdt-price__list {
-    flex-direction: column-reverse;
+    display: flex;
+	flex-direction: row-reverse;
     align-items: flex-start;
     gap: 4px;
 }
