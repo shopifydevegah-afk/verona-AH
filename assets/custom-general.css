@@ -492,3 +492,25 @@
 	max-width: 290px;
 	max-height: 484px;
 }
+
+@media (max-width: 767px) {
+	.product-video  .hdt-media-overlap-content{
+	max-width: 160px;
+	max-height: 284px;
+}
+}
+
+/* footer */
+.footer-style {
+  position: relative;
+}
+
+.footer-style::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: min(90% - 40px, 1250px);
+	border-top: 1px solid;
+}
