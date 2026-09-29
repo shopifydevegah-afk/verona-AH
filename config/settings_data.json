@@ -84,7 +84,7 @@
     "show_quick_add": false,
     "show_qty": false,
     "pr_card_alignment": "left",
-    "show_rating": false,
+    "show_rating": true,
     "pr_title_weight": "semibold",
     "pr_price_size": "base",
     "pr_price_weight": "semibold",
@@ -133,6 +133,20 @@
     "round_currency": true,
     "favicon": "shopify://shop_images/4ff13ba6a89bc07c2c2bc7b74a5340e3955e2697_1.png",
     "content_for_index": [],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "13047258039897440615": {
+        "type": "shopify://apps/judge-me-reviews/blocks/cart_drawer_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+          "widget_type": "review-widget"
+        }
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -187,7 +201,7 @@
           "button_label": "#ffffff",
           "button_border": "#2a3a4a",
           "secondary_button_label": "#222222",
-          "accent_color": "#2A3A4A",
+          "accent_color": "#2a3a4a",
           "line_border": "#eeeeee",
           "overlay": "#000000",
           "pr_text": "#000000",
@@ -210,7 +224,7 @@
           "secondary_button_label": "#1a2a3a",
           "accent_color": "#1a2a3a",
           "line_border": "#dddddd",
-          "overlay": "#F9F6F4",
+          "overlay": "#f9f6f4",
           "pr_text": "#1a2a3a",
           "price": "#aaaaaa",
           "sale_price": "#1a2a3a",

@@ -349,17 +349,9 @@
           "type": "_product-carousel",
           "name": "t:blocks.product_carousel.name",
           "settings": {
-            "collection": "",
+            "collection": "الأكثر-مبيعا",
             "products_count": 8,
-            "product_list": [
-              "fresh-linen-فواحة",
-              "oud-royal-فواحة",
-              "white-musk-فواحة",
-              "بوكس-مسكي-الرجالي",
-              "عطر-bleu-de-chanel-بلو-دو-شانيل",
-              "عطر-scandal",
-              "عطر-stronger-with-you"
-            ],
+            "product_list": [],
             "pr_border": "none",
             "product_des": "6",
             "image_ratio": "square",
@@ -676,18 +668,9 @@
           "type": "_product-carousel",
           "name": "t:blocks.product_carousel.name",
           "settings": {
-            "collection": "",
+            "collection": "التوزيعات",
             "products_count": 8,
-            "product_list": [
-              "عطر-خمرة-من-لطافة",
-              "عطر-سوفاج",
-              "عطر-scandal",
-              "عطر-stronger-with-you",
-              "white-musk-فواحة",
-              "fresh-linen-فواحة",
-              "oud-royal-فواحة",
-              "عطر-bleu-de-chanel-بلو-دو-شانيل"
-            ],
+            "product_list": [],
             "pr_border": "none",
             "product_des": "6",
             "image_ratio": "square",
