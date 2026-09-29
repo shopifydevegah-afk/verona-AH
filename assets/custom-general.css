@@ -514,3 +514,44 @@
 	width: min(90% - 40px, 1250px);
 	border-top: 1px solid;
 }
+
+/* another shipping */
+.shipping2  .hdt-ship-icon{
+	background-color: #EEE4DE !important;
+}
+
+.shipping2 .hdt-content-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.shipping2 .hdt-content-inner > *:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.shipping2,
+.shipping2 *,
+.shipping2 .hdt-ship-icon,
+.shipping2 .hdt-shipping-item {
+  pointer-events: none !important;
+  will-change: auto !important;
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+.shipping2 *::before,
+.shipping2 *::after {
+  display: none !important;
+  transition: none !important;
+  animation: none !important;
+}
