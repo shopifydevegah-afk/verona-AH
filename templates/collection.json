@@ -48,7 +48,6 @@
         "cat_iGRBeG"
       ],
       "settings": {
-        "custom_class_header_inline": "main-collection",
         "show_type": "menu",
         "menu": "menu-collection",
         "sort": "alphabetical",
@@ -72,10 +71,10 @@
           "type": "_heading_liquid",
           "settings": {
             "text": "{{ collection.title }}",
-            "line_height": "",
+            "line_height": "hdt-lh-1",
             "font_family": "hdt-font-1",
-            "text_size": "2xl",
-            "text_color": "hdt-s-text",
+            "text_size": "4xl",
+            "text_color": "hdt-text-secondary",
             "italic": false,
             "uppercase": false,
             "font_size_text_lg": 16,
@@ -83,22 +82,15 @@
             "letter_spacing_text": 0
           },
           "blocks": {}
-        },
-        "heading_brc_pYUK78": {
-          "type": "_heading_brc",
-          "settings": {},
-          "blocks": {}
         }
       },
       "block_order": [
-        "heading_liquid_wcaa7G",
-        "heading_brc_pYUK78"
+        "heading_liquid_wcaa7G"
       ],
-      "disabled": true,
       "settings": {
         "use_dynamic_source": false,
-        "color_scheme": "scheme-77e4ef58-56a9-4631-876a-12098ba7d57d",
-        "bg_overlay": 54,
+        "color_scheme": "scheme-23cf8966-8e57-4acd-9bb3-bb85f222fbb9",
+        "bg_overlay": 100,
         "space_item": 0,
         "mg": "",
         "mg_mb": "",
