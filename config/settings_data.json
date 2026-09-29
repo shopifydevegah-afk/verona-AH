@@ -280,6 +280,27 @@
           "input_primary": "#ffffff",
           "input_secondary": "#686868"
         }
+      },
+      "scheme-9d4b8c96-bcef-4740-808f-c1d3c1e791b5": {
+        "settings": {
+          "text": "#c6a490",
+          "text2": "#837065",
+          "background": "#111e2d",
+          "background_gradient": "",
+          "background2": "#f2f2f2",
+          "button": "#d0b4a6",
+          "button_label": "#ffffff",
+          "button_border": "#2a3a4a",
+          "secondary_button_label": "#d0b4a6",
+          "accent_color": "#c6a490",
+          "line_border": "#dddddd",
+          "overlay": "#000000",
+          "pr_text": "#222222",
+          "price": "#696969",
+          "sale_price": "#ec0101",
+          "input_primary": "#ffffff",
+          "input_secondary": "#878787"
+        }
       }
     }
   },
