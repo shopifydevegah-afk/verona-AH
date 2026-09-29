@@ -481,3 +481,14 @@
 }
 
 }
+
+/* videos */
+.product-video .hdt-content{
+	display: none;
+}
+
+.product-video  .hdt-media-overlap-content{
+	border-radius: 4px;
+	max-width: 290px;
+	max-height: 484px;
+}

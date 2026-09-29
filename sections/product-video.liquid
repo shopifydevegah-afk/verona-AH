@@ -17,9 +17,10 @@
   }
   {% render 'spacing-vars', box: section %}
 {% endstyle %}
+{%- assign custom_class = section.settings.custom_class | strip -%}
 <div
   id="{{ section.id }}"
-  class="hdt-s-inner hdt-section-spacing hdt-section-spacing-{{ section.id }} hdt-s-gradient{%- if section.settings.image_height == 'full' -%} hdt-fullscreen-desktop{%- endif %} hdt-style-{{ section.settings.style }}"
+  class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-s-inner hdt-section-spacing hdt-section-spacing-{{ section.id }} hdt-s-gradient{%- if section.settings.image_height == 'full' -%} hdt-fullscreen-desktop{%- endif %} hdt-style-{{ section.settings.style }}"
   color-scheme="{{ section.settings.color_scheme }}"
 >
   <div class="hdt-container{%- if section.settings.full_width -%}-full{%- endif -%}" id="Video-{{ section.id }}">
@@ -31,14 +32,14 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.57 5.92993L3.5 11.9999L9.57 18.0699" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M20.4999 12H3.66992" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>              
+              </svg>
           </button>
           <button aria-controls="Slider-{{ section.id }}" class="hdt-slider__button hdt-slider__button--next" type="button" disabled name="next" aria-label="next">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.4299 5.92993L20.4999 11.9999L14.4299 18.0699" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M3.5 12H20.33" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              
+
           </button>
         </div>
       {%- endif -%}
@@ -73,6 +74,12 @@
     "groups": ["*"]
   },
   "settings": [
+   {
+      "type": "text",
+      "id": "custom_class",
+      "label": "custom class to style",
+      "info": "add custom class here to style"
+    },
     {
       "type": "checkbox",
       "id": "full_width",
@@ -103,7 +110,7 @@
       "type": "select",
       "id": "image_height",
       "options": [
-        
+
         {
           "value": "adapt_image_first",
           "label": "t:sections.video.settings.video_height.adapt_video"
