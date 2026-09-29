@@ -1,0 +1,81 @@
+.main-collection{
+    background-color: rgba(198, 164, 144, 0.1);
+}
+
+.main-collection .hdt-top-list-collections {
+    border-bottom: 1px solid;
+}
+
+.main-collection .hdt-card-product {
+box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.06) !important;
+  border-radius: 14px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+  margin-left: 10px;
+}
+
+.main-collection .hdt-card-product .hdt-card-product__wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.main-collection .hdt-card-product__info{
+	padding-right: 10px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: start;
+	text-align: start;
+}
+.main-collection .hdt-card-product .hdt-product-btns {
+	margin-top: auto !important;
+	flex: 0 0 auto !important;
+	width: 100% !important;
+	display: flex;
+	padding-top: 12px;
+}
+
+.main-collection .hdt-card-product .hdt-pr_btn,
+.main-collection .hdt-card-product .hdt-ultra_btn_parent {
+	margin-left: 10px ;
+	display: block;
+	width: 100% !important;
+	flex: 1 1 100% !important;
+	max-width: 100%;
+}
+
+.main-collection  .hdt-card-product .hdt-card-product__btn-ultra {
+	width: 100% !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.main-collection  .hdt-card-product__btn-ultra:hover{
+	background-color: #C6A490;
+	color: #1A2A3A;
+}
+
+/* color of price */
+.main-collection .hdt-card-product__title .hdt-price-wrapp {
+	font-weight: 600;
+}
+
+/* Current price color */
+.main-collection .hdt-card-product .hdt-price {
+  color: #1b2d42 !important;
+}
+
+/* Old (crossed-out) price color */
+.main-collection .hdt-card-product .hdt-compare-at-price {
+  color: #AAAAAA !important;
+  font-weight: lighter;
+}
+
+.main-collection .hdt-card-product .hdt-price__list {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 4px;
+}

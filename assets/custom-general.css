@@ -335,7 +335,7 @@ position: absolute !important;
 
 /* Buttons group: pushed to the bottom of the card (all buttons on one line) */
 .feature-collection .hdt-card-product .hdt-product-btns,
-.hdt-card-product .hdt-pr-btns-group1 {
+.feature-collection .hdt-card-product .hdt-pr-btns-group1 {
 	margin-top: auto !important;
 	flex: 0 0 auto !important;
 	width: 100% !important;
@@ -345,7 +345,7 @@ position: absolute !important;
 
 /* Button takes the full width */
 .feature-collection .hdt-card-product .hdt-pr_btn,
-.hdt-card-product .hdt-ultra_btn_parent {
+.feature-collection  .hdt-card-product .hdt-ultra_btn_parent {
 	margin-left: 10px ;
 	display: block;
 	width: 100% !important;

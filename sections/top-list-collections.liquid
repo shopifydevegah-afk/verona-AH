@@ -6,7 +6,7 @@
   #Section layout
   assign sizes  = '(min-width: 1150px) ' | append: settings.page_width | append: 'px,(min-width: 750px) calc(100vw - 60px), calc(100vw - 30px)'
 
-  case section.settings.section_layout 
+  case section.settings.section_layout
     when 'container'
       assign parent = 'hdt-container'
       assign child  = 'hdt-section-spacing hdt-s-gradient hdt-relative' | append: ' hdt-section-spacing-' | append: section.id
