@@ -518,7 +518,7 @@ position: absolute !important;
 
 .collection-list .hdt-collection-wrapper>a :hover{
 	background-color: #1A2A3A;
-	color: #D0B4A6;
+	color: #D0B4A6 !important;
 }
 
 .collection-list .hdt-full-width-link:hover::after{
