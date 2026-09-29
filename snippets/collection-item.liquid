@@ -67,7 +67,7 @@
       <div class="hdt-collection-content hdt-absolute hdt-place-self-{{ section.settings.content_position }}">
         <div class="hdt-collection-wrapper hdt-flex hdt-flex-col hdt-justify-center hdt-align-center">
           <span class="hdt-collection-title-text hdt-truncate">{{ title }}</span>
-          <a class="hdt-collection-title hdt-truncate hdt-inline-flex hdt-align-center hdt-justify-center hdt-text-{{ section.settings.content_size }} hdt-font-{{ section.settings.content_weight }}" href="{{ collection_link }}">Shop now</a>
+          <a class="hdt-collection-title hdt-truncate hdt-inline-flex hdt-align-center hdt-justify-center hdt-text-{{ section.settings.content_size }} hdt-font-{{ section.settings.content_weight }}" href="{{ collection_link }}">{{ shop_now_label | default: block.settings.shop_now_label | default: 'Shop now' }}</a>
         </div>
       </div>
     {% endif %}

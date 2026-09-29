@@ -6,6 +6,7 @@
   assign hdt_svg_image = block.settings.hdt_collection_list_svg
   assign svg_width = block.settings.svg_width
   assign svg_width_mb = block.settings.svg_width_mb
+  assign shop_now_label = block.settings.shop_now_label
   if section.settings.space_items == "x"
     assign space_item = settings.spacing_grid_horizontal
     assign space_item_tb = settings.spacing_grid_horizontal | divided_by: 2
@@ -27,7 +28,7 @@
   {%- endif -%}
 {%- endcapture -%}
 {%- liquid
-  render 'collection-item', block: block, hdt_svg_image: hdt_svg_image, svg_width: svg_width, svg_width_mb: svg_width_mb, collection: collections[block.settings.collection], class: "hdt-slider__slide", sizes: sizes, current: 1
+  render 'collection-item', block: block, shop_now_label: shop_now_label, hdt_svg_image: hdt_svg_image, svg_width: svg_width, svg_width_mb: svg_width_mb, collection: collections[block.settings.collection], class: "hdt-slider__slide", sizes: sizes, current: 1
 -%}
 {% schema %}
 {
