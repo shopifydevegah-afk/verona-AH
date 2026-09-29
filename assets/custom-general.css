@@ -520,7 +520,7 @@
 	background-color: #EEE4DE !important;
 }
 
-.shipping2 .hdt-content-inner {
+.shipping2 .hdt-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -528,11 +528,86 @@
   gap: 10px;
 }
 
-.shipping2 .hdt-content-inner > *:nth-child(4) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+@media (min-width: 1024px) {
+  .shipping2 .hdt-row-grid > :nth-child(4) {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 767px) {
+
+	/* Container */
+	.shipping2 .hdt-row-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 4px;
+	justify-items: center;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	}
+
+	.shipping2 .hdt-row-grid > :not(:last-child) {
+	grid-row: 1;
+	width: 100%;
+	text-align: center;
+	padding: 0 !important;
+	margin: 0 !important;
+	}
+
+	.shipping2 .hdt-row-grid > :not(:last-child) img,
+	.shipping2 .hdt-row-grid > :not(:last-child) svg,
+	.shipping2 .hdt-row-grid > :not(:last-child) .hdt-shipping-icon {
+	width: 48px !important;
+	height: 48px !important;
+	max-width: 48px !important;
+	margin: 0 auto 4px auto !important;
+	}
+
+
+
+	.shipping2 .hdt-row-grid > :last-child {
+	grid-column: 1 / -1;
+	grid-row: 2;
+	width: 100% !important;
+	max-width: 100% !important;
+	box-sizing: border-box !important;
+	margin-top: 10px !important;
+	padding: 6px 8px !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	gap: 6px !important;
+	}
+
+	.shipping2 .hdt-row-grid > :last-child span,
+	.shipping2 .hdt-row-grid > :last-child a {
+	font-size: 11px !important;
+	white-space: nowrap !important;
+	}
+
+	.shipping2 .hdt-row-grid > :last-child img,
+	.shipping2 .hdt-row-grid > :last-child svg {
+	width: 22px !important;
+	height: 22px !important;
+	}
+
+.shipping2,
+.shipping2 .hdt-section-header,
+.shipping2 .hdt-section-title,
+.shipping2 [class*="title"],
+.shipping2 [class*="heading"],
+.shipping2 h1,
+.shipping2 h2,
+.shipping2 h3,
+.shipping2 h4,
+.shipping2 p {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  justify-content: center !important;
+}
 }
 
 .shipping2,
