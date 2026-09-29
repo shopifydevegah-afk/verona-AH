@@ -87,17 +87,56 @@
             "border_pd": 0
           },
           "blocks": {}
+        },
+        "slide_item_YxRXVL": {
+          "type": "_slide-item",
+          "settings": {
+            "image": "shopify://shop_images/imgi_57_Verona_-_TAS-27158_copy.png",
+            "image_mb": "shopify://shop_images/316b4f08e2dae6d6c0b94311817bedd38524f897.jpg",
+            "url": "",
+            "banner_target": false,
+            "color_scheme": "scheme-77e4ef58-56a9-4631-876a-12098ba7d57d",
+            "content_position_type": "container",
+            "position_x": 50,
+            "position_y": 50,
+            "content_position": "center-end",
+            "alignment": "right",
+            "position_x_mb": 50,
+            "position_y_mb": 50,
+            "content_position_mb": "center-end",
+            "alignment_mb": "right",
+            "overlay_content": false,
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background_content": false,
+            "background_content_color": "#ffffff",
+            "bg_opacity": 0,
+            "box_square": false,
+            "content_rounded": false,
+            "use_border_content": false,
+            "border_color": "#ffffff",
+            "background_border": "#ffffff",
+            "border_opacity": 0,
+            "border_style": "none",
+            "border_pd_dk": 0,
+            "padding_vertical": 30,
+            "padding_horizontal": 30,
+            "min_width_content": 350,
+            "border_pd": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "slide_item_n4nQgY",
-        "slide_item_xPDwgq"
+        "slide_item_xPDwgq",
+        "slide_item_YxRXVL"
       ],
       "settings": {
         "custom_class_header_inline": "navigation",
-        "image_height": "adapt_image",
+        "image_height": "adapt_image_first",
         "fixed_height": 700,
-        "image_height_mb": "adapt_image",
+        "image_height_mb": "adapt_image_first",
         "fixed_height_mb": 400,
         "is_fade": false,
         "loop": true,
@@ -117,7 +156,7 @@
         "pag_mgt": 20,
         "pag_hide_mobile": true,
         "colors_by_section": true,
-        "color_scheme": "scheme-6707cc8e-6558-49d9-8759-f7d934d9fe4f",
+        "color_scheme": "scheme-1",
         "background_opacity": 0,
         "full_width": true,
         "mg": "",
