@@ -17,24 +17,25 @@
     {%- endif -%}
   }
   {%- endstyle -%}
-  <div calc-nav class="hdt-media-overlap-content">
+  {%- assign custom_class = section.settings.custom_class | strip -%}
+  <div calc-nav class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-media-overlap-content">
     {%- if block.settings.video -%}
-      <hdt-video-player autoplay>
-        {{- block.settings.video | video_tag: image_size: '1500x', playsinline: true, muted: true, loop: true, controls: false, preload: 'metadata' -}}
+      <hdt-video-player>
+        {{- block.settings.video | video_tag: image_size: '1500x', playsinline: true, muted: true, controls: true, preload: 'metadata' -}}
       </hdt-video-player>
     {%- else -%}
-      <hdt-video-player host="{{ block.settings.external_video_url.type }}" type="background" autoplay>
+      <hdt-video-player host="{{ block.settings.external_video_url.type }}" type="background" >
         <template>
           {%- if block.settings.external_video_url.type == 'youtube' -%}
-            <iframe id="iframe-{{ block.id }}" src="https://www.youtube.com/embed/{{ block.settings.external_video_url.id }}?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist={{ block.settings.external_video_url.id }}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+            <iframe id="iframe-{{ block.id }}" src="https://www.youtube.com/embed/{{ block.settings.external_video_url.id }}?playsinline=1&autoplay=0&controls=0&mute=1&loop=1&playlist={{ block.settings.external_video_url.id }}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}" allow="encrypted-media" allowfullscreen="allowfullscreen"></iframe>
           {%- elsif block.settings.external_video_url.type == 'vimeo' -%}
-            <iframe src="https://player.vimeo.com/video/{{ block.settings.external_video_url.id }}?autoplay=1&autopause=1&background=1&loop=1&muted=1&transparent=0&responsive=1&portrait=0&title=0&byline=0&color={{ settings.color_accent | remove_first: '#' }}" allow="autoplay; encrypted-media;" allowfullscreen="allowfullscreen"></iframe>
+            <iframe src="https://player.vimeo.com/video/{{ block.settings.external_video_url.id }}?autoplay=0&autopause=1&background=1&loop=1&muted=1&transparent=0&responsive=1&portrait=0&title=0&byline=0&color={{ settings.color_accent | remove_first: '#' }}" allow=" encrypted-media;" allowfullscreen="allowfullscreen"></iframe>
           {%- endif -%}
         </template>
       </hdt-video-player>
     {%- endif -%}
   </div>
-  <div class="hdt-content">
+  <div class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-content">
     {%- liquid
       assign product = block.settings.product
     -%}
@@ -71,7 +72,7 @@
               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16.1486 15.3255L17.8149 9.10664L11.5961 7.44031" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M6.77326 15.4817L17.7047 9.17041" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>              
+              </svg>
             </a>
           {%- endif -%}
         </div>
@@ -128,7 +129,7 @@
     "presets": [
       {
         "name": "Item"
-      } 
+      }
     ]
   }
 {% endschema %}
