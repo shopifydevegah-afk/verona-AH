@@ -178,7 +178,7 @@
             "svg_width_mb": 40,
             "title": "العروض الخاصة",
             "shop_now_label": "تسوق الآن",
-            "collection_link": "",
+            "collection_link": "shopify://collections/العروض-الخاصة",
             "col_dk": "6",
             "col_tb": "6",
             "col_mb": "6"
@@ -195,7 +195,7 @@
             "svg_width_mb": 40,
             "title": "التوزيعات",
             "shop_now_label": "تسوق الآن",
-            "collection_link": "",
+            "collection_link": "shopify://collections/التوزيعات",
             "col_dk": "6",
             "col_tb": "6",
             "col_mb": "6"
@@ -212,7 +212,7 @@
             "svg_width_mb": 40,
             "title": "الموالح",
             "shop_now_label": "تسوق الآن",
-            "collection_link": "",
+            "collection_link": "shopify://collections/الموالح",
             "col_dk": "6",
             "col_tb": "6",
             "col_mb": "6"
@@ -229,7 +229,7 @@
             "svg_width_mb": 40,
             "title": "بوكسات الشوكولاتة",
             "shop_now_label": "تسوق الآن",
-            "collection_link": "",
+            "collection_link": "shopify://collections/بوكسات-الشوكولاتة",
             "col_dk": "6",
             "col_tb": "6",
             "col_mb": "6"
@@ -246,7 +246,7 @@
             "svg_width_mb": 40,
             "title": "الكيك",
             "shop_now_label": "تسوق الآن",
-            "collection_link": "",
+            "collection_link": "shopify://collections/الكيك",
             "col_dk": "6",
             "col_tb": "6",
             "col_mb": "6"
@@ -295,7 +295,13 @@
       "name": "t:sections.collections-list.name",
       "settings": {
         "custom_class": "collections",
-        "collection_list": [],
+        "collection_list": [
+          "العروض-الخاصة",
+          "التوزيعات",
+          "الموالح",
+          "بوكسات-الشوكولاتة",
+          "الكيك"
+        ],
         "collection_des": "8",
         "content_size": "lg",
         "content_weight": "semibold",
