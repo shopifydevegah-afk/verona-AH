@@ -1,0 +1,375 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collections_list_simple_4yRUED": {
+      "type": "top-list-collections",
+      "blocks": {
+        "cat_p49HMg": {
+          "type": "cat",
+          "settings": {
+            "collection": "بوكسات-الشوكولاتة",
+            "icon": ""
+          }
+        },
+        "cat_htXgFg": {
+          "type": "cat",
+          "settings": {
+            "collection": "الموالح",
+            "icon": ""
+          }
+        },
+        "cat_WhJ68V": {
+          "type": "cat",
+          "settings": {
+            "collection": "التوزيعات",
+            "icon": ""
+          }
+        },
+        "cat_iGRBeG": {
+          "type": "cat",
+          "settings": {
+            "collection": "العروض-الخاصة",
+            "icon": ""
+          }
+        }
+      },
+      "block_order": [
+        "cat_p49HMg",
+        "cat_htXgFg",
+        "cat_WhJ68V",
+        "cat_iGRBeG"
+      ],
+      "settings": {
+        "show_type": "menu",
+        "menu": "menu-collection",
+        "sort": "alphabetical",
+        "hide_mobile": false,
+        "navUI": false,
+        "colors_by_section": true,
+        "color_scheme": "scheme-e0b73555-c767-4eda-aa6d-4e44e10aefce",
+        "background_opacity": 1,
+        "section_layout": "wrapper_container",
+        "hdt_background_parallax": false,
+        "mg": "",
+        "mg_mb": "",
+        "pd": "",
+        "pd_mb": ""
+      }
+    },
+    "main_heading_PHNGje": {
+      "type": "main-heading",
+      "blocks": {
+        "heading_liquid_wcaa7G": {
+          "type": "_heading_liquid",
+          "settings": {
+            "text": "{{ collection.title }}",
+            "line_height": "hdt-lh-1",
+            "font_family": "hdt-font-1",
+            "text_size": "4xl",
+            "text_color": "hdt-text-secondary",
+            "italic": false,
+            "uppercase": false,
+            "font_size_text_lg": 16,
+            "font_size_text": 14,
+            "letter_spacing_text": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading_liquid_wcaa7G"
+      ],
+      "settings": {
+        "use_dynamic_source": false,
+        "color_scheme": "scheme-23cf8966-8e57-4acd-9bb3-bb85f222fbb9",
+        "bg_overlay": 100,
+        "space_item": 0,
+        "mg": "",
+        "mg_mb": "",
+        "pd": "55px,,55px,",
+        "pd_mb": "34px,,34px,"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "filter_KX6bJW": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "filter_KX6bJW"
+      ],
+      "settings": {
+        "custom_class_header_inline": "main-collection",
+        "show_description": false,
+        "use_read_more": false,
+        "read_more_height": 300,
+        "description_position": "before",
+        "product_des": "6",
+        "image_ratio": "square",
+        "image_size": true,
+        "show_vendor": false,
+        "pr_border": "none",
+        "products_count": 50,
+        "col_dk": "4",
+        "col_tb": "3",
+        "col_mb": "2",
+        "space_items": "x",
+        "pagination_type": "links",
+        "enable_progressbar": true,
+        "paginate_pos": "center",
+        "dis_pagination": 40,
+        "btn_label": "",
+        "btn_style": "hdt-btn-outline",
+        "size": "xl",
+        "btn_fw": "medium",
+        "enable_sorting": true,
+        "enable_filtering": true,
+        "enable_num_cols_selector": false,
+        "widget_heading": "Product categories",
+        "cat_source": "1",
+        "cat_link_list": "",
+        "count": true,
+        "colors_by_section": true,
+        "color_scheme": "scheme-23cf8966-8e57-4acd-9bb3-bb85f222fbb9",
+        "background_opacity": 0,
+        "section_layout": "wrapper_container",
+        "hdt_background_parallax": false,
+        "mg": "",
+        "mg_mb": "",
+        "pd": "30px,,30px,",
+        "pd_mb": "10px,,16px,",
+        "sidebar_drawer": false,
+        "sidebar_position": "left",
+        "sidebar_size": "small",
+        "colors_by_section_sb": true,
+        "color_scheme_sb": "scheme-e0b73555-c767-4eda-aa6d-4e44e10aefce",
+        "background_opacity_sb": 1
+      }
+    },
+    "testimonial_section_kaYR4Y": {
+      "type": "testimonial_section",
+      "blocks": {
+        "testimonial_item_mPTwC7": {
+          "type": "_testimonial_item",
+          "settings": {
+            "custom_class": "",
+            "heading": "",
+            "content": "<p>الصراحة، خدمة فيرونا رهيبة! الشحن سريع ووصلت الهدية خلال ساعات، والورود كانت طازة والشوكولاتة لذيذة. تغليفهم محترف وراقي، أنصح الكل في فيرونا</p>",
+            "title": "سارة العلي",
+            "pos": "الكويت - العاصمة",
+            "rating": 5
+          },
+          "blocks": {}
+        },
+        "testimonial_item_8fqnCf": {
+          "type": "_testimonial_item",
+          "settings": {
+            "custom_class": "",
+            "heading": "",
+            "content": "<p>جربت فيرونا أكثر من مرة، وكل مرة تكون التجربة أفضل. الشحن سريع، التغليف مرتب وفاخر، والمنتجات جودتها عالية. يستاهلون 5 نجوم</p>",
+            "title": "فهد المنيفي",
+            "pos": "الكويت - الجهراء",
+            "rating": 5
+          },
+          "blocks": {}
+        },
+        "testimonial_item_CrDg4L": {
+          "type": "_testimonial_item",
+          "settings": {
+            "custom_class": "",
+            "heading": "",
+            "content": "<p>ما توقعت الشحن يكون سريع لهالدرجة، طلبت هدية ووصّلوا ليها في ساعات، التغلف رائع والشوكولاتة طعمها ما يعلى عليه. تجربتي معهم أكثر من رائعة</p>",
+            "title": "نورة الصالح",
+            "pos": "الكويت - حولي",
+            "rating": 5
+          },
+          "blocks": {}
+        },
+        "testimonial_item_47mjpH": {
+          "type": "_testimonial_item",
+          "settings": {
+            "custom_class": "",
+            "heading": "",
+            "content": "<p>ما شاء الله عليهم، الخدمة سريعة والتغليف مرتب وجميل. الشوكولاتة لذيذة طازه، وكل شي كان تمام. أنصح فيها لأي مناسبة</p>",
+            "title": "مشعل المطيري",
+            "pos": "الكويت - الفحيحيل",
+            "rating": 5
+          },
+          "blocks": {}
+        },
+        "testimonial_item_NzRHgB": {
+          "type": "_testimonial_item",
+          "settings": {
+            "custom_class": "",
+            "heading": "",
+            "content": "<p>لو في 10 نجوم كنت عطيتهم، الشحن سريع وايد والتغليف جميل، والبوكس اللي وصلني كان طازة وفاخر. تجربة مميزة وأكيد راح أكررها</p>",
+            "title": "رهف الخالدي",
+            "pos": "الكويت - السالمية",
+            "rating": 5
+          },
+          "blocks": {}
+        },
+        "testimonial_item_eVnKAF": {
+          "type": "_testimonial_item",
+          "settings": {
+            "custom_class": "",
+            "heading": "",
+            "content": "<p>لو في 10 نجوم كنت عطيتهم، الشحن سريع وايد والتغليف جميل، والبوكس اللي وصلني كان طازة وفاخر. تجربة مميزة وأكيد راح أكررها</p>",
+            "title": "رهف الخالدي",
+            "pos": "الكويت - السالمية",
+            "rating": 5
+          },
+          "blocks": {}
+        },
+        "testimonial_item_qaTUiP": {
+          "type": "_testimonial_item",
+          "settings": {
+            "custom_class": "",
+            "heading": "",
+            "content": "<p>لو في 10 نجوم كنت عطيتهم، الشحن سريع وايد والتغليف جميل، والبوكس اللي وصلني كان طازة وفاخر. تجربة مميزة وأكيد راح أكررها</p>",
+            "title": "رهف الخالدي",
+            "pos": "الكويت - السالمية",
+            "rating": 5
+          },
+          "blocks": {}
+        },
+        "our-team": {
+          "type": "section-heading",
+          "static": true,
+          "settings": {
+            "design_heading": "1",
+            "horizontal": false,
+            "alignment": "center",
+            "heading_gap": 8,
+            "margin_bottom": 30
+          },
+          "blocks": {
+            "heading_icon_xbiJm9": {
+              "type": "_heading_icon",
+              "name": "t:blocks.icon.name",
+              "settings": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 24\" width=\"150\" height=\"26\">\n  <g fill=\"#FFB800\">\n    <!-- Star 1 -->\n    <path d=\"M12 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7L12 17l-6.1 3.3 1.4-6.7-5-4.6 6.8-.8z\"/>\n    <!-- Star 2 -->\n    <path d=\"M36 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7L36 17l-6.1 3.3 1.4-6.7-5-4.6 6.8-.8z\"/>\n    <!-- Star 3 -->\n    <path d=\"M60 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7L60 17l-6.1 3.3 1.4-6.7-5-4.6 6.8-.8z\"/>\n    <!-- Star 4 -->\n    <path d=\"M84 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7L84 17l-6.1 3.3 1.4-6.7-5-4.6 6.8-.8z\"/>\n    <!-- Star 5 -->\n    <path d=\"M108 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7-6.1-3.3-6.1 3.3 1.4-6.7-5-4.6 6.8-.8z\"/>\n  </g>\n</svg>",
+                "text_color": "hdt-s-text",
+                "line": false,
+                "width": "auto",
+                "width_dk": 30,
+                "width_tb": 30,
+                "width_mb": 30,
+                "mg": "",
+                "mg_mb": "",
+                "pd": "",
+                "pd_mb": ""
+              },
+              "blocks": {}
+            },
+            "heading_section_Atcnza": {
+              "type": "_heading_section",
+              "name": "t:blocks.section_heading.name",
+              "settings": {
+                "heading": "عملاؤنا يتحدثون عن تجربتهم",
+                "line_height": "",
+                "heading_size": "h3",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 50,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            },
+            "sub_heading_section_9QCyGY": {
+              "type": "_sub_heading_section",
+              "settings": {
+                "text": "<p>في فيرونا، نؤمن أن تجربتك معنا يجب أن تكون استثنائية من البداية للنهاية</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "text_size": "sm",
+                "text_color": "hdt-text-secondary",
+                "font_size_text_lg": 16,
+                "font_size_text": 10,
+                "letter_spacing_text": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_icon_xbiJm9",
+            "heading_section_Atcnza",
+            "sub_heading_section_9QCyGY"
+          ]
+        }
+      },
+      "block_order": [
+        "testimonial_item_mPTwC7",
+        "testimonial_item_8fqnCf",
+        "testimonial_item_CrDg4L",
+        "testimonial_item_47mjpH",
+        "testimonial_item_NzRHgB",
+        "testimonial_item_eVnKAF",
+        "testimonial_item_qaTUiP"
+      ],
+      "name": "t:sections.testimonials_section.name",
+      "settings": {
+        "custom_class": "feadback-card",
+        "ter_des": "8",
+        "cl_name": "#1b2d42",
+        "cl_content": "#1a2a3a",
+        "cl_bd": "#f4f0ea",
+        "cl_bg_item": "#f4f0ea",
+        "bdr": 10,
+        "content_align": "left",
+        "col_dk": "5",
+        "col_tb": "2",
+        "col_mb": "2",
+        "space_horizontal": "10",
+        "space_vertical": "15",
+        "space_horizontal_mb": "8",
+        "space_vertical_mb": "10",
+        "layout": "carousel",
+        "loop": false,
+        "autoplay": 0,
+        "pauseOnHover": false,
+        "navUI": true,
+        "nav_position": "on_border",
+        "nav_visible": "always",
+        "nav_style": "simple",
+        "nav_shape": "default",
+        "nav_size": "small",
+        "nav_hide_mobile": false,
+        "dotUI": false,
+        "pag_style": "default",
+        "pag_rounded": false,
+        "pag_space": 10,
+        "pag_mgt": 10,
+        "only_show_mobile": false,
+        "pag_hide_mobile": false,
+        "colors_by_section": true,
+        "color_scheme": "scheme-23cf8966-8e57-4acd-9bb3-bb85f222fbb9",
+        "background_opacity": 1,
+        "section_layout": "wrapper_container",
+        "hdt_background_parallax": false,
+        "mg": "",
+        "mg_mb": ",,30px,",
+        "pd": "48px,,48px,",
+        "pd_mb": "10px,,16px,"
+      }
+    }
+  },
+  "order": [
+    "collections_list_simple_4yRUED",
+    "main_heading_PHNGje",
+    "main-collection",
+    "testimonial_section_kaYR4Y"
+  ]
+}

@@ -72,13 +72,14 @@
         "img_trust_zatTgB"
       ],
       "settings": {
+        "custom_class": "drawer",
         "colors_by_section": true,
-        "color_scheme": "scheme-e0b73555-c767-4eda-aa6d-4e44e10aefce",
-        "show_free_shipping_bar": true,
+        "color_scheme": "scheme-77e4ef58-56a9-4631-876a-12098ba7d57d",
+        "show_free_shipping_bar": false,
         "show_cart_note": true,
         "show_gift_wrap": false,
-        "show_shipping_estimator": true,
-        "show_cart_discount": true,
+        "show_shipping_estimator": false,
+        "show_cart_discount": false,
         "discount_error_message": "Enter a valid discount code",
         "show_cart_complementary": false,
         "heading": "Customers also bought",
