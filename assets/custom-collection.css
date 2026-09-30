@@ -217,9 +217,7 @@ box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.06) !important;
 
 @media (max-width: 767px) {
     .main-collection .hdt-card-product .hdt-price__list {
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    gap: 4px;
+    flex-direction: column-reverse;
 }
 }
 
