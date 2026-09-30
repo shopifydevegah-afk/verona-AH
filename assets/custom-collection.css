@@ -80,3 +80,8 @@ box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.06) !important;
     align-items: flex-start;
     gap: 4px;
 }
+
+.main-collection .hdt-quote-content>p{
+	max-width: 300px;
+	max-height: 100px;
+}
