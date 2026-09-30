@@ -75,11 +75,12 @@
         "heading_liquid_wcaa7G": {
           "type": "_heading_liquid",
           "settings": {
+            "custom_class": "heading",
             "text": "{{ collection.title }}",
             "line_height": "hdt-lh-1",
             "font_family": "hdt-font-1",
             "text_size": "4xl",
-            "text_color": "hdt-text-secondary",
+            "text_color": "hdt-s-text",
             "italic": false,
             "uppercase": false,
             "font_size_text_lg": 16,
@@ -99,8 +100,8 @@
         "space_item": 0,
         "mg": "",
         "mg_mb": "",
-        "pd": "55px,,55px,",
-        "pd_mb": "34px,,34px,"
+        "pd": "48px,,10px,",
+        "pd_mb": "16px,,10px,"
       }
     },
     "main-collection": {
@@ -147,14 +148,14 @@
         "cat_link_list": "",
         "count": true,
         "colors_by_section": true,
-        "color_scheme": "scheme-23cf8966-8e57-4acd-9bb3-bb85f222fbb9",
-        "background_opacity": 0,
+        "color_scheme": "scheme-732b134c-94f8-4af3-954c-1e27cb537c55",
+        "background_opacity": 1,
         "section_layout": "wrapper_container",
         "hdt_background_parallax": false,
         "mg": "",
         "mg_mb": "",
-        "pd": "30px,,30px,",
-        "pd_mb": "10px,,16px,",
+        "pd": ",,48px,",
+        "pd_mb": ",,16px,",
         "sidebar_drawer": false,
         "sidebar_position": "left",
         "sidebar_size": "small",
