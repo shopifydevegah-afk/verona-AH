@@ -320,13 +320,7 @@ position: absolute !important;
   margin-left: 10px;
 }
 
-.feature-collection .hdt-card-product__title{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block; /* أو inline-block */
-  max-width: 100%;
-}
+
 
 
 .feature-collection .hdt-card-product .hdt-card-product__wrapper {

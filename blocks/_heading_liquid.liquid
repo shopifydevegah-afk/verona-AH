@@ -40,8 +40,8 @@
         echo page.title | escape
     endcase
   endcapture -%}
-    {%- assign custom_class = section.settings.custom_class_header_inline | strip -%}
-<div hdt-reveal="slide-in" timeline id="block-{{ block.id }}" class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-text-warry hdt-heading-liquid {{ block.settings.text_color }} hdt-text-{{ block.settings.text_size }} {{ block.settings.font_family }} {{ block.settings.line_height }}{% if block.settings.italic %} hdt-italic{% endif %}{% if block.settings.uppercase %} hdt-uppercase{% endif %}" {{ block.shopify_attributes }}>
+{%- assign custom_class = block.settings.custom_class | strip -%}
+<div hdt-reveal="slide-in" timeline id="block-{{ block.id }}" class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-text-warry hdt-heading-liquid {{ block.settings.text_color }} hdt-text-{{ block.settings.text_size }} {{ block.settings.font_family }} {{ block.settings.line_height }}{% if block.settings.italic %} hdt-italic{% endif %}{% if block.settings.uppercase %} hdt-uppercase{% endif %} " {{ block.shopify_attributes }}>
   {{- block.settings.text | default: heading_title -}}
   {%- if block.settings.text_size == "custom" -%}
     {%- style -%}
@@ -57,6 +57,12 @@
   "name": "t:sections.heading-page.page",
   "tag": null,
   "settings": [
+      {
+      "type": "text",
+      "id": "custom_class",
+      "label": "custom class to style",
+      "info": "add custom class here to style"
+    },
     {
       "type": "liquid",
       "id": "text",

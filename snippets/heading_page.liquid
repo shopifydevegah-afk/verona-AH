@@ -36,7 +36,7 @@
   endcapture
 -%}
 {%- if section.blocks.size > 0 -%}
-  {%- assign custom_class = section.settings.custom_class_header_inline | strip -%}
+  {%- assign custom_class = section.settings.custom_class | strip -%}
   <div class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-container">
     <div class="hdt-main-heading hdt-flex hdt-flex-col hdt-text-center hdt-align-center hdt-spacing_hd hdt-relative">
       {%- for block in section.blocks -%}
