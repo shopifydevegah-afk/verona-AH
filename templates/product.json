@@ -11,6 +11,7 @@
   "sections": {
     "breadcrumb": {
       "type": "brc-nav-product",
+      "disabled": true,
       "settings": {
         "back_next_pr": true,
         "colors_by_section": true,
@@ -31,7 +32,7 @@
           "type": "_group-product",
           "settings": {
             "colors_by_block": false,
-            "color_scheme": ""
+            "color_scheme": "scheme-9d4b8c96-bcef-4740-808f-c1d3c1e791b5"
           },
           "blocks": {
             "product_title_ehRqkq": {
@@ -39,10 +40,10 @@
               "settings": {
                 "txt_tr_pr": "none",
                 "tag": "h2",
-                "heading_size": "h_custom",
+                "heading_size": "h3",
                 "font_size_heading_lg": 16,
                 "font_size_heading": 16,
-                "font_weight": "semibold",
+                "font_weight": "bold",
                 "letter_spacing_heading": 0
               },
               "blocks": {}
@@ -55,18 +56,18 @@
             "product_description_AJaqwJ": {
               "type": "_product-description",
               "settings": {
-                "des": "2",
+                "des": "1",
                 "short_des": "<p>Go kalles this summer with this vintage navy and white striped v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks for a stylish kalles vibe.</p>",
                 "readm": false,
                 "length": 130,
                 "readm_txt": "Read more",
                 "readl_txt": "Read less",
-                "ffamily": "",
-                "text_size": "base",
+                "ffamily": "--f_family_1",
+                "text_size": "lg",
                 "line_height": "",
-                "font_weight": "normal",
+                "font_weight": "semibold",
                 "heading_color": "",
-                "text_color": "hdt-text-secondary",
+                "text_color": "hdt-s-text",
                 "font_size_text_lg": 16,
                 "font_size_text": 14,
                 "letter_spacing_text": 0
@@ -90,28 +91,6 @@
               "settings": {},
               "blocks": {}
             },
-            "product_buy_button_aPmAbD": {
-              "type": "_product-buy-button",
-              "settings": {
-                "show_quantity_selector": true,
-                "show_dynamic_checkout": false,
-                "show_gift_card_recipient": true,
-                "show_wishlist": true,
-                "color_wishlist": "#222222",
-                "color_hover_wishlist": "#56cfe1",
-                "color_active_wishlist": "#e81e1e",
-                "show_compare": true,
-                "color_compare": "#222222",
-                "color_hover_compare": "#56cfe1",
-                "color_active_compare": "#e81e1e",
-                "ani": "hdt-ani-shake is--infinite",
-                "time": 6,
-                "btn_transform": "hdt-uppercase",
-                "btn_style": "hdt-btn-accent",
-                "btn_fullwidth": false
-              },
-              "blocks": {}
-            },
             "product_back_instock_qMdMA6": {
               "type": "_product_back_instock",
               "name": "Back in stock",
@@ -128,6 +107,7 @@
             },
             "product_trust_badge_QALnxQ": {
               "type": "_product-trust-badge",
+              "disabled": true,
               "settings": {
                 "mess": "",
                 "size": 16,
@@ -140,6 +120,7 @@
             },
             "product_extra_link_HfDmDV": {
               "type": "_product-extra-link",
+              "disabled": true,
               "settings": {},
               "blocks": {
                 "product_size_chart_6Y9gBm": {
@@ -205,6 +186,7 @@
             },
             "socials_XYJPwj": {
               "type": "socials",
+              "disabled": true,
               "settings": {
                 "text_color": "hdt-s-text",
                 "type": "share",
@@ -221,6 +203,28 @@
                 "space_item": 30
               },
               "blocks": {}
+            },
+            "product_buy_button_aPmAbD": {
+              "type": "_product-buy-button",
+              "settings": {
+                "show_quantity_selector": true,
+                "show_dynamic_checkout": true,
+                "show_gift_card_recipient": true,
+                "show_wishlist": true,
+                "color_wishlist": "#222222",
+                "color_hover_wishlist": "#56cfe1",
+                "color_active_wishlist": "#e81e1e",
+                "show_compare": true,
+                "color_compare": "#222222",
+                "color_hover_compare": "#56cfe1",
+                "color_active_compare": "#e81e1e",
+                "ani": "hdt-ani-shake is--infinite",
+                "time": 6,
+                "btn_transform": "hdt-uppercase",
+                "btn_style": "hdt-btn-accent",
+                "btn_fullwidth": true
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -229,13 +233,13 @@
             "product_description_AJaqwJ",
             "product_variant_picker_WMmDTM",
             "quantity_selector_tarLcL",
-            "product_buy_button_aPmAbD",
             "product_back_instock_qMdMA6",
             "product_pickup_Jpchr6",
             "product_trust_badge_QALnxQ",
             "product_extra_link_HfDmDV",
             "product_meta_hnDEjn",
-            "socials_XYJPwj"
+            "socials_XYJPwj",
+            "product_buy_button_aPmAbD"
           ]
         },
         "main-product-sidebar": {
@@ -253,22 +257,22 @@
           "static": true,
           "settings": {
             "media_box_size": 50,
-            "desktop_media_layout": "thumbnail_left",
+            "desktop_media_layout": "thumbnail_bottom",
             "media_size": "medium",
             "mobile_media_layout": "thumbnails",
             "show_first_media": false,
             "use_select_varaint_change_media": true,
             "enable_media_autoplay": false,
             "enable_video_looping": false,
-            "enable_thumb_efect": true,
+            "enable_thumb_efect": false,
             "image_ratio": "adapt_image",
             "image_size": true,
-            "image_zoom": "zoom_lightbox",
+            "image_zoom": "no",
             "enable_lightbox_icon": false,
-            "image_zoom_type": "external",
+            "image_zoom_type": "inner",
             "zoom_level": 2,
             "max_zoom_lightbox": 3,
-            "navUI": true,
+            "navUI": false,
             "nav_style": "outline",
             "nav_shape": "rounded",
             "nav_size": "small",
@@ -281,11 +285,12 @@
         "group_product_9RYttB"
       ],
       "settings": {
+        "custom_class": "main-product",
         "product_list_fbt": [],
         "sticky_atc": true,
         "hdt_enable_choose_variant": true,
         "hdt_layout_atc_mob": "hdt_layout_atc_mob_default",
-        "hdt_show_sticky_atc": "hdt_show_always",
+        "hdt_show_sticky_atc": "hdt_show_scrolls_outside_the_scope_of_the_form",
         "ani": "hdt-ani-shake is--infinite",
         "time": 6,
         "btn_transform": "hdt-uppercase",
@@ -344,10 +349,232 @@
     },
     "sidebar": {
       "type": "sidebar-product",
-      "disabled": true,
       "settings": {
+        "custom_class": "sidebar",
         "color_scheme": "",
         "space": 50
+      }
+    },
+    "shipping_NntCy4": {
+      "type": "shipping",
+      "blocks": {
+        "shipping_GNtpWT": {
+          "type": "_shipping",
+          "settings": {
+            "custom_class": "",
+            "icon_themes": "help",
+            "image_icon": "shopify://shop_images/94338be7379ae53e7fc3938359c982e6cde19cec_1.png",
+            "icon": ""
+          },
+          "blocks": {
+            "heading_CbnrNf": {
+              "type": "heading",
+              "settings": {
+                "heading": "<p>شحن سريع ومضمون</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "font_weight": "semibold",
+                "heading_size": "h6",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 16,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_CbnrNf"
+          ]
+        },
+        "shipping_fxn9dF": {
+          "type": "_shipping",
+          "settings": {
+            "custom_class": "",
+            "icon_themes": "help",
+            "image_icon": "shopify://shop_images/93c437ebdd4789fc6258418b0d412cf4afe846b7.png",
+            "icon": ""
+          },
+          "blocks": {
+            "heading_zUcgKe": {
+              "type": "heading",
+              "settings": {
+                "heading": "<p>جودة تلاحظها من أول قطعة</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "font_weight": "semibold",
+                "heading_size": "h6",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 16,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_zUcgKe"
+          ]
+        },
+        "shipping_h3xbj3": {
+          "type": "_shipping",
+          "settings": {
+            "custom_class": "",
+            "icon_themes": "door-lock",
+            "image_icon": "shopify://shop_images/fea98e63affc202c46d3f51648b32f932e294233.png",
+            "icon": ""
+          },
+          "blocks": {
+            "heading_yN8cfR": {
+              "type": "heading",
+              "settings": {
+                "heading": "<p>تغليف فخم وأنيق</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "font_weight": "semibold",
+                "heading_size": "h6",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 16,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_yN8cfR"
+          ]
+        },
+        "shipping_q6mtEV": {
+          "type": "_shipping",
+          "settings": {
+            "custom_class": "",
+            "icon_themes": "door-lock",
+            "image_icon": "shopify://shop_images/b3b96b6c7368823389e28311ef8dce5aa9b75b3b.png",
+            "icon": ""
+          },
+          "blocks": {
+            "heading_mE3qiJ": {
+              "type": "heading",
+              "settings": {
+                "heading": "<p>تنويع نكهات لكل الأذواق</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "font_weight": "semibold",
+                "heading_size": "h6",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 16,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_mE3qiJ"
+          ]
+        },
+        "section-heading-shipping": {
+          "type": "section-heading",
+          "static": true,
+          "settings": {
+            "design_heading": "1",
+            "horizontal": false,
+            "alignment": "center",
+            "heading_gap": 15,
+            "margin_bottom": 30
+          },
+          "blocks": {
+            "heading_section_ni7hTi": {
+              "type": "_heading_section",
+              "settings": {
+                "heading": "ما عليك إلا أن تختار فيرونا",
+                "line_height": "",
+                "heading_size": "h3",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 50,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            },
+            "sub_heading_section_VWEpKF": {
+              "type": "_sub_heading_section",
+              "settings": {
+                "text": "<p>نقدم لك تجربة فاخرة تجمع بين الجودة والذوق الرفيع، سواء للاحتفال بلحظاتك السعيدة أو لتقديم هدية مميزة.</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "text_size": "sm",
+                "text_color": "hdt-text-secondary",
+                "font_size_text_lg": 16,
+                "font_size_text": 10,
+                "letter_spacing_text": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_section_ni7hTi",
+            "sub_heading_section_VWEpKF"
+          ]
+        }
+      },
+      "block_order": [
+        "shipping_GNtpWT",
+        "shipping_fxn9dF",
+        "shipping_h3xbj3",
+        "shipping_q6mtEV"
+      ],
+      "custom_css": [],
+      "name": "t:sections.shipping.name",
+      "settings": {
+        "custom_class": "shipping",
+        "content_align": "center",
+        "align_center": true,
+        "icon_design": "circle",
+        "use_border": true,
+        "space_padding": true,
+        "icon_size": "large",
+        "icon_color": "",
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "2",
+        "carousel_mobile": false,
+        "dot_color": "",
+        "dot_rounded": true,
+        "colors_by_section": true,
+        "color_scheme": "scheme-fe88a2ec-47a1-478d-8953-54da0178e18c",
+        "background_opacity": 1,
+        "section_layout": "wrapper_container",
+        "hdt_background_parallax": false,
+        "mg": "",
+        "mg_mb": ",,30px,",
+        "pd": "40px,,40px,",
+        "pd_mb": "16px,,16px,"
+      }
+    },
+    "1790709085288d1099": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_Ez6CMD": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_Ez6CMD"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "related-products": {
@@ -367,32 +594,48 @@
             "heading_section_nLFWkr": {
               "type": "_heading_section",
               "settings": {
-                "heading": "You may also like",
+                "heading": "منتجات قد تعجبك ..",
                 "line_height": "",
-                "heading_size": "h5",
+                "heading_size": "h3",
                 "text_color": "hdt-s-text",
                 "font_size_heading_lg": 50,
                 "font_size_heading": 24,
                 "letter_spacing_heading": 0
               },
               "blocks": {}
+            },
+            "sub_heading_section_wJzqTF": {
+              "type": "_sub_heading_section",
+              "settings": {
+                "text": "<p><a href=\"/collections/all\" title=\"All products\">أكتشف المزيد ›</a></p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "text_size": "sm",
+                "text_color": "hdt-s-text",
+                "font_size_text_lg": 16,
+                "font_size_text": 10,
+                "letter_spacing_text": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "heading_section_nLFWkr"
+            "heading_section_nLFWkr",
+            "sub_heading_section_wJzqTF"
           ]
         }
       },
       "settings": {
-        "product_des": "1",
-        "image_ratio": "portrait",
+        "custom_class": "related-product",
+        "product_des": "6",
+        "image_ratio": "adapt_image",
         "image_size": true,
         "show_vendor": false,
         "display_type": "4",
         "pr_border": "none",
         "limit": 10,
-        "col_dk": "4",
-        "col_tb": "3",
+        "col_dk": "6",
+        "col_tb": "4",
         "col_mb": "2",
         "space_items": "x",
         "loop": false,
@@ -400,9 +643,9 @@
         "pauseOnHover": false,
         "navUI": true,
         "nav_position": "default",
-        "nav_visible": "hover",
-        "nav_style": "outline",
-        "nav_shape": "rounded",
+        "nav_visible": "always",
+        "nav_style": "simple",
+        "nav_shape": "default",
         "nav_size": "small",
         "nav_hide_mobile": false,
         "dotUI": false,
@@ -412,15 +655,15 @@
         "pag_mgt": 10,
         "only_show_mobile": false,
         "pag_hide_mobile": false,
-        "colors_by_section": false,
-        "color_scheme": "",
+        "colors_by_section": true,
+        "color_scheme": "scheme-23cf8966-8e57-4acd-9bb3-bb85f222fbb9",
         "background_opacity": 0,
-        "section_layout": "container",
+        "section_layout": "wrapper_container",
         "hdt_background_parallax": false,
         "mg": "",
         "mg_mb": "",
-        "pd": "75px,,75px,",
-        "pd_mb": "37px,,37px,"
+        "pd": "48px,,48px,",
+        "pd_mb": "16px,,16px,"
       }
     },
     "recently-products": {
@@ -456,6 +699,7 @@
           ]
         }
       },
+      "disabled": true,
       "settings": {
         "product_des": "1",
         "image_ratio": "portrait",
@@ -496,26 +740,6 @@
         "pd": ",,50px,",
         "pd_mb": ",,40px,"
       }
-    },
-    "1790709085288d1099": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_Ez6CMD": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "real_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_Ez6CMD"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -523,8 +747,9 @@
     "main-product",
     "tabs",
     "sidebar",
+    "shipping_NntCy4",
+    "1790709085288d1099",
     "related-products",
-    "recently-products",
-    "1790709085288d1099"
+    "recently-products"
   ]
 }
