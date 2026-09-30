@@ -36,7 +36,8 @@
   endcapture
 -%}
 {%- if section.blocks.size > 0 -%}
-  <div class="hdt-container">
+  {%- assign custom_class = section.settings.custom_class_header_inline | strip -%}
+  <div class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-container">
     <div class="hdt-main-heading hdt-flex hdt-flex-col hdt-text-center hdt-align-center hdt-spacing_hd hdt-relative">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -44,28 +45,36 @@
             {%- assign heading_titles = block.settings.heading | default: heading_title -%}
             <{{ tagName }} class="hdt-heading-template-text hdt-{{ block.settings.heading_size }} hdt-s-text">
               {{ heading_titles }}
-            </{{ tagName }}>
-          {%- when '2' -%}
-            <nav class="hdt-breadcrumb" role="navigation" aria-label="breadcrumbs">
-              <ul class="hdt-text-base hdt-font-normal hdt-breadcrumb-list">
-                <li class="hdt-breadcrumb-item hdt-inline-block">
-                  <a href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a>
-                </li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="8" viewBox="0 0 5 8" class="hdt-s-text hdt-inline-block" fill="currentColor">
-                  <path d="M0.886718 3.49691e-07L4.88672 4L0.886719 8L0.176719 7.29L3.46672 4L0.176719 0.71L0.886718 3.49691e-07Z"/>
-                </svg>
-                <li class="hdt-breadcrumb-item hdt-inline-block">
-                  {{ heading_title | default: page_title }}
-                </li>
-              </ul>
-            </nav>
-          {%- else -%}
-            {%- if block.settings.sub_heading != blank -%}
-              <p class="hdt-sub-heading">{{ block.settings.sub_heading }}</p>
-            {%- endif -%}
-        {%- endcase -%}
-      {%- endfor -%}
+              </{{ tagName }}>
+            {%- when '2' -%}
+              <nav
+                class="hdt-breadcrumb"
+                role="navigation"
+                aria-label="breadcrumbs">
+                <ul class="hdt-text-base hdt-font-normal hdt-breadcrumb-list">
+                  <li class="hdt-breadcrumb-item hdt-inline-block">
+                    <a href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a>
+                  </li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="5"
+                    height="8"
+                    viewBox="0 0 5 8"
+                    class="hdt-s-text hdt-inline-block"
+                    fill="currentColor">
+                    <path d="M0.886718 3.49691e-07L4.88672 4L0.886719 8L0.176719 7.29L3.46672 4L0.176719 0.71L0.886718 3.49691e-07Z" />
+                  </svg>
+                  <li class="hdt-breadcrumb-item hdt-inline-block">
+                    {{ heading_title | default: page_title }}
+                  </li>
+                </ul>
+              </nav>
+            {%- else -%}
+              {%- if block.settings.sub_heading != blank -%}
+                <p class="hdt-sub-heading">{{ block.settings.sub_heading }}</p>
+              {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
     </div>
-  </div>
-{%- endif -%}
-
+  {%- endif -%}
