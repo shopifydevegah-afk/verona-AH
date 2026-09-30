@@ -349,8 +349,8 @@
     },
     "sidebar": {
       "type": "sidebar-product",
+      "disabled": true,
       "settings": {
-        "custom_class": "sidebar",
         "color_scheme": "",
         "space": 50
       }
