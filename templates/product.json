@@ -878,7 +878,7 @@
         "col_dk": "6",
         "col_tb": "4",
         "col_mb": "2",
-        "space_items": "20",
+        "space_items": "5",
         "loop": false,
         "autoplay": 0,
         "pauseOnHover": false,
