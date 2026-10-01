@@ -56,6 +56,7 @@
             "product_description_AJaqwJ": {
               "type": "_product-description",
               "settings": {
+                "custom_class": "prouct-desctiption",
                 "des": "1",
                 "short_des": "<p>Go kalles this summer with this vintage navy and white striped v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks for a stylish kalles vibe.</p>",
                 "readm": false,
@@ -76,6 +77,7 @@
             },
             "product_variant_picker_WMmDTM": {
               "type": "_product-variant-picker",
+              "disabled": true,
               "settings": {
                 "color_picker_type": "color_rounded",
                 "color_size": "medium",
@@ -94,6 +96,7 @@
             "product_back_instock_qMdMA6": {
               "type": "_product_back_instock",
               "name": "Back in stock",
+              "disabled": true,
               "settings": {
                 "only_show_soldout": true
               },
@@ -102,6 +105,7 @@
             "product_pickup_Jpchr6": {
               "type": "_product-pickup",
               "name": "t:sections.main-product.blocks.pickup_availability.name",
+              "disabled": true,
               "settings": {},
               "blocks": {}
             },
@@ -153,6 +157,7 @@
             },
             "product_meta_hnDEjn": {
               "type": "_product-meta",
+              "disabled": true,
               "settings": {},
               "blocks": {
                 "product_meta_available_hVC3VU": {
@@ -207,6 +212,7 @@
             "product_buy_button_aPmAbD": {
               "type": "_product-buy-button",
               "settings": {
+                "custom_class": "product-button",
                 "show_quantity_selector": true,
                 "show_dynamic_checkout": true,
                 "show_gift_card_recipient": true,
@@ -222,7 +228,27 @@
                 "time": 6,
                 "btn_transform": "hdt-uppercase",
                 "btn_style": "hdt-btn-accent",
-                "btn_fullwidth": true
+                "btn_fullwidth": false
+              },
+              "blocks": {}
+            },
+            "product_order_Feke3y": {
+              "type": "_product-order",
+              "name": "t:sections.main-product.blocks.order.name",
+              "settings": {
+                "custom_class": "product-order",
+                "hide_pre": true,
+                "icon": "none",
+                "svg_upload": "",
+                "ani": "none",
+                "txt": "✓ أطلب الحين ويصلك بنفس اليوم خلال 1 - 3 ساعات",
+                "ds": 10,
+                "de": 15,
+                "mode": "1",
+                "cut_day": "SAT,SUN",
+                "off_days": "23/12/****\n24/12/****\n01/01/****",
+                "frm_day": "t44, t45 t46",
+                "time": "16:00:00"
               },
               "blocks": {}
             }
@@ -239,11 +265,13 @@
             "product_extra_link_HfDmDV",
             "product_meta_hnDEjn",
             "socials_XYJPwj",
-            "product_buy_button_aPmAbD"
+            "product_buy_button_aPmAbD",
+            "product_order_Feke3y"
           ]
         },
         "main-product-sidebar": {
           "type": "_product_sidebar",
+          "disabled": true,
           "static": true,
           "settings": {
             "color_scheme": "",
@@ -256,7 +284,8 @@
           "type": "_product-medias",
           "static": true,
           "settings": {
-            "media_box_size": 42,
+            "custom_class": "product-media",
+            "media_box_size": 46,
             "desktop_media_layout": "thumbnail_bottom",
             "media_size": "medium",
             "mobile_media_layout": "thumbnails",
@@ -295,8 +324,8 @@
         "time": 6,
         "btn_transform": "hdt-uppercase",
         "btn_style": "hdt-btn-accent",
-        "colors_by_section": false,
-        "color_scheme": "",
+        "colors_by_section": true,
+        "color_scheme": "scheme-e0b73555-c767-4eda-aa6d-4e44e10aefce",
         "background_opacity": 1,
         "fullwidth": false,
         "mg": "",
@@ -334,6 +363,7 @@
         "tab_add_HXf3yk",
         "tab_html_7dKb7L"
       ],
+      "disabled": true,
       "settings": {
         "tabs_design": "tab",
         "enable_first_tab": false,
@@ -628,7 +658,7 @@
       "settings": {
         "custom_class": "related-product",
         "product_des": "6",
-        "image_ratio": "adapt_image",
+        "image_ratio": "square",
         "image_size": true,
         "show_vendor": false,
         "display_type": "4",
@@ -637,7 +667,7 @@
         "col_dk": "6",
         "col_tb": "4",
         "col_mb": "2",
-        "space_items": "x",
+        "space_items": "20",
         "loop": false,
         "autoplay": 0,
         "pauseOnHover": false,
