@@ -10,7 +10,7 @@
   #Section layout
   assign sizes  = '(min-width: 1150px) ' | append: settings.page_width | append: 'px,(min-width: 750px) calc(100vw - 60px), calc(100vw - 30px)'
 
-  case section.settings.section_layout 
+  case section.settings.section_layout
     when 'container'
       assign parent = 'hdt-container'
       assign child  = 'hdt-section-spacing hdt-s-gradient hdt-relative' | append: ' hdt-section-spacing-' | append: section.id
@@ -23,7 +23,8 @@
       assign sizes  = '100vw'
   endcase
 %}
-<div id="{{ section.id }}" class="{{ parent }} {% if section.settings.hdt_background_parallax %} hdt-animate--parallax-bg {% endif %}" {%- if section.settings.colors_by_section %} color-scheme="{{ section.settings.color_scheme }}" style="--background-opacity: {{ section.settings.background_opacity }};"{%- endif %} hdt-reveal="fade-in">
+  {%- assign custom_class = section.settings.custom_class | strip -%}
+<div id="{{ section.id }}" class=" {{ parent }} {% if custom_class != blank %} {{ custom_class }}{% endif %} {% if section.settings.hdt_background_parallax %} hdt-animate--parallax-bg {% endif %}" {%- if section.settings.colors_by_section %} color-scheme="{{ section.settings.color_scheme }}" style="--background-opacity: {{ section.settings.background_opacity }};"{%- endif %} hdt-reveal="fade-in">
   <div class="{{ child }}">
     {%- if section.settings.section_background != blank -%}
       {% liquid
@@ -61,6 +62,12 @@
     },
   ],
   "settings": [
+              {
+      "type": "text",
+      "id": "custom_class",
+      "label": "custom class to style",
+      "info": "add custom class here to style"
+    },
     {
       "type": "select",
       "id": "layout",
@@ -237,9 +244,9 @@
                 "heading_size": "h2",
                 "text_color": "hdt-s-text",
                 "font_size_heading_lg": 50,
-                
+
                 "font_size_heading": 24,
-                
+
                 "letter_spacing_heading": 0
               }
             },
@@ -324,9 +331,9 @@
                 "heading_size": "h4",
                 "text_color": "hdt-s-text",
                 "font_size_heading_lg": 50,
-                
+
                 "font_size_heading": 24,
-                
+
                 "letter_spacing_heading": 0
               }
             },
