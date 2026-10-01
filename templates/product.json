@@ -510,6 +510,7 @@
         },
         "section-heading-shipping": {
           "type": "section-heading",
+          "disabled": true,
           "static": true,
           "settings": {
             "design_heading": "1",
@@ -518,39 +519,7 @@
             "heading_gap": 15,
             "margin_bottom": 30
           },
-          "blocks": {
-            "heading_section_ni7hTi": {
-              "type": "_heading_section",
-              "settings": {
-                "heading": "ما عليك إلا أن تختار فيرونا",
-                "line_height": "",
-                "heading_size": "h3",
-                "text_color": "hdt-s-text",
-                "font_size_heading_lg": 50,
-                "font_size_heading": 24,
-                "letter_spacing_heading": 0
-              },
-              "blocks": {}
-            },
-            "sub_heading_section_VWEpKF": {
-              "type": "_sub_heading_section",
-              "settings": {
-                "text": "<p>نقدم لك تجربة فاخرة تجمع بين الجودة والذوق الرفيع، سواء للاحتفال بلحظاتك السعيدة أو لتقديم هدية مميزة.</p>",
-                "hidden_br_mobile": false,
-                "hidden_on_mobile": false,
-                "text_size": "sm",
-                "text_color": "hdt-text-secondary",
-                "font_size_text_lg": 16,
-                "font_size_text": 10,
-                "letter_spacing_text": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "heading_section_ni7hTi",
-            "sub_heading_section_VWEpKF"
-          ]
+          "blocks": {}
         }
       },
       "block_order": [
@@ -583,7 +552,7 @@
         "hdt_background_parallax": false,
         "mg": "",
         "mg_mb": ",,30px,",
-        "pd": "40px,,40px,",
+        "pd": "48px,,48px,",
         "pd_mb": "16px,,16px,"
       }
     },
