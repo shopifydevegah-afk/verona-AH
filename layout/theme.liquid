@@ -138,10 +138,10 @@
 
     </a>
     {{ 'custom-general.css' | asset_url | stylesheet_tag }}
-    {%if template.name == 'product' and template.suffix != blank%}
+    {%if template.name == 'product'%}
       {{ 'custom-product.css' | asset_url | stylesheet_tag }}
     {%endif%}
-    {%if template.name == 'collection' and template.suffix == blank%}
+    {%if template.name == 'collection'%}
       {{ 'custom-collection.css' | asset_url | stylesheet_tag }}
     {%endif%}
   </body>

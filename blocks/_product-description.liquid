@@ -1,32 +1,32 @@
 {%- liquid
-  unless product 
+  unless product
     assign product = section.settings.product
   endunless
   assign description_excerpt = product.metafields.theme.description_excerpt | default: block.settings.short_des | default: product.description
   if description_excerpt == blank
-    continue 
-  endif 
+    continue
+  endif
 -%}
 {%- capture css -%}
   {%- if block.settings.ffamily != '' -%}--ff:var({{ block.settings.ffamily }}); {%- endif -%}
 {%- endcapture -%}
-
-{%- if product.description != blank and block.settings.des == '1' -%}    
-  <div class="hdt-product-info__item hdt-product__description" {{ block.shopify_attributes }}>
+    {%- assign custom_class = block.settings.custom_class | strip -%}
+{%- if product.description != blank and block.settings.des == '1' -%}
+  <div class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-product-info__item hdt-product__description" {{ block.shopify_attributes }}>
     <div class="hdt-rte {{ block.settings.heading_color }} {{ block.settings.text_color }} hdt-text-{{ block.settings.text_size }} hdt-font-{{ block.settings.font_weight }} {{ block.settings.line_height }}" {%- if css != blank %} style="{{ css }}"{% endif %}>
       {{ product.description }}
     </div>
   </div>
 {%- elsif description_excerpt != blank -%}
   {%- if block.settings.readm == false -%}
-    <div class="hdt-product-info__item hdt-product__description" {{ block.shopify_attributes }}>
+    <div class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-product-info__item hdt-product__description" {{ block.shopify_attributes }}>
       <div class="hdt-rte {{ block.settings.heading_color }} {{ block.settings.text_color }} hdt-text-{{ block.settings.text_size }} hdt-font-{{ block.settings.font_weight }} {{ block.settings.line_height }}" {%- if css != blank %} style="{{ css }}"{% endif %}>
         {{ description_excerpt }}
       </div>
     </div>
   {%- else -%}
     {%- assign height_limit = block.settings.length | abs -%}
-    <product-description class="hdt-block hdt-main-product-description" data-height-limit="{{ height_limit }}" data-type="{{ block.type }}" {{ block.shopify_attributes }}>
+    <product-description class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-block hdt-main-product-description" data-height-limit="{{ height_limit }}" data-type="{{ block.type }}" {{ block.shopify_attributes }}>
       <div data-content class="hdt-product-info__item hdt-product__description hdt-relative hdt-oh {{ block.settings.heading_color }} {{ block.settings.text_color }} hdt-text-{{ block.settings.text_size }} hdt-font-{{ block.settings.font_weight }} {{ block.settings.line_height }}" {%- if css != blank %} style="{{ css }}"{% endif %}>
         <div class="hdt-rte hdt-full-des">
           {{ description_excerpt }}
@@ -46,6 +46,12 @@
   "name": "t:sections.main-product.blocks.description.name",
   "tag": null,
   "settings": [
+              {
+      "type": "text",
+      "id": "custom_class",
+      "label": "custom class to style",
+      "info": "add custom class here to style"
+    },
     {
       "type": "select",
       "id": "des",
@@ -167,7 +173,7 @@
         {
           "value": "4xl",
           "label": "t:settings_schema.typography.settings.font_size.4xl"
-        },  
+        },
         {
           "value": "custom",
           "label": "t:settings_schema.typography.settings.font_size.custom"
@@ -311,7 +317,7 @@
     },
   ],
   "presets": [
-    { 
+    {
       "name": "t:sections.main-product.blocks.description.name",
     }
   ]

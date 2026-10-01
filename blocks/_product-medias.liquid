@@ -48,7 +48,8 @@
     }
   }
 </style>
-<div class="hdt-product-media-wrapps hdt-group-block hdt-s-gradient hdt-group-block--{{ block.id }}">
+    {%- assign custom_class = block.settings.custom_class | strip -%}
+<div class="{% if custom_class != blank %} {{ custom_class }}{% endif %}  hdt-product-media-wrapps hdt-group-block hdt-s-gradient hdt-group-block--{{ block.id }}">
   {%- if product != blank -%}
     {%- capture start_index -%}
     {%- unless group_media_obj.size > 0 %}, "startIndex": {% if block.settings.show_first_media or un_no_pick == false %}0{% else %}{{ selected_variant_featured_media.position | default: 1 | minus: 1 }}{% endif %}{% endunless -%}
@@ -57,7 +58,7 @@
     {%- if first_3d_model -%}
     <link rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'; this.onload = null">
     {%- endif -%}
-    
+
     {%- if enable_media_360 != blank -%}
     {{ 'hdt-360-viewer.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'hdt-360-viewer.js' | asset_url }}" defer></script>
@@ -305,6 +306,12 @@
   "name": "t:sections.main-product.blocks.medias.name",
   "tag": null,
   "settings": [
+                  {
+      "type": "text",
+      "id": "custom_class",
+      "label": "custom class to style",
+      "info": "add custom class here to style"
+    },
     {
       "type": "header",
       "content": "t:sections.main-product.settings.header.content",

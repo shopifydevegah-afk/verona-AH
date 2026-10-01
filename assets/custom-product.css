@@ -1,6 +1,186 @@
-
-.related-product .hdt-card-product {
-      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.06) !important;
-
+/* main product */
+.main-product .hdt-price__sale {
+      flex-direction: row-reverse;
 }
 
+.main-product .hdt-price>span{
+      font-size: 28px;
+      font-weight: 700;
+}
+
+.main-product .hdt-compare-at-price>span{
+      color: #1A2A3A;
+      font-size: 18px;
+      font-weight: 400;
+}
+
+/* product media */
+.product-media .hdt-badge__wrapp>span {
+      display: none;
+}
+
+/* product description */
+.prouct-desctiption {
+  background-color: #F4F0EA !important;
+  padding: 16px 31px;
+  border-radius: 8px;
+  border-right: 3px solid #9E7C4E;
+}
+
+/* product buttons */
+.product-button .hdt-product-form__top-buttons{
+      gap: 300px;
+}
+
+
+.product-button .hdt-product-form__submit{
+      padding: 12px 60px;
+      border-radius: 8px;
+      color: #C9A97AE5;
+      border: 1px solid #E8E4DE;
+}
+
+.product-button .hdt-quantity-wrapp{
+      border-radius: 8px !important;
+      display: flex;
+      justify-content: center !important;
+      align-items: center !important;
+      border: 1.33px solid #E8E4DE;
+      padding: 12px 70px !important;
+}
+
+.product-button .hdt-quantity__button {
+      background-color: #F4F0EA !important;
+      width: 30% !important;
+      height: 100% !important;
+}
+
+.product-button .shopify-payment-button__button{
+      border-radius: 8px !important;
+      background-color: #F4F0EA !important;
+      color: #1A2A3A !important;
+      padding: 5px 207px !important;
+      font-size: 22px !important;
+      border: 1px solid #C9A97ACC;
+}
+
+/* product order */
+.product-order{
+      background-color: #EDF7F0;
+      padding: 8px 14px;
+      color: #1A7A3A;
+      width: 368px;
+      border-radius: 8px;
+}
+
+/* related */
+
+.related-product .hdt-card-product {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.06) !important;
+  border-radius: 14px;
+  padding: 0 0 15px 0;
+  background-color: #ffffff;
+}
+
+
+
+.related-product .hdt-card-product .hdt-card-product__wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+/* Info area: fills the remaining height, content is centered */
+
+.related-product .hdt-card-product__info{
+	padding-right: 10px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: start;
+	text-align: start;
+}
+
+/* Buttons group: pushed to the bottom of the card (all buttons on one line) */
+.related-product.hdt-card-product .hdt-product-btns,
+.related-product .hdt-card-product .hdt-pr-btns-group1 {
+	margin-top: auto !important;
+	flex: 0 0 auto !important;
+	width: 100% !important;
+	display: flex;
+	padding-top: 12px;
+}
+
+/* Button takes the full width */
+.related-product .hdt-card-product .hdt-pr_btn,
+.related-product  .hdt-card-product .hdt-ultra_btn_parent {
+	margin-left: 10px ;
+	display: block;
+	width: 100% !important;
+	flex: 1 1 100% !important;
+	max-width: 100%;
+}
+.related-product .hdt-card-product__btn-ultra:hover{
+	background-color: #C6A490;
+	color: #1A2A3A;
+}
+
+/* Center the button text and icon */
+.related-product .hdt-card-product .hdt-card-product__btn-ultra {
+	width: 100% !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+/* color of price */
+.related-product .hdt-card-product__title .hdt-price-wrapp {
+	font-weight: 600;
+}
+
+/* Current price color */
+.related-product .hdt-card-product .hdt-price {
+  color: #1b2d42 !important;
+}
+
+/* Old (crossed-out) price color */
+.related-product .hdt-card-product .hdt-compare-at-price {
+  color: #AAAAAA !important;
+  font-weight: lighter;
+}
+
+.related-product .hdt-card-product .hdt-price__list {
+    display: flex;
+	flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.related-product  .hdt-badge__wrapp {
+  position: relative;
+}
+
+.related-product  .hdt-badge__best-seller {
+  position: absolute;
+  top: 5px;
+  right: 14px;
+  background-color: #d0021b;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.related-product .hdt-badge__new{
+position: absolute;
+  top: 5px;
+  right: 14px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 2;
+}

@@ -31,14 +31,15 @@
   {%- capture hourHTML -%}
   <hdt-countdown-simple config='{ "time": {{ block.settings.time | default: "19041994" | json }} }'><template>[hours] {{ 'sections.countdown_timmer.hr_plural' | t | escape }} [mins] {{ 'sections.countdown_timmer.min_plural' | t | escape }}</template></hdt-countdown-simple>
   {%- endcapture -%}
-  <div class="hdt-product-info__item hdt-product__order" {{ block.shopify_attributes }} style="{%-unless selected_variant.available-%}display: none;{%-endunless-%}{%- if has_pre_order and product.variants.size == 1 and block.settings.hide_pre %}display: none;{%- endif -%}">
+      {%- assign custom_class = block.settings.custom_class | strip -%}
+  <div class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-product-info__item hdt-product__order" {{ block.shopify_attributes }} style="{%-unless selected_variant.available-%}display: none;{%-endunless-%}{%- if has_pre_order and product.variants.size == 1 and block.settings.hide_pre %}display: none;{%- endif -%}">
     <order-delivery id="delivery{{ block.id }}" class="" config='{ "timezone":false, "format_day":"{{ block.settings.frm_day }}", "mode":"{{ block.settings.mode }}", "cut_day": {{ block.settings.cut_day | json }}, "off_day": "{{ block.settings.off_days | split: " " | join: "," }}", "estimateStartDate": {{ product.metafields.theme.estimateStartDate | default: block.settings.ds | json }}, "estimateEndDate": {{ product.metafields.theme.estimateEndDate | default: block.settings.de | json }}, "time":{{ block.settings.time | default: "19041994" | json }}, "hideWithPreorder":{{ block.settings.hide_pre }} }' form="{{ product_form_id }}">
       <div class="hdt-product__order-wrap hdt-inline-flex">
         {%- liquid
           assign class = block.settings.ani | append: ' is--infinite '
           if block.settings.svg_upload != blank
             echo '<div class="' | append: class | append:'">'
-              echo block.settings.svg_upload 
+              echo block.settings.svg_upload
             echo '</div>'
           elsif block.settings.image_upload != blank
             echo '<div>'
@@ -58,6 +59,12 @@
   "name": "t:sections.main-product.blocks.order.name",
   "tag": null,
   "settings":[
+                      {
+      "type": "text",
+      "id": "custom_class",
+      "label": "custom class to style",
+      "info": "add custom class here to style"
+    },
     {
       "type": "paragraph",
       "content": "t:sections.main-product.blocks.order.settings.paragraph.content"
