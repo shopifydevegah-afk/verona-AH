@@ -1,8 +1,8 @@
 {%-liquid
   assign target = product
   assign product = section.settings.product | default: target
-  assign product_form_id = 'product-form-' | append: section.id | append: product.id 
-  
+  assign product_form_id = 'product-form-' | append: section.id | append: product.id
+
   assign un_no_pick = true
   if settings.pick_mode == 'no' and product.variants.size > 1
     assign selected_variant = product.selected_variant
@@ -14,14 +14,113 @@
   else
     assign selected_variant = product.selected_or_first_available_variant
   endif
+
+  assign save_badge = ''
+  if block.settings.show_save_badge
+    assign badge_variant = selected_variant | default: product.selected_or_first_available_variant
+    assign badge_compare = badge_variant.compare_at_price
+    assign badge_price = badge_variant.price
+    if badge_compare != blank and badge_compare > badge_price
+      if block.settings.badge_type == 'percent'
+        assign badge_value = badge_compare | minus: badge_price | times: 100.0 | divided_by: badge_compare | round | append: '%'
+      elsif block.settings.badge_money == 'with_currency'
+        assign badge_value = badge_compare | minus: badge_price | money_with_currency
+      else
+        assign badge_value = badge_compare | minus: badge_price | money_without_trailing_zeros
+      endif
+      assign save_badge = badge_value
+    endif
+  endif
 -%}
-<div class="hdt-product-info__item hdt-product__price" {{ block.shopify_attributes }}>
+<div class="hdt-product-info__item hdt-product__price{% if block.settings.show_save_badge %} hdt-price-with-save{% endif %}" {{ block.shopify_attributes }}>
   {%- render 'price', product: product, use_variant: true, form_id: product_form_id, show_badges: false, only_show_sale: true, show_volume_note: false, un_no_pick: un_no_pick -%}
+  {%- if save_badge != blank -%}
+    <span class="hdt-save-badge" style="--sv-bg: {{ block.settings.badge_bg }}; --sv-color: {{ block.settings.badge_color }};">
+      {{ block.settings.save_text }} {{ save_badge }}
+    </span>
+  {%- endif -%}
 </div>
+
+{% stylesheet %}
+  .hdt-price-with-save {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 14px;
+  }
+  .hdt-save-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background: var(--sv-bg);
+    color: var(--sv-color);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+{% endstylesheet %}
+
 {% schema %}
   {
     "name": "t:sections.main-product.blocks.price.name",
     "tag": null,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Save badge"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_save_badge",
+        "label": "Show save badge",
+        "info": "Shows only when the product has a compare at price",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "save_text",
+        "label": "Badge text",
+        "default": "وفّر",
+        "visible_if": "{{ block.settings.show_save_badge }}"
+      },
+      {
+        "type": "select",
+        "id": "badge_type",
+        "label": "Show saving as",
+        "options": [
+          { "value": "amount", "label": "Amount" },
+          { "value": "percent", "label": "Percent" }
+        ],
+        "default": "amount",
+        "visible_if": "{{ block.settings.show_save_badge }}"
+      },
+      {
+        "type": "select",
+        "id": "badge_money",
+        "label": "Amount format",
+        "options": [
+          { "value": "with_currency", "label": "With currency (KWD)" },
+          { "value": "without_currency", "label": "Without trailing zeros" }
+        ],
+        "default": "with_currency",
+        "visible_if": "{{ block.settings.show_save_badge }}"
+      },
+      {
+        "type": "color",
+        "id": "badge_bg",
+        "label": "Badge background",
+        "default": "#f3e6d8",
+        "visible_if": "{{ block.settings.show_save_badge }}"
+      },
+      {
+        "type": "color",
+        "id": "badge_color",
+        "label": "Badge text color",
+        "default": "#9a6b3b",
+        "visible_if": "{{ block.settings.show_save_badge }}"
+      }
+    ],
     "presets": [
       {
         "name": "t:sections.main-product.blocks.price.name"
