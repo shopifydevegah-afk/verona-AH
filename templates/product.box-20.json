@@ -35,6 +35,10 @@
             "color_scheme": "scheme-9d4b8c96-bcef-4740-808f-c1d3c1e791b5"
           },
           "blocks": {
+            "judge_me_reviews_preview_badge_ENjMKw": {
+              "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+              "settings": {}
+            },
             "product_title_ehRqkq": {
               "type": "_product-title",
               "settings": {
@@ -50,7 +54,14 @@
             },
             "product_price_9JizTC": {
               "type": "_product-price",
-              "settings": {},
+              "settings": {
+                "show_save_badge": true,
+                "save_text": "وفّر",
+                "badge_type": "amount",
+                "badge_money": "without_currency",
+                "badge_bg": "#f3e6d8",
+                "badge_color": "#9a6b3b"
+              },
               "blocks": {}
             },
             "product_description_AJaqwJ": {
@@ -68,6 +79,25 @@
                 "line_height": "",
                 "font_weight": "semibold",
                 "heading_color": "",
+                "text_color": "hdt-s-text",
+                "font_size_text_lg": 16,
+                "font_size_text": 14,
+                "letter_spacing_text": 0
+              },
+              "blocks": {}
+            },
+            "liquid_eYNR6N": {
+              "type": "_liquid",
+              "name": "t:blocks.liquid.name",
+              "settings": {
+                "option_type": "liquid",
+                "page": "",
+                "text": "<ul class=\"chk-list\">\n  <li><span class=\"chk-ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span>خيار مثالي لضيافة راقية</span></li>\n  <li><span class=\"chk-ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span>جاهزة للتقديم مباشرة</span></li>\n  <li><span class=\"chk-ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span>تغليف أنيق يحافظ على الجودة</span></li>\n  <li><span class=\"chk-ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span>20 بوكس - كل بوكس قطعتين</span></li>\n</ul>\n\n<style>\n  .chk-list {\n    --chk-circle: #1A7A3A;\n    --chk-icon: #ffffff;\n    --chk-text: #1b2a3d;\n    --chk-size: 22px;\n    --chk-fs: 16px;\n    list-style: none;\n    margin: 0;\n    padding: 0;\n  }\n  .chk-list li {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    margin: 0 0 10px;\n    color: var(--chk-text);\n    font-size: var(--chk-fs);\n    line-height: 1.5;\n  }\n  .chk-list li:last-child { margin-bottom: 0; }\n  .chk-ic {\n    flex: 0 0 auto;\n    display: grid;\n    place-items: center;\n    width: var(--chk-size);\n    height: var(--chk-size);\n    border-radius: 50%;\n    background: var(--chk-circle);\n    color: var(--chk-icon);\n  }\n  .chk-ic svg { width: 58%; height: 58%; }\n\n  @media (min-width: 768px) {\n    .chk-list {\n      --chk-size: 22px;\n      --chk-fs: 14px;\n    }\n  }\n</style>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "ffamily": "",
+                "text_size": "custom",
+                "font_weight": "normal",
                 "text_color": "hdt-s-text",
                 "font_size_text_lg": 16,
                 "font_size_text": 14,
@@ -97,13 +127,36 @@
                 "btn_fullwidth": false
               },
               "blocks": {}
+            },
+            "product_order_b9QpGj": {
+              "type": "_product-order",
+              "name": "t:sections.main-product.blocks.order.name",
+              "settings": {
+                "custom_class": "product-order",
+                "hide_pre": true,
+                "icon": "none",
+                "svg_upload": "",
+                "ani": "none",
+                "txt": "✓ أطلب الحين ويصلك بنفس اليوم خلال 1 - 3 ساعات",
+                "ds": 10,
+                "de": 15,
+                "mode": "1",
+                "cut_day": "SAT,SUN",
+                "off_days": "23/12/****\n24/12/****\n01/01/****",
+                "frm_day": "t44, t45 t46",
+                "time": "16:00:00"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
+            "judge_me_reviews_preview_badge_ENjMKw",
             "product_title_ehRqkq",
             "product_price_9JizTC",
             "product_description_AJaqwJ",
-            "product_buy_button_aPmAbD"
+            "liquid_eYNR6N",
+            "product_buy_button_aPmAbD",
+            "product_order_b9QpGj"
           ]
         },
         "main-product-sidebar": {
@@ -733,24 +786,119 @@
         "pd_mb": "16px,,16px,"
       }
     },
-    "1790709085288d1099": {
-      "type": "apps",
+    "custom_section_kPmAPU": {
+      "type": "custom-section",
       "blocks": {
-        "judge_me_reviews_review_widget_Ez6CMD": {
+        "group_8net6f": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 0,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "colors_by_block": false,
+            "color_scheme": "scheme-23cf8966-8e57-4acd-9bb3-bb85f222fbb9",
+            "group_rounded": "",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_left": 0,
+            "padding_right": 0,
+            "padding_rate_mobile": 0
+          },
+          "blocks": {
+            "icon_Tz4EcM": {
+              "type": "icon",
+              "name": "t:blocks.icon.name",
+              "settings": {
+                "icon": "car",
+                "svg_upload": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 24\" width=\"150\" height=\"26\">\n  <g fill=\"#FFB800\">\n    <!-- Star 1 -->\n    <path d=\"M12 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7L12 17l-6.1 3.3 1.4-6.7-5-4.6 6.8-.8z\"/>\n    <!-- Star 2 -->\n    <path d=\"M36 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7L36 17l-6.1 3.3 1.4-6.7-5-4.6 6.8-.8z\"/>\n    <!-- Star 3 -->\n    <path d=\"M60 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7L60 17l-6.1 3.3 1.4-6.7-5-4.6 6.8-.8z\"/>\n    <!-- Star 4 -->\n    <path d=\"M84 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7L84 17l-6.1 3.3 1.4-6.7-5-4.6 6.8-.8z\"/>\n    <!-- Star 5 -->\n    <path d=\"M108 2l2.9 6.2 6.8.8-5 4.6 1.4 6.7-6.1-3.3-6.1 3.3 1.4-6.7-5-4.6 6.8-.8z\"/>\n  </g>\n</svg>",
+                "width_lg": 125,
+                "width_md": 44,
+                "width": 138
+              },
+              "blocks": {}
+            },
+            "heading_7tbi44": {
+              "type": "heading",
+              "name": "t:blocks.heading.name",
+              "settings": {
+                "heading": "<p>عملاؤنا يتحدثون عن تجربتهم</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "font_weight": "semibold",
+                "heading_size": "h3",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 50,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            },
+            "text_WpDrJ8": {
+              "type": "text",
+              "name": "t:blocks.text.name",
+              "settings": {
+                "text": "<p>في فيرونا، نؤمن أن تجربتك معنا يجب أن تكون استثنائية من البداية للنهاية</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "ffamily": "",
+                "text_size": "base",
+                "line_height": "",
+                "font_weight": "medium",
+                "text_color": "hdt-text-secondary",
+                "countdown": "2025-12-30 15:00:00",
+                "txt_day": "days",
+                "font_size_text_lg": 16,
+                "font_size_text": 14,
+                "letter_spacing_text": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "icon_Tz4EcM",
+            "heading_7tbi44",
+            "text_WpDrJ8"
+          ]
+        },
+        "judge_me_reviews_review_widget_iQc6Ph": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "real_data",
             "max_width": 1200,
             "show_shop_reviews": false,
-            "empty_state": "empty_widget"
+            "empty_state": "other_products_reviews"
           }
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_Ez6CMD"
+        "group_8net6f",
+        "judge_me_reviews_review_widget_iQc6Ph"
       ],
+      "name": "t:sections.custom_section.name",
       "settings": {
-        "include_margins": true
+        "layout": "10",
+        "item_spacing": 30,
+        "item_spacing_tb": 15,
+        "item_spacing_mb": 15,
+        "colors_by_section": true,
+        "color_scheme": "scheme-23cf8966-8e57-4acd-9bb3-bb85f222fbb9",
+        "background_opacity": 1,
+        "section_layout": "wrapper_container",
+        "hdt_background_parallax": false,
+        "mg": "",
+        "mg_mb": ",,30px,",
+        "pd": "48px,,48px,",
+        "pd_mb": "16px,,16px,"
       }
     },
     "related-products": {
@@ -926,7 +1074,7 @@
     "sidebar",
     "shipping_NntCy4",
     "custom_section_mBiqgG",
-    "1790709085288d1099",
+    "custom_section_kPmAPU",
     "related-products",
     "recently-products"
   ]
