@@ -154,8 +154,11 @@
   .custom-section  .hdt-text-primary{
   font-size: 20px;
 }
-.custom-section .hdt-text-warry{
-  font-size: 14px;
+.custom-section .hdt-text-warry .hdt-text-primary{
+  font-size: 20px;
+}
+.custom-section .hdt-text-tertiary{
+  font-size: 14px !important;
 }
 .custom-section .hdt-text-warry li::before {
     width: 20px;
@@ -177,6 +180,15 @@
   margin-top: 30px;
 }
 
+.image-text .hdt-text-warry{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+  .image-text .hdt-text-secondary{
+    font-size: 16.3px !important;
+    font-weight: 400 !important;
+  }
 .image-text .hdt-image-wrap{
 width: 100% !important;
   height: 100% !important;
@@ -184,6 +196,57 @@ width: 100% !important;
   display: block !important;
 }
 
+
+
+.image-text2{
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+.image-text1{
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+}
+
+.image-text1 .hdt-column_inner{
+  display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media (max-width: 767px) {
+  .image-text{
+    border-radius: 16px !important;
+    margin: 0 !important;
+  }
+  .image-text1 {
+    order: 2 !important;
+    margin-top: -23px !important;
+    padding-bottom: 16px !important;
+
+  }
+  .image-text2 {
+    order: 1 !important;
+  }
+
+  .image-text .hdt-text-warry{
+    font-size: 20px;
+  }
+  .image-text .hdt-text-secondary{
+    font-size: 13px !important;
+  }
+  .image-text1 .hdt-column_inner{
+    gap: 16px;
+}
+  .image-text2 .hdt-ratio--square {
+    --ratio-percent: 66.6% !important;
+  }
+
+  .image-text1 .hdt-il{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+}
 /* edit in related product */
 
 /* Card and wrapper take the same height */

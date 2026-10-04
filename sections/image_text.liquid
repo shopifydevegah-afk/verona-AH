@@ -21,7 +21,8 @@
   endcase
 %}
   {%- assign custom_class = section.settings.custom_class | strip -%}
-<div id="{{ section.id }}" class="{% if custom_class != blank %} {{ custom_class }}{% endif %} {{ parent }} {% if section.settings.hdt_background_parallax %} hdt-animate--parallax-bg {% endif %}" {%- if section.settings.colors_by_section %} color-scheme="{{ section.settings.color_scheme }}" style="--background-opacity: {{ section.settings.background_opacity }};"{%- endif %} hdt-reveal="fade-in">
+  {%- assign custom_class_specific = section.settings.custom_class_specific | strip -%}
+<div id="{{ section.id }}" class="{% if custom_class != blank %} {{ custom_class }}{% endif %} {% if custom_class_specific  != blank %} {{ custom_class_specific  }}{% endif %} {{ parent }} {% if section.settings.hdt_background_parallax %} hdt-animate--parallax-bg {% endif %}" {%- if section.settings.colors_by_section %} color-scheme="{{ section.settings.color_scheme }}" style="--background-opacity: {{ section.settings.background_opacity }};"{%- endif %} hdt-reveal="fade-in">
   <div class="{{ child }}">
     {%- if section.settings.section_background != blank -%}
       {% liquid
@@ -62,6 +63,12 @@
       "id": "custom_class",
       "label": "custom class to style",
       "info": "add custom class here to style"
+    },
+      {
+      "type": "text",
+      "id": "custom_class_specific",
+      "label": "custom class to style specific",
+      "info": "add custom class here to style specific"
     },
       {
         "type": "header",

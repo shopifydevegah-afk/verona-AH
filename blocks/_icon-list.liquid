@@ -1,0 +1,126 @@
+
+
+{% style %}
+  #il-{{ block.id }} {
+    --il-cols: {{ block.settings.columns_dk }};
+    --il-cols-mb: {{ block.settings.columns_mb }};
+    --il-gap: {{ block.settings.row_gap }}px;
+    --il-col-gap: {{ block.settings.column_gap }}px;
+    --il-size: {{ block.settings.circle_size_mb }}px;
+    --il-circle: {{ block.settings.circle_color }};
+    --il-icon: {{ block.settings.icon_color }};
+    --il-text: {{ block.settings.text_color }};
+    --il-fs: {{ block.settings.font_size_mb }}px;
+  }
+  @media (min-width: 768px) {
+    #il-{{ block.id }} {
+      --il-size: {{ block.settings.circle_size }}px;
+      --il-fs: {{ block.settings.font_size }}px;
+    }
+  }
+{% endstyle %}
+
+<ul id="il-{{ block.id }}" class="hdt-il" {{ block.shopify_attributes }}>
+  {% content_for 'blocks' %}
+</ul>
+
+{% stylesheet %}
+  .hdt-il {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    column-count: var(--il-cols-mb);
+    column-gap: var(--il-col-gap);
+  }
+  @media (min-width: 768px) {
+    .hdt-il { column-count: var(--il-cols); }
+  }
+  .hdt-il__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 var(--il-gap);
+    break-inside: avoid;
+    color: var(--il-text);
+    font-size: var(--il-fs);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  .hdt-il__icon {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: var(--il-size);
+    height: var(--il-size);
+    border-radius: 50%;
+    background: var(--il-circle);
+    color: var(--il-icon);
+    overflow: hidden;
+  }
+  .hdt-il__icon svg {
+    width: calc(var(--il-size) * 0.46);
+    height: calc(var(--il-size) * 0.46);
+  }
+  .hdt-il__icon img {
+    width: calc(var(--il-size) * 0.6);
+    height: calc(var(--il-size) * 0.6);
+    object-fit: contain;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Icon list",
+  "blocks": [
+    { "type": "_icon-list-item" }
+  ],
+  "settings": [
+    { "type": "header", "content": "Layout" },
+    {
+      "type": "select",
+      "id": "columns_dk",
+      "label": "Columns (desktop)",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" },
+        { "value": "3", "label": "3" }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "select",
+      "id": "columns_mb",
+      "label": "Columns (mobile)",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" }
+      ],
+      "default": "1"
+    },
+    { "type": "range", "id": "row_gap", "min": 0, "max": 40, "step": 2, "unit": "px", "label": "Space between rows", "default": 16 },
+    { "type": "range", "id": "column_gap", "min": 0, "max": 80, "step": 2, "unit": "px", "label": "Space between columns", "default": 24 },
+    { "type": "header", "content": "Style" },
+    { "type": "range", "id": "circle_size", "min": 24, "max": 64, "step": 2, "unit": "px", "label": "Circle size (desktop)", "default": 40 },
+    { "type": "range", "id": "circle_size_mb", "min": 24, "max": 64, "step": 2, "unit": "px", "label": "Circle size (mobile)", "default": 34 },
+    { "type": "range", "id": "font_size", "min": 12, "max": 22, "step": 1, "unit": "px", "label": "Text size (desktop)", "default": 14 },
+    { "type": "range", "id": "font_size_mb", "min": 10, "max": 22, "step": 1, "unit": "px", "label": "Text size (mobile)", "default": 13 },
+    { "type": "color", "id": "circle_color", "label": "Circle color", "default": "#eef0fb" },
+    { "type": "color", "id": "icon_color", "label": "Icon color", "default": "#1b2a3d" },
+    { "type": "color", "id": "text_color", "label": "Text color", "default": "#1b2a3d" }
+  ],
+  "presets": [
+    {
+      "name": "Icon list",
+      "blocks": [
+        { "type": "_icon-list-item", "settings": { "icon": "star", "text": "حشوات غنية وموزونة" } },
+        { "type": "_icon-list-item", "settings": { "icon": "package", "text": "تنويع نكهات يرضي كل الأذواق" } },
+        { "type": "_icon-list-item", "settings": { "icon": "coffee", "text": "تجربة مثالية مع القهوة" } },
+        { "type": "_icon-list-item", "settings": { "icon": "gift", "text": "تقديم أنيق يصلح كهدية" } },
+        { "type": "_icon-list-item", "settings": { "icon": "shield-check", "text": "شوكولاتة مختارة بعناية" } },
+        { "type": "_icon-list-item", "settings": { "icon": "award", "text": "جودة تلاحظها من أول قطعة" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -26,7 +26,9 @@
   endif
 -%}
   {%- assign custom_class = block.settings.custom_class | strip -%}
-<div id="{{ block.id }}" class="{% if custom_class != blank %} {{ custom_class }}{% endif %} hdt-column hdt-g-col hdt-g-col-{{ col_mb }} md:hdt-g-col-{{ col_tb }} lg:hdt-g-col-{{ col_dk }} {{ block.settings.rounded }} hdt-text-{{ block.settings.alignment_mb }} md:hdt-text-{{ block.settings.alignment }} hdt-relative {{ display_dk }} {{ display_mb }} {% if block.settings.content_position == 'auto' and block.settings.align_content %} hdt-align-content-center{% endif %}" {{ block.shopify_attributes }}>
+  {%- assign custom_class_specific = block.settings.custom_class_specific | strip -%}
+
+<div id="{{ block.id }}" class="{% if custom_class != blank %} {{ custom_class }}{% endif %} {% if custom_class_specific  != blank %} {{ custom_class_specific  }}{% endif %} hdt-column hdt-g-col hdt-g-col-{{ col_mb }} md:hdt-g-col-{{ col_tb }} lg:hdt-g-col-{{ col_dk }} {{ block.settings.rounded }} hdt-text-{{ block.settings.alignment_mb }} md:hdt-text-{{ block.settings.alignment }} hdt-relative {{ display_dk }} {{ display_mb }} {% if block.settings.content_position == 'auto' and block.settings.align_content %} hdt-align-content-center{% endif %}" {{ block.shopify_attributes }}>
   {%- liquid
     assign image_background = block.settings.background_image
     if image_background != blank
@@ -42,6 +44,9 @@
     "name": "t:blocks.column.name",
     "tag": null,
     "blocks": [
+      {
+  "type": "_icon-list"
+},
       {
         "type": "@theme",
       },
@@ -100,6 +105,12 @@
       "id": "custom_class",
       "label": "custom class to style",
       "info": "add custom class here to style"
+    },
+          {
+      "type": "text",
+      "id": "custom_class_specific",
+      "label": "custom class to style specific",
+      "info": "add custom class here to style specific"
     },
       {
         "type": "header",
