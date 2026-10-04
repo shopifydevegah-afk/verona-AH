@@ -221,6 +221,7 @@
           "type": "_multi_column",
           "settings": {
             "custom_class": "custom-section",
+            "custom_class_specific": "",
             "column_dk": "6",
             "column_tb": "6",
             "column_mb": "12",
@@ -268,6 +269,7 @@
           "name": "t:blocks.column.name",
           "settings": {
             "custom_class": "custom-section",
+            "custom_class_specific": "",
             "column_dk": "6",
             "column_tb": "6",
             "column_mb": "12",
@@ -523,6 +525,7 @@
           "name": "t:blocks.column.name",
           "settings": {
             "custom_class": "image-text",
+            "custom_class_specific": "image-text1",
             "column_dk": "6",
             "column_tb": "6",
             "column_mb": "12",
@@ -530,11 +533,11 @@
             "column_tb_10": "5",
             "column_mb_10": "10",
             "spacing_h_dk": 20,
-            "spacing_v_dk": 0,
+            "spacing_v_dk": 71,
             "spacing_h_tb": 12,
             "spacing_v_tb": 0,
             "spacing_h_mb": 14,
-            "spacing_v_mb": 12,
+            "spacing_v_mb": 50,
             "content_position": "auto",
             "align_content": true,
             "content_position_mb": "auto",
@@ -571,7 +574,7 @@
                 "text_size": "base",
                 "line_height": "",
                 "font_weight": "normal",
-                "text_color": "hdt-s-text",
+                "text_color": "hdt-text-secondary",
                 "countdown": "2025-12-30 15:00:00",
                 "txt_day": "days",
                 "font_size_text_lg": 16,
@@ -579,11 +582,87 @@
                 "letter_spacing_text": 0
               },
               "blocks": {}
+            },
+            "icon_list_GgfRWU": {
+              "type": "_icon-list",
+              "name": "Icon list",
+              "settings": {
+                "columns_dk": "2",
+                "columns_mb": "1",
+                "row_gap": 16,
+                "column_gap": 24,
+                "circle_size": 40,
+                "circle_size_mb": 34,
+                "font_size": 16,
+                "font_size_mb": 12,
+                "circle_color": "#eef0fb",
+                "icon_color": "#1b2a3d",
+                "text_color": "#1b2a3d"
+              },
+              "blocks": {
+                "icon_list_item_Pgee8P": {
+                  "type": "_icon-list-item",
+                  "settings": {
+                    "text": "حشوات غنية وموزونة",
+                    "icon": "star"
+                  },
+                  "blocks": {}
+                },
+                "icon_list_item_qCy7Af": {
+                  "type": "_icon-list-item",
+                  "settings": {
+                    "text": "تنويع نكهات يرضي كل الأذواق",
+                    "icon": "package"
+                  },
+                  "blocks": {}
+                },
+                "icon_list_item_CCYLxQ": {
+                  "type": "_icon-list-item",
+                  "settings": {
+                    "text": "تجربة مثالية مع القهوة",
+                    "icon": "coffee"
+                  },
+                  "blocks": {}
+                },
+                "icon_list_item_x9JaKY": {
+                  "type": "_icon-list-item",
+                  "settings": {
+                    "text": "تقديم أنيق يصلح كهدية",
+                    "icon": "gift"
+                  },
+                  "blocks": {}
+                },
+                "icon_list_item_m6rEpF": {
+                  "type": "_icon-list-item",
+                  "settings": {
+                    "text": "شوكولاتة مختارة بعناية",
+                    "icon": "shield-check"
+                  },
+                  "blocks": {}
+                },
+                "icon_list_item_hK4kLX": {
+                  "type": "_icon-list-item",
+                  "settings": {
+                    "text": "جودة تلاحظها من أول قطعة",
+                    "icon": "award"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_list_item_Pgee8P",
+                "icon_list_item_qCy7Af",
+                "icon_list_item_CCYLxQ",
+                "icon_list_item_x9JaKY",
+                "icon_list_item_m6rEpF",
+                "icon_list_item_hK4kLX"
+              ]
             }
           },
           "block_order": [
             "heading_4bxbqt",
-            "text_HAxwiY"
+            "text_HAxwiY",
+            "icon_list_GgfRWU"
           ]
         },
         "multi_column_P6KnRe": {
@@ -591,6 +670,7 @@
           "name": "t:blocks.column.name",
           "settings": {
             "custom_class": "image-text",
+            "custom_class_specific": "image-text2",
             "column_dk": "6",
             "column_tb": "6",
             "column_mb": "12",
