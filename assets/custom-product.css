@@ -241,10 +241,8 @@ width: 100% !important;
     --ratio-percent: 66.6% !important;
   }
 
-  .image-text1 .hdt-il{
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
+  .image-text1 .hdt-il__item {
+    gap: 5px;
   }
 }
 /* edit in related product */
